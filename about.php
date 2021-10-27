@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link rel="shortcut icon" href="./images/hiltonHotelsLogo.svg.png" />
-    <title>Hilton Hotel Resort</title>
+    <title>Giới thiệu khách sạn Hilton</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
