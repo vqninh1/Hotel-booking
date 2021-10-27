@@ -288,7 +288,7 @@
       <div class="container-fluid">
         <div class="row no-gutters justify-content-center pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
-          	<span class="subheading">Photos</span>
+          	<span class="subheading">Ảnh</span>
             <h2><span>Instagram</span></h2>
           </div>
         </div>
