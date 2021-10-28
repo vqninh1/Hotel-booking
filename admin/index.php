@@ -12,8 +12,8 @@
   <script src="assets/js/pace.min.js"></script>
   <!--favicon-->
   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-  <!--Full Calendar Css-->
-  <link href="assets/plugins/fullcalendar/css/fullcalendar.min.css" rel='stylesheet'/>
+  <!-- Vector CSS -->
+  <link href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet"/>
   <!-- simplebar CSS-->
   <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
   <!-- Bootstrap core CSS-->
@@ -30,84 +30,40 @@
 </head>
 
 <body class="bg-theme bg-theme1">
-
-   <!-- start loader -->
-   <div id="pageloader-overlay" class="visible incoming"><div class="loader-wrapper-outer"><div class="loader-wrapper-inner" ><div class="loader"></div></div></div></div>
-   <!-- end loader -->
-
+ 
 <!-- Start wrapper-->
  <div id="wrapper">
  
-   <!--Start sidebar-wrapper-->
+  <!--Start sidebar-wrapper-->
    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
-      <a href="index.html">
+      <a href="index.php">
        <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
-       <h5 class="logo-text">Dashtreme Admin</h5>
-     </a>
-   </div>
+       <h5 class="logo-text">HiltonHotel Admin</h5>
+      </a>
+    </div>
    <ul class="sidebar-menu do-nicescrol">
-      <li class="sidebar-header">MAIN NAVIGATION</li>
+      <li class="sidebar-header">MENU</li>
       <li>
-        <a href="index.html">
-          <i class="zmdi zmdi-view-dashboard"></i> <span>Dashboard</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="icons.html">
-          <i class="zmdi zmdi-invert-colors"></i> <span>UI Icons</span>
+        <a href="./index.php">
+          <i class="zmdi zmdi-view-dashboard"></i> <span>Tài khoản</span>
         </a>
       </li>
 
       <li>
-        <a href="forms.html">
-          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Forms</span>
+        <a href="./check-room.php">
+          <i class="zmdi zmdi-invert-colors"></i> <span>Đặt phòng</span>
         </a>
       </li>
 
       <li>
-        <a href="tables.html">
-          <i class="zmdi zmdi-grid"></i> <span>Tables</span>
+        <a href="./info.php">
+          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Thông tin</span>
         </a>
       </li>
-
-      <li>
-        <a href="calendar.html">
-          <i class="zmdi zmdi-calendar-check"></i> <span>Calendar</span>
-          <small class="badge float-right badge-light">New</small>
-        </a>
-      </li>
-
-      <li>
-        <a href="profile.html">
-          <i class="zmdi zmdi-face"></i> <span>Profile</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="login.html" target="_blank">
-          <i class="zmdi zmdi-lock"></i> <span>Login</span>
-        </a>
-      </li>
-
-       <li>
-        <a href="register.html" target="_blank">
-          <i class="zmdi zmdi-account-circle"></i> <span>Registration</span>
-        </a>
-      </li>
-	 
-
-      <li class="sidebar-header">LABELS</li>
-      <li><a href="javaScript:void();"><i class="zmdi zmdi-coffee text-danger"></i> <span>Important</span></a></li>
-      <li><a href="javaScript:void();"><i class="zmdi zmdi-chart-donut text-success"></i> <span>Warning</span></a></li>
-      <li><a href="javaScript:void();"><i class="zmdi zmdi-share text-info"></i> <span>Information</span></a></li>
-
-    </ul>
-   
    </div>
    <!--End sidebar-wrapper-->
-
+ 
 <!--Start topbar header-->
 <header class="topbar-nav">
  <nav class="navbar navbar-expand fixed-top">
@@ -133,15 +89,6 @@
     <li class="nav-item dropdown-lg">
       <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">
       <i class="fa fa-bell-o"></i></a>
-    </li>
-    <li class="nav-item language">
-      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();"><i class="fa fa-flag"></i></a>
-      <ul class="dropdown-menu dropdown-menu-right">
-          <li class="dropdown-item"> <i class="flag-icon flag-icon-gb mr-2"></i> English</li>
-          <li class="dropdown-item"> <i class="flag-icon flag-icon-fr mr-2"></i> French</li>
-          <li class="dropdown-item"> <i class="flag-icon flag-icon-cn mr-2"></i> Chinese</li>
-          <li class="dropdown-item"> <i class="flag-icon flag-icon-de mr-2"></i> German</li>
-        </ul>
     </li>
     <li class="nav-item">
       <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
@@ -178,20 +125,57 @@
 	
   <div class="content-wrapper">
     <div class="container-fluid">
-    
-    <div class="mt-3">
-      <div id='calendar'></div>
-    </div>
-			
-		<!--start overlay-->
+
+  <!--Start Dashboard Content-->
+
+	<div class="row">
+	 <div class="col-12 col-lg-12">
+	   <div class="card">
+	     <div class="card-header">Bảng điều khiển người dùng
+		  <div class="card-action">
+             <div class="dropdown">
+             <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
+              <i class="icon-options"></i>
+             </a>
+              <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="javascript:void();">Xoá</a>
+              <a class="dropdown-item" href="javascript:void();">Another action</a>
+              <a class="dropdown-item" href="javascript:void();">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="javascript:void();">Separated link</a>
+               </div>
+              </div>
+             </div>
+		 </div>
+	       <div class="table-responsive">
+                 <table class="table align-items-center table-flush table-borderless">
+                  <thead>
+                   <tr>
+                     <th>ID</th>
+                     <th>Họ tên</th>
+                     <th>Email</th>
+                     <th>SDT</th>
+                     <th>Địa chỉ</th>
+                     <th>Loại người dùng</th>
+                   </tr>
+                   </thead>
+                  </table>
+               </div>
+	   </div>
+	 </div>
+	</div><!--End Row-->
+
+      <!--End Dashboard Content-->
+	  
+	<!--start overlay-->
 		  <div class="overlay toggle-menu"></div>
-		<!--end overlay-->	
-			
+		<!--end overlay-->
+		
     </div>
     <!-- End container-fluid-->
-   </div><!--End content-wrapper-->
-   
-  <!--Start Back To Top Button-->
+    
+    </div><!--End content-wrapper-->
+   <!--Start Back To Top Button-->
     <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
     <!--End Back To Top Button-->
 	
@@ -199,13 +183,13 @@
 	<footer class="footer">
       <div class="container">
         <div class="text-center">
-          Copyright © 2018 Dashtreme Admin
+        
         </div>
       </div>
     </footer>
 	<!--End footer-->
 	
-	<!--start color switcher-->
+  <!--start color switcher-->
    <div class="right-sidebar">
     <div class="switcher-icon">
       <i class="zmdi zmdi-settings zmdi-hc-spin"></i>
@@ -245,25 +229,26 @@
    
   </div><!--End wrapper-->
 
-
   <!-- Bootstrap core JavaScript-->
-  
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
 	
-  <!-- simplebar js -->
+ <!-- simplebar js -->
   <script src="assets/plugins/simplebar/js/simplebar.js"></script>
   <!-- sidebar-menu js -->
   <script src="assets/js/sidebar-menu.js"></script>
-  
+  <!-- loader scripts -->
+  <script src="assets/js/jquery.loading-indicator.js"></script>
   <!-- Custom scripts -->
   <script src="assets/js/app-script.js"></script>
+  <!-- Chart js -->
   
-  <!-- Full Calendar -->
-  <script src='assets/plugins/fullcalendar/js/moment.min.js'></script>
-  <script src='assets/plugins/fullcalendar/js/fullcalendar.min.js'></script>
-  <script src="assets/plugins/fullcalendar/js/fullcalendar-custom-script.js"></script>
-	
+  <script src="assets/plugins/Chart.js/Chart.min.js"></script>
+ 
+  <!-- Index js -->
+  <script src="assets/js/index.js"></script>
+
+  
 </body>
 </html>
