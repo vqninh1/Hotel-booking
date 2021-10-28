@@ -16,15 +16,14 @@
         </div>
       </div>
     </div>
-
     <section class="ftco-section bg-light ftco-no-pb">
     	<div class="container-fluid px-0">
     		<div class="row no-gutters justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Hilton's Rooms</span>
-            <h2 class="mb-4">Phòng Khách Sạn</h2>
-          </div>
-        </div>  
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<span class="subheading">Hilton's Rooms</span>
+					<h2 class="mb-4">Phòng Khách Sạn</h2>
+          		</div>
+        	</div>  
     		<div class="row no-gutters">
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
@@ -52,7 +51,6 @@
     					</div>
     				</div>
     			</div>
-
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
     					<a href="#" class="img order-md-last" style="background-image: url(images/room-2.jpg);"></a>
@@ -79,7 +77,6 @@
     					</div>
     				</div>
     			</div>
-
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
     					<a href="rooms-single.html" class="img" style="background-image: url(images/room-4.jpg);"></a>
