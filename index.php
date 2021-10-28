@@ -221,7 +221,8 @@
 							<div class="half right-arrow d-flex align-items-center">
 								<div class="text p-4 p-xl-5 text-center">
 									<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-									<p class="mb-0"><span class="price mr-1">10.000.000VNĐ</span> <span class="per">một đêm</span></p>
+									<p class="mb-0"><span class="price mr-1">10.000.000VNĐ</span></p>
+									<span class="per">một đêm</span>
 									<h3 class="mb-3"><a href="rooms.html">Phòng Cổ Điển</a></h3>
 									<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
 								</div>
@@ -234,7 +235,8 @@
 							<div class="half right-arrow d-flex align-items-center">
 								<div class="text p-4 p-xl-5 text-center">
 									<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-									<p class="mb-0"><span class="price mr-1">15.000.000VNĐ</span> <span class="per">một đêm</span></p>
+									<p class="mb-0"><span class="price mr-1">15.000.000VNĐ</span></p>
+									<span class="per">một đêm</span>
 									<h3 class="mb-3"><a href="rooms.html">Phòng Gia Đình</a></h3>
 									<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
 								</div>
@@ -248,7 +250,8 @@
 							<div class="half left-arrow d-flex align-items-center">
 								<div class="text p-4 p-xl-5 text-center">
 									<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-									<p class="mb-0"><span class="price mr-1">17.000.000VNĐ</span> <span class="per">một đêm</span></p>
+									<p class="mb-0"><span class="price mr-1">17.000.000VNĐ</span></p>
+									<span class="per">một đêm</span>
 									<h3 class="mb-3"><a href="rooms.html">Phòng Deluxe</a></h3>
 									<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
 								</div>
@@ -261,7 +264,8 @@
 							<div class="half left-arrow d-flex align-items-center">
 								<div class="text p-4 p-xl-5 text-center">
 									<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-									<p class="mb-0"><span class="price mr-1">25.000.000VNĐ</span> <span class="per">một đêm</span></p>
+									<p class="mb-0"><span class="price mr-1">25.000.000VNĐ</span></p>
+									<span class="per">một đêm</span>
 									<h3 class="mb-3"><a href="rooms.html">Phòng Thượng Hạng</a></h3>
 									<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
 								</div>
@@ -303,7 +307,7 @@
 		              </div>
 		              <div class="item">
 		                <div class="testimony-wrap py-4 pb-5">
-		                  <div class="user-img mb-4" style="background-image: url(images/person_2.jpg)">
+		                  <div class="user-img mb-4" style="background-image: url(images/tuan.jpg)">
 		                    <span class="quote d-flex align-items-center justify-content-center">
 		                      <i class="icon-quote-left"></i>
 		                    </span>
@@ -318,7 +322,7 @@
 		              </div>
 		              <div class="item">
 		                <div class="testimony-wrap py-4 pb-5">
-		                  <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
+		                  <div class="user-img mb-4" style="background-image: url(images/hiep.jpg)">
 		                    <span class="quote d-flex align-items-center justify-content-center">
 		                      <i class="icon-quote-left"></i>
 		                    </span>
@@ -333,7 +337,7 @@
 		              </div>
 		              <div class="item">
 		                <div class="testimony-wrap py-4 pb-5">
-		                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+		                  <div class="user-img mb-4" style="background-image: url(images/son.jpg)">
 		                    <span class="quote d-flex align-items-center justify-content-center">
 		                      <i class="icon-quote-left"></i>
 		                    </span>
@@ -341,14 +345,14 @@
 		                  <div class="text text-center">
 		                  	<p class="star"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
 		                    <p class="mb-4">Khách sạn nằm ngay trung tâm hà nội, cạnh nhà hát lớn, đi bộ ra hồ gươm rất gần, xung quanh nhiều điểm ăn uống cà phê... phòng ốc sạch đẹp, các bạn nhân viên được đào tạo rất chuyên nghiệp chào đón mình rất ấm áp! Nhât định lần công tác tới sẽ ghé lại Hilton</p>
-		                    <p class="name">Bùi Toàn Long</p>
+		                    <p class="name">Vũ Xuân Sơn</p>
 		                    <span class="position">Khách hàng</span>
 		                  </div>
 		                </div>
 		              </div>
 		              <div class="item">
 		                <div class="testimony-wrap py-4 pb-5">
-		                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+		                  <div class="user-img mb-4" style="background-image: url(images/hoanglong)">
 		                    <span class="quote d-flex align-items-center justify-content-center">
 		                      <i class="icon-quote-left"></i>
 		                    </span>
@@ -356,7 +360,7 @@
 		                  <div class="text text-center">
 		                  	<p class="star"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
 		                    <p class="mb-4">Có việc vào khách sạn hilton làm việc. Khách sạn đẹp quá. Nhân viên phục vụ cũng tốt. Bên cạnh có quán cafe khá yên tĩnh. Mình hẹn khách nên ra đây ngồi. Cảm giác yên bình giữa thành phố. Mặc dù giá cũng cao hơn mặt vằng chung 1 chút.</p>
-		                    <p class="name">Lê Văn Luyện</p>
+		                    <p class="name">Nguyễn Hoàng Long</p>
 		                    <span class="position">Khách hàng</span>
 		                  </div>
 		                </div>
