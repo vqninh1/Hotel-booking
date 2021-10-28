@@ -1,54 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  	<link rel="shortcut icon" href="./images/hiltonHotelsLogo.svg.png" />
-    <title>Hilton Holten Resort</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.php"><img src="./images/hiltonHotelsLogo.svg.png(1).png" alt=""></a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> 
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.php" class="nav-link">Trang Chủ</a></li>
-	          <li class="nav-item"><a href="rooms.php" class="nav-link">Phòng</a></li>
-	          <li class="nav-item"><a href="restaurant.php" class="nav-link">Nhà Hàng</a></li>
-	          <li class="nav-item"><a href="about.php" class="nav-link">Giới Thiệu</a></li>
-	          <li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.php" class="nav-link">Liên Hệ</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
+<?php include ('header.php')?>
     <!-- END nav -->
 		<div class="hero">
 			<div class="container-wrap d-flex justify-content-end align-items-end">
@@ -97,16 +47,16 @@
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-				    					<label for="#">Ngày Đến</label>
-				    					<input type="text" class="form-control checkin_date" placeholder="Check-in date">
+				    					<label for="#">Ngày Nhận Phòng</label>
+				    					<input type="text" class="form-control checkin_date" placeholder="Ngày Nhận Phòng">
 			    					</div>
 			    				</div>
 	        			</div>
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-				    					<label for="#">Ngày Về</label>
-				    					<input type="text" class="form-control checkout_date" placeholder="Check-out date">
+				    					<label for="#">Ngày Trả Phòng</label>
+				    					<input type="text" class="form-control checkout_date" placeholder="Ngày Trả Phòng">
 			    					</div>
 			    				</div>
 	        			</div>
@@ -138,12 +88,12 @@
 			        					<div class="select-wrap">
 			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
 			                    <select name="" id="" class="form-control">
-			                    	<option value="">1 Người Lớn</option>
-			                      <option value="">2 Người Lớn</option>
-			                      <option value="">3 Người Lớn</option>
-			                      <option value="">4 Người Lớn</option>
-			                      <option value="">5 Người Lớn</option>
-			                      <option value="">6 Người Lớn</option>
+			                    	<option value="">1 Người </option>
+			                      <option value="">2 Người </option>
+			                      <option value="">3 Người </option>
+			                      <option value="">4 Người </option>
+			                      <option value="">5 Người </option>
+			                      <option value="">6 Người </option>
 			                    </select>
 			                  </div>
 				              </div>
@@ -584,8 +534,6 @@
 
 	?>
     
-  
-
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
   <script src="js/jquery.min.js"></script>
