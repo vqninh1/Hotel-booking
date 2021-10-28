@@ -9,7 +9,7 @@
           <div class="col-md-9 ftco-animate text-center d-flex align-items-end justify-content-center">
           	<div class="text">
 	            <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.php">Trang chủ</a></span> <span>Giới thiệu</span></p>
-	            <h1 class="mb-4 bread">Giới thiệu</h1>
+	            <h2 class="mb-4">Giới thiệu</h2>
             </div>
           </div>
         </div>

@@ -1,5 +1,4 @@
-
-<section class="ftco-section ftco-menu" style="background-image: url(images/restaurant-pattern.jpg);">
+		<section class="ftco-section ftco-menu" style="background-image: url(images/restaurant-pattern.jpg);">
 			<div class="container">
 				<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -53,7 +52,7 @@
 	        				<span class="price price-left"></span>
 	        			</div>
 	        			<div class="d-block">
-	        				<p>Ngũ vị hương được ủ trong lò cấp đông 77 49 ngày được hòa quyện cùng thịt dê Ninh Bình</p>
+	        				<p>Ngũ vị hương được ủ trong lò cấp đông 77 49 ngày được hòa quyện cùng thịt dê được nhập nguyên đàn từ Ninh Bình</p>
 	        			</div>
 	        		</div>
         		</div>
@@ -111,4 +110,4 @@
         	</div>
         </div>
 			</div>
-
+		</section>

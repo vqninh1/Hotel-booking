@@ -3,14 +3,14 @@
 
 ?>
 
-		<div class="hero-wrap" style="background-image: url('images/bg_1.jpg');">
+		<div class="hero-wrap" style="background-image: url('./images/Khách-sạn-Hilton-Hà-Nội-Opera-4-1290x860.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text d-flex align-itemd-end justify-content-center">
           <div class="col-md-9 ftco-animate text-center d-flex align-items-end justify-content-center">
           	<div class="text">
 	            <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Trang Chủ</a></span> <span>Nhà Hàng</span></p>
-	            <h1 class="mb-4 bread">Nhà Hàng</h1>
+	            <h2 class="mb-4">Nhà Hàng</h2>
             </div>
           </div>
         </div>

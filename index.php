@@ -92,66 +92,39 @@
     			<div class="col-lg-12 pr-1 aside-stretch">
     				<form action="#" class="booking-form">
 	        		<div class="row">
-	        			<div class="col-md d-flex py-md-4">
+					<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
 				    					<label for="#">Ngày Đến</label>
-<<<<<<< HEAD
-<<<<<<< HEAD
 				    					<input type="text" class="form-control checkin_date" placeholder="Ngày Đến">
-=======
-				    					<input type="text" class="form-control checkin_date" placeholder="Check-in date">
->>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
-=======
-				    					<input type="text" class="form-control checkin_date" placeholder="Ngày Đến">
->>>>>>> 0db9e3715819a3fc65d19aff32901ee045423576
 			    					</div>
 			    				</div>
 	        			</div>
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-<<<<<<< HEAD
-				    					<label for="#">Ngày Trả phòng</label>
+				    					<label for="#">Ngày Trả Phòng</label>
 				    					<input type="text" class="form-control checkout_date" placeholder="Ngày Trả Phòng">
-=======
-				    					<label for="#">Ngày Về</label>
-<<<<<<< HEAD
-				    					<input type="text" class="form-control checkout_date" placeholder="Check-out date">
->>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
-=======
-				    					<input type="text" class="form-control checkout_date" placeholder="Ngày Về">
->>>>>>> 0db9e3715819a3fc65d19aff32901ee045423576
 			    					</div>
 			    				</div>
 	        			</div>
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-<<<<<<< HEAD
 			      					<label for="#">Phòng</label>
-=======
+
 			      					<label for="#">Loại Phòng</label>
->>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
 			      					<div class="form-field">
 			        					<div class="select-wrap">
 			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
 			                    <select name="" id="" class="form-control">
-<<<<<<< HEAD
 			                    	<option value="">Phòng Cổ Điển</option>
 			                      <option value="">Phòng Gia Đình</option>
 			                      <option value="">Phòng Deluxe</option>
 			                      <option value="">Phòng Thượng Hạng</option>
 			                      <option value="">Phòng Sang Trọng</option>
 			                      <option value="">Phòng Superior</option>
-=======
-			                    	<option value="">Phòng Thượng Hạng</option>
-			                      <option value="">Phòng Gia Đình</option>
-			                      <option value="">Phòng Deluxe</option>
-			                      <option value="">Phòng Thường</option>
-			                      <option value="">Phòng Superior</option>
-			                      <option value="">Phòng Sang Trọng</option>
->>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
+
 			                    </select>
 			                  </div>
 				              </div>
@@ -161,30 +134,22 @@
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-<<<<<<< HEAD
+
 			      					<label for="#">Khách</label>
-=======
+
 			      					<label for="#">Số Khách</label>
->>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
+
 			      					<div class="form-field">
 			        					<div class="select-wrap">
 			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-			                    <select name="" id="" class="form-control">
-<<<<<<< HEAD
-			                      <option value="">1 Người </option>
-			                      <option value="">2 Người </option>
-			                      <option value="">3 Người </option>
-			                      <option value="">4 Người </option>
-			                      <option value="">5 Người </option>
-			                      <option value="">6 Người </option>
-=======
+			                    <select name="" id="" class="form-control">			
 			                    	<option value="">1 Người Lớn</option>
 			                      <option value="">2 Người Lớn</option>
 			                      <option value="">3 Người Lớn</option>
 			                      <option value="">4 Người Lớn</option>
 			                      <option value="">5 Người Lớn</option>
 			                      <option value="">6 Người Lớn</option>
->>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
+
 			                    </select>
 			                  </div>
 				              </div>
@@ -193,17 +158,17 @@
 	        			</div>
 	        			<div class="col-md d-flex">
 	        				<div class="form-group d-flex align-self-stretch">
-<<<<<<< HEAD
+
 			              <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Kiểm Tra Phòng Trống<small>Đảm Bảo Mức Giá Tốt Nhất</small></span></a>
-=======
-			              <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Tìm Phòng</span></a>
->>>>>>> 0db9e3715819a3fc65d19aff32901ee045423576
+
+
 			            </div>
 	        			</div>
 	        		</div>
 	        	</form>
 	    		</div>
     		</div>
+
     	</div>
     </section>
 
@@ -524,7 +489,6 @@
 		include('./footer.php')
 
 	?>
-    
   
 
   <!-- loader -->
