@@ -43,6 +43,7 @@
 	          <li class="nav-item"><a href="rooms.html" class="nav-link">Phòng</a></li>
 	          <li class="nav-item"><a href="restaurant.html" class="nav-link">Nhà Hàng</a></li>
 	          <li class="nav-item"><a href="about.html" class="nav-link">Giới Thiệu</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Liên Hệ</a></li>
 	        </ul>
 	      </div>
@@ -96,62 +97,32 @@
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
 				    					<label for="#">Ngày Đến</label>
-<<<<<<< HEAD
-<<<<<<< HEAD
-				    					<input type="text" class="form-control checkin_date" placeholder="Ngày Đến">
-=======
 				    					<input type="text" class="form-control checkin_date" placeholder="Check-in date">
->>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
-=======
-				    					<input type="text" class="form-control checkin_date" placeholder="Ngày Đến">
->>>>>>> 0db9e3715819a3fc65d19aff32901ee045423576
 			    					</div>
 			    				</div>
 	        			</div>
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-<<<<<<< HEAD
-				    					<label for="#">Ngày Trả phòng</label>
-				    					<input type="text" class="form-control checkout_date" placeholder="Ngày Trả Phòng">
-=======
 				    					<label for="#">Ngày Về</label>
-<<<<<<< HEAD
 				    					<input type="text" class="form-control checkout_date" placeholder="Check-out date">
->>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
-=======
-				    					<input type="text" class="form-control checkout_date" placeholder="Ngày Về">
->>>>>>> 0db9e3715819a3fc65d19aff32901ee045423576
 			    					</div>
 			    				</div>
 	        			</div>
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-<<<<<<< HEAD
-			      					<label for="#">Phòng</label>
-=======
 			      					<label for="#">Loại Phòng</label>
->>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
 			      					<div class="form-field">
 			        					<div class="select-wrap">
 			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
 			                    <select name="" id="" class="form-control">
-<<<<<<< HEAD
-			                    	<option value="">Phòng Cổ Điển</option>
-			                      <option value="">Phòng Gia Đình</option>
-			                      <option value="">Phòng Deluxe</option>
-			                      <option value="">Phòng Thượng Hạng</option>
-			                      <option value="">Phòng Sang Trọng</option>
-			                      <option value="">Phòng Superior</option>
-=======
 			                    	<option value="">Phòng Thượng Hạng</option>
 			                      <option value="">Phòng Gia Đình</option>
 			                      <option value="">Phòng Deluxe</option>
 			                      <option value="">Phòng Thường</option>
 			                      <option value="">Phòng Superior</option>
 			                      <option value="">Phòng Sang Trọng</option>
->>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
 			                    </select>
 			                  </div>
 				              </div>
@@ -161,30 +132,17 @@
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-<<<<<<< HEAD
-			      					<label for="#">Khách</label>
-=======
 			      					<label for="#">Số Khách</label>
->>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
 			      					<div class="form-field">
 			        					<div class="select-wrap">
 			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
 			                    <select name="" id="" class="form-control">
-<<<<<<< HEAD
-			                      <option value="">1 Người </option>
-			                      <option value="">2 Người </option>
-			                      <option value="">3 Người </option>
-			                      <option value="">4 Người </option>
-			                      <option value="">5 Người </option>
-			                      <option value="">6 Người </option>
-=======
 			                    	<option value="">1 Người Lớn</option>
 			                      <option value="">2 Người Lớn</option>
 			                      <option value="">3 Người Lớn</option>
 			                      <option value="">4 Người Lớn</option>
 			                      <option value="">5 Người Lớn</option>
 			                      <option value="">6 Người Lớn</option>
->>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
 			                    </select>
 			                  </div>
 				              </div>
@@ -193,11 +151,7 @@
 	        			</div>
 	        			<div class="col-md d-flex">
 	        				<div class="form-group d-flex align-self-stretch">
-<<<<<<< HEAD
-			              <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Kiểm Tra Phòng Trống<small>Đảm Bảo Mức Giá Tốt Nhất</small></span></a>
-=======
-			              <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Tìm Phòng</span></a>
->>>>>>> 0db9e3715819a3fc65d19aff32901ee045423576
+			              <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Check Availability <small>Best Price Guaranteed!</small></span></a>
 			            </div>
 	        			</div>
 	        		</div>
@@ -214,29 +168,29 @@
 					<div class="col-md-3">
 						<a href="#" class="services-wrap img align-items-end d-flex" style="background-image: url(images/room-3.jpg);">
 							<div class="text text-center pb-2">
-								<h3>Phòng Đặc Biệt</h3>
+								<h3>Special Rooms</h3>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3">
 						<a href="#" class="services-wrap img align-items-end d-flex" style="background-image: url(images/swimming-pool.jpg);">
 							<div class="text text-center pb-2">
-								<h3>Bể Bơi</h3>
+								<h3>Swimming Pool</h3>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3">
 						<a href="#" class="services-wrap img align-items-end d-flex" style="background-image: url(images/resto.jpg);">
 							<div class="text text-center pb-2">
-								<h3>Nhà Hàng</h3>
+								<h3>Restaurant</h3>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3">
 						<div class="services-wrap services-overlay img align-items-center d-flex" style="background-image: url(images/sleep.jpg);">
 							<div class="text text-center pb-2">
-								<h3 class="mb-0">Loại Phòng &amp; Phòng</h3>
-								<span>Phòng Đặc Biệt</span>
+								<h3 class="mb-0">Suites &amp; Rooms</h3>
+								<span>Special Rooms</span>
 								<div class="d-flex mt-2 justify-content-center">
 								<div class="icon">
 									<a href="#"><span class="ion-ios-arrow-forward"></span></a>
@@ -266,7 +220,7 @@
               	</div>
               </div>
               <div class="media-body">
-                <h3 class="heading mb-3">Dịch Vụ Đặt Bàn</h3>
+                <h3 class="heading mb-3">Dịch Vụ Thân Thiện</h3>
               </div>
             </div>      
           </div>
@@ -347,8 +301,8 @@
     					<div class="half right-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-    							<p class="mb-0"><span class="price mr-1">10.000.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms.html">Phòng Cổ Điển</a></h3>
+    							<p class="mb-0"><span class="price mr-1">1.500.000VNĐ</span> <span class="per">một đêm</span></p>
+	    						<h3 class="mb-3"><a href="rooms.html">Phòng Deluxe Đơn </a></h3>
 	    						<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
@@ -360,8 +314,8 @@
     					<div class="half right-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-    							<p class="mb-0"><span class="price mr-1">15.000.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms.html">Phòng Gia Đình</a></h3>
+    							<p class="mb-0"><span class="price mr-1">2.500.000VNĐ</span> <span class="per">một đêm</span></p>
+	    						<h3 class="mb-3"><a href="rooms.html">Phòng Deluxe Đôi</a></h3>
 	    						<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
@@ -374,8 +328,8 @@
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-    							<p class="mb-0"><span class="price mr-1">17.000.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms.html">Phòng Deluxe</a></h3>
+    							<p class="mb-0"><span class="price mr-1">10.000.000VNĐ</span> <span class="per">một đêm</span></p>
+	    						<h3 class="mb-3"><a href="rooms.html">Phòng Executive Đơn</a></h3>
 	    						<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
@@ -387,8 +341,8 @@
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-    							<p class="mb-0"><span class="price mr-1">25.000.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms.html">Phòng Thượng Hạng</a></h3>
+    							<p class="mb-0"><span class="price mr-1">20.000.000VNĐ</span> <span class="per">một đêm</span></p>
+	    						<h3 class="mb-3"><a href="rooms.html">Phòng Executive Đôi</a></h3>
 	    						<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
@@ -421,7 +375,7 @@
 		                  </div>
 		                  <div class="text text-center">
 		                  	<p class="star"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-		                    <p class="mb-4">Khách sạn ảo thật đấy</p>
+		                    <p class="mb-4">Địt mẹ mày khách sạn ảo thật đấy</p>
 		                    <p class="name">Lương Chí Thành</p>
 		                    <span class="position">Khách hàng</span>
 		                  </div>
@@ -451,7 +405,7 @@
 		                  </div>
 		                  <div class="text text-center">
 		                  	<p class="star"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-		                    <p class="mb-4">Dịch vụ tốt</p>
+		                    <p class="mb-4">Na`Vi tuổi lồn à ?</p>
 		                    <p class="name">Trần Ngọc Hiệp</p>
 		                    <span class="position">Khách hàng</span>
 		                  </div>
@@ -519,6 +473,111 @@
 			include('./restaurant-detail.php')
 		?>
 
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading">Blog</span>
+            <h2>Blog Gần Đây</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+              </a>
+              <div class="text mt-3 text-center">
+              	<div class="meta mb-2">
+                  <div><a href="#">July 03, 2021</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <p><a href="#" class="btn-custom">Đọc thêm</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+              </a>
+              <div class="text mt-3 text-center">
+              	<div class="meta mb-2">
+                  <div><a href="#">October 08, 2021</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <p><a href="#" class="btn-custom">Đọc thêm</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+              </a>
+              <div class="text mt-3 text-center">
+              	<div class="meta mb-2">
+                  <div><a href="#">May 25, 2021</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <p><a href="#" class="btn-custom">Đọc thêm</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="instagram">
+      <div class="container-fluid">
+        <div class="row no-gutters justify-content-center pb-5">
+          <div class="col-md-7 text-center heading-section ftco-animate">
+          	<span class="subheading">Ảnh</span>
+            <h2><span>Instagram</span></h2>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-sm-12 col-md ftco-animate">
+            <a href="images/insta-1.jpg" class="insta-img image-popup" style="background-image: url(images/insta-1.jpg);">
+              <div class="icon d-flex justify-content-center">
+                <span class="icon-instagram align-self-center"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md ftco-animate">
+            <a href="images/insta-2.jpg" class="insta-img image-popup" style="background-image: url(images/insta-2.jpg);">
+              <div class="icon d-flex justify-content-center">
+                <span class="icon-instagram align-self-center"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md ftco-animate">
+            <a href="images/insta-3.jpg" class="insta-img image-popup" style="background-image: url(images/insta-3.jpg);">
+              <div class="icon d-flex justify-content-center">
+                <span class="icon-instagram align-self-center"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md ftco-animate">
+            <a href="images/insta-4.jpg" class="insta-img image-popup" style="background-image: url(images/insta-4.jpg);">
+              <div class="icon d-flex justify-content-center">
+                <span class="icon-instagram align-self-center"></span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md ftco-animate">
+            <a href="images/insta-5.jpg" class="insta-img image-popup" style="background-image: url(images/insta-5.jpg);">
+              <div class="icon d-flex justify-content-center">
+                <span class="icon-instagram align-self-center"></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <?php
 		include('./footer.php')
