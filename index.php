@@ -1,4 +1,6 @@
+
 <?php include ('header.php')?>
+
     <!-- END nav -->
 		<div class="hero">
 			<div class="container-wrap d-flex justify-content-end align-items-end">
@@ -47,33 +49,44 @@
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
+
 				    					<label for="#">Ngày Nhận Phòng</label>
 				    					<input type="text" class="form-control checkin_date" placeholder="Ngày Nhận Phòng">
+
+				    					
 			    					</div>
 			    				</div>
 	        			</div>
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
+
 				    					<label for="#">Ngày Trả Phòng</label>
 				    					<input type="text" class="form-control checkout_date" placeholder="Ngày Trả Phòng">
+				    		
 			    					</div>
 			    				</div>
 	        			</div>
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
+
 			      					<label for="#">Loại Phòng</label>
+
+
+			      					
 			      					<div class="form-field">
 			        					<div class="select-wrap">
 			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
 			                    <select name="" id="" class="form-control">
+
 			                    	<option value="">Phòng Thượng Hạng</option>
 			                      <option value="">Phòng Gia Đình</option>
 			                      <option value="">Phòng Deluxe</option>
 			                      <option value="">Phòng Thường</option>
 			                      <option value="">Phòng Superior</option>
 			                      <option value="">Phòng Sang Trọng</option>
+
 			                    </select>
 			                  </div>
 				              </div>
@@ -83,17 +96,24 @@
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-			      					<label for="#">Số Khách</label>
+
+
+			      					<label for="#">Khách</label>
+
+
+
 			      					<div class="form-field">
 			        					<div class="select-wrap">
 			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
 			                    <select name="" id="" class="form-control">
+
 			                    	<option value="">1 Người </option>
 			                      <option value="">2 Người </option>
 			                      <option value="">3 Người </option>
 			                      <option value="">4 Người </option>
 			                      <option value="">5 Người </option>
 			                      <option value="">6 Người </option>
+
 			                    </select>
 			                  </div>
 				              </div>
@@ -102,7 +122,11 @@
 	        			</div>
 	        			<div class="col-md d-flex">
 	        				<div class="form-group d-flex align-self-stretch">
-			              <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Tìm Phòng Trống <small>Đảm Bảo Giá Tốt Nhất</small></span></a>
+
+
+			              <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Kiểm Tra Phòng Trống<small>Đảm Bảo Mức Giá Tốt Nhất</small></span></a>
+
+
 			            </div>
 	        			</div>
 	        		</div>
@@ -112,46 +136,6 @@
     	</div>
     </section>
 
-
-		<section class="ftco-section ftco-no-pt ftco-no-pb ftco-services-wrap">
-			<div class="container">
-				<div class="row no-gutters">
-					<div class="col-md-3">
-						<a href="#" class="services-wrap img align-items-end d-flex" style="background-image: url(images/room-3.jpg);">
-							<div class="text text-center pb-2">
-								<h3>Phòng Đặc Biệt</h3>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3">
-						<a href="#" class="services-wrap img align-items-end d-flex" style="background-image: url(images/swimming-pool.jpg);">
-							<div class="text text-center pb-2">
-								<h3>Bể Bơi</h3>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3">
-						<a href="#" class="services-wrap img align-items-end d-flex" style="background-image: url(images/resto.jpg);">
-							<div class="text text-center pb-2">
-								<h3>Nhà Hàng</h3>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3">
-						<div class="services-wrap services-overlay img align-items-center d-flex" style="background-image: url(images/sleep.jpg);">
-							<div class="text text-center pb-2">
-								<h3 class="mb-0">Dịch Vụ Khác </h3>
-								<div class="d-flex mt-2 justify-content-center">
-								<div class="icon">
-									<a href="#"><span class="ion-ios-arrow-forward"></span></a>
-								</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
 		<section class="ftco-section">
       <div class="container">
