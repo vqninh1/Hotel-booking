@@ -22,7 +22,6 @@
 	        </div>
 	        </div>
 	      </div>
-
 	      <div class="slider-item" style="background-image:url(images/Khách-sạn-Hilton-Hà-Nội-Opera-4-1290x860.jpg);">
 	      	<div class="overlay"></div>
 	        <div class="container">
@@ -38,7 +37,6 @@
 	      </div>
 		  </div>
 	    </section>
-
 
     <section class="ftco-booking ftco-section ftco-no-pt ftco-no-pb">
     	<div class="container">
@@ -88,10 +86,7 @@
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
 
-
 			      					<label for="#">Khách</label>
-
-
 
 			      					<div class="form-field">
 			        					<div class="select-wrap">
