@@ -32,19 +32,19 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html"><img src="./images/hiltonHotelsLogo.svg.png(1).png" alt=""></a>
+	      <a class="navbar-brand" href="index.php"><img src="./images/hiltonHotelsLogo.svg.png(1).png" alt=""></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> 
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Trang Chủ</a></li>
-	          <li class="nav-item"><a href="rooms.html" class="nav-link">Phòng</a></li>
-	          <li class="nav-item"><a href="restaurant.html" class="nav-link">Nhà Hàng</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">Giới Thiệu</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Liên Hệ</a></li>
+	          <li class="nav-item active"><a href="index.php" class="nav-link">Trang Chủ</a></li>
+	          <li class="nav-item"><a href="rooms.php" class="nav-link">Phòng</a></li>
+	          <li class="nav-item"><a href="restaurant.php" class="nav-link">Nhà Hàng</a></li>
+	          <li class="nav-item"><a href="about.php" class="nav-link">Giới Thiệu</a></li>
+	          <li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="contact.php" class="nav-link">Liên Hệ</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -84,8 +84,9 @@
 	        </div>
 	        </div>
 	      </div>
+		  </div>
 	    </section>
-	  </div>
+
 
     <section class="ftco-booking ftco-section ftco-no-pt ftco-no-pb">
     	<div class="container">
@@ -151,7 +152,7 @@
 	        			</div>
 	        			<div class="col-md d-flex">
 	        				<div class="form-group d-flex align-self-stretch">
-			              <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Check Availability <small>Best Price Guaranteed!</small></span></a>
+			              <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Tìm Phòng Trống <small>Đảm Bảo Giá Tốt Nhất</small></span></a>
 			            </div>
 	        			</div>
 	        		</div>
@@ -168,29 +169,28 @@
 					<div class="col-md-3">
 						<a href="#" class="services-wrap img align-items-end d-flex" style="background-image: url(images/room-3.jpg);">
 							<div class="text text-center pb-2">
-								<h3>Special Rooms</h3>
+								<h3>Phòng Đặc Biệt</h3>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3">
 						<a href="#" class="services-wrap img align-items-end d-flex" style="background-image: url(images/swimming-pool.jpg);">
 							<div class="text text-center pb-2">
-								<h3>Swimming Pool</h3>
+								<h3>Bể Bơi</h3>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3">
 						<a href="#" class="services-wrap img align-items-end d-flex" style="background-image: url(images/resto.jpg);">
 							<div class="text text-center pb-2">
-								<h3>Restaurant</h3>
+								<h3>Nhà Hàng</h3>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3">
 						<div class="services-wrap services-overlay img align-items-center d-flex" style="background-image: url(images/sleep.jpg);">
 							<div class="text text-center pb-2">
-								<h3 class="mb-0">Suites &amp; Rooms</h3>
-								<span>Special Rooms</span>
+								<h3 class="mb-0">Dịch Vụ Khác </h3>
 								<div class="d-flex mt-2 justify-content-center">
 								<div class="icon">
 									<a href="#"><span class="ion-ios-arrow-forward"></span></a>
@@ -289,7 +289,7 @@
     				<div class="room-wrap">
     					<div class="img d-flex align-items-center" style="background-image: url(images/bg_3.jpg);">
     						<div class="text text-center px-4 py-4">
-    							<h2>Chào mừng tới khách sạn <a href="index.html">Hilton</a> </h2>
+    							<h2>Chào mừng tới khách sạn <a href="index.php">Hilton</a> </h2>
     							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
     						</div>
     					</div>
@@ -302,8 +302,8 @@
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
     							<p class="mb-0"><span class="price mr-1">1.500.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms.html">Phòng Deluxe Đơn </a></h3>
-	    						<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
+	    						<h3 class="mb-3"><a href="rooms.php">Phòng Deluxe Đơn </a></h3>
+	    						<p class="pt-1"><a href="./rooms-single.php" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
     				</div>
@@ -315,8 +315,8 @@
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
     							<p class="mb-0"><span class="price mr-1">2.500.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms.html">Phòng Deluxe Đôi</a></h3>
-	    						<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
+	    						<h3 class="mb-3"><a href="rooms.php">Phòng Deluxe Đôi</a></h3>
+	    						<p class="pt-1"><a href="./rooms-single.php" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
     				</div>
@@ -329,8 +329,8 @@
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
     							<p class="mb-0"><span class="price mr-1">10.000.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms.html">Phòng Executive Đơn</a></h3>
-	    						<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
+	    						<h3 class="mb-3"><a href="rooms.php">Phòng Executive Đơn</a></h3>
+	    						<p class="pt-1"><a href="./rooms-single.php" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
     				</div>
@@ -342,8 +342,8 @@
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
     							<p class="mb-0"><span class="price mr-1">20.000.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms.html">Phòng Executive Đôi</a></h3>
-	    						<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
+	    						<h3 class="mb-3"><a href="rooms.php">Phòng Executive Đôi</a></h3>
+	    						<p class="pt-1"><a href="./rooms-single.php" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
     				</div>
@@ -484,7 +484,7 @@
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+              <a href="blog-single.php" class="block-20" style="background-image: url('images/image_1.jpg');">
               </a>
               <div class="text mt-3 text-center">
               	<div class="meta mb-2">
@@ -499,7 +499,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+              <a href="blog-single.php" class="block-20" style="background-image: url('images/image_2.jpg');">
               </a>
               <div class="text mt-3 text-center">
               	<div class="meta mb-2">
@@ -514,7 +514,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+              <a href="blog-single.php" class="block-20" style="background-image: url('images/image_3.jpg');">
               </a>
               <div class="text mt-3 text-center">
               	<div class="meta mb-2">
@@ -588,8 +588,6 @@
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>

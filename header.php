@@ -32,18 +32,18 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html"><img src="./images/hiltonHotelsLogo.svg.png(1).png" alt=""></a>
+	      <a class="navbar-brand" href="index.php"><img src="./images/hiltonHotelsLogo.svg.png(1).png" alt=""></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> 
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Trang Chủ</a></li>
-	          <li class="nav-item"><a href="rooms.html" class="nav-link">Phòng</a></li>
-	          <li class="nav-item"><a href="restaurant.html" class="nav-link">Nhà Hàng</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">Giới Thiệu</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Liên Hệ</a></li>
+	          <li class="nav-item active"><a href="index.php" class="nav-link">Trang Chủ</a></li>
+	          <li class="nav-item"><a href="rooms.php" class="nav-link">Phòng</a></li>
+	          <li class="nav-item"><a href="restaurant.php" class="nav-link">Nhà Hàng</a></li>
+	          <li class="nav-item"><a href="about.php" class="nav-link">Giới Thiệu</a></li>
+	          <li class="nav-item"><a href="contact.php" class="nav-link">Liên Hệ</a></li>
 	        </ul>
 	      </div>
 	    </div>
