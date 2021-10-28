@@ -95,33 +95,33 @@
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-				    					<label for="#">Check-in Date</label>
-				    					<input type="text" class="form-control checkin_date" placeholder="Check-in date">
+				    					<label for="#">Ngày Đến</label>
+				    					<input type="text" class="form-control checkin_date" placeholder="Ngày Đến">
 			    					</div>
 			    				</div>
 	        			</div>
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-				    					<label for="#">Check-out Date</label>
-				    					<input type="text" class="form-control checkout_date" placeholder="Check-out date">
+				    					<label for="#">Ngày Trả phòng</label>
+				    					<input type="text" class="form-control checkout_date" placeholder="Ngày Trả Phòng">
 			    					</div>
 			    				</div>
 	        			</div>
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-			      					<label for="#">Room</label>
+			      					<label for="#">Phòng</label>
 			      					<div class="form-field">
 			        					<div class="select-wrap">
 			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
 			                    <select name="" id="" class="form-control">
-			                    	<option value="">Suite</option>
-			                      <option value="">Family Room</option>
-			                      <option value="">Deluxe Room</option>
-			                      <option value="">Classic Room</option>
-			                      <option value="">Superior Room</option>
-			                      <option value="">Luxury Room</option>
+			                    	<option value="">Phòng Cổ Điển</option>
+			                      <option value="">Phòng Gia Đình</option>
+			                      <option value="">Phòng Deluxe</option>
+			                      <option value="">Phòng Thượng Hạng</option>
+			                      <option value="">Phòng Sang Trọng</option>
+			                      <option value="">Phòng Superior</option>
 			                    </select>
 			                  </div>
 				              </div>
@@ -131,17 +131,17 @@
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-			      					<label for="#">Guests</label>
+			      					<label for="#">Khách</label>
 			      					<div class="form-field">
 			        					<div class="select-wrap">
 			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
 			                    <select name="" id="" class="form-control">
-			                    	<option value="">1 Adult</option>
-			                      <option value="">2 Adult</option>
-			                      <option value="">3 Adult</option>
-			                      <option value="">4 Adult</option>
-			                      <option value="">5 Adult</option>
-			                      <option value="">6 Adult</option>
+			                      <option value="">1 Người </option>
+			                      <option value="">2 Người </option>
+			                      <option value="">3 Người </option>
+			                      <option value="">4 Người </option>
+			                      <option value="">5 Người </option>
+			                      <option value="">6 Người </option>
 			                    </select>
 			                  </div>
 				              </div>
@@ -150,7 +150,7 @@
 	        			</div>
 	        			<div class="col-md d-flex">
 	        				<div class="form-group d-flex align-self-stretch">
-			              <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Check Availability <small>Best Price Guaranteed!</small></span></a>
+			              <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Kiểm Tra Phòng Trống<small>Đảm Bảo Mức Giá Tốt Nhất</small></span></a>
 			            </div>
 	        			</div>
 	        		</div>
@@ -167,29 +167,29 @@
 					<div class="col-md-3">
 						<a href="#" class="services-wrap img align-items-end d-flex" style="background-image: url(images/room-3.jpg);">
 							<div class="text text-center pb-2">
-								<h3>Special Rooms</h3>
+								<h3>Phòng Đặc Biệt</h3>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3">
 						<a href="#" class="services-wrap img align-items-end d-flex" style="background-image: url(images/swimming-pool.jpg);">
 							<div class="text text-center pb-2">
-								<h3>Swimming Pool</h3>
+								<h3>Bể Bơi</h3>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3">
 						<a href="#" class="services-wrap img align-items-end d-flex" style="background-image: url(images/resto.jpg);">
 							<div class="text text-center pb-2">
-								<h3>Restaurant</h3>
+								<h3>Nhà Hàng</h3>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3">
 						<div class="services-wrap services-overlay img align-items-center d-flex" style="background-image: url(images/sleep.jpg);">
 							<div class="text text-center pb-2">
-								<h3 class="mb-0">Suites &amp; Rooms</h3>
-								<span>Special Rooms</span>
+								<h3 class="mb-0">Loại Phòng &amp; Phòng</h3>
+								<span>Phòng Đặc Biệt</span>
 								<div class="d-flex mt-2 justify-content-center">
 								<div class="icon">
 									<a href="#"><span class="ion-ios-arrow-forward"></span></a>
@@ -219,7 +219,7 @@
               	</div>
               </div>
               <div class="media-body">
-                <h3 class="heading mb-3">Dịch Vụ Thân Thiện</h3>
+                <h3 class="heading mb-3">Dịch Vụ Đặt Bàn</h3>
               </div>
             </div>      
           </div>
@@ -300,8 +300,8 @@
     					<div class="half right-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-    							<p class="mb-0"><span class="price mr-1">1.500.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms.html">Phòng Deluxe Đơn </a></h3>
+    							<p class="mb-0"><span class="price mr-1">10.000.000VNĐ</span> <span class="per">một đêm</span></p>
+	    						<h3 class="mb-3"><a href="rooms.html">Phòng Cổ Điển</a></h3>
 	    						<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
@@ -313,8 +313,8 @@
     					<div class="half right-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-    							<p class="mb-0"><span class="price mr-1">2.500.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms.html">Phòng Deluxe Đôi</a></h3>
+    							<p class="mb-0"><span class="price mr-1">15.000.000VNĐ</span> <span class="per">một đêm</span></p>
+	    						<h3 class="mb-3"><a href="rooms.html">Phòng Gia Đình</a></h3>
 	    						<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
@@ -327,8 +327,8 @@
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-    							<p class="mb-0"><span class="price mr-1">10.000.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms.html">Phòng Executive Đơn</a></h3>
+    							<p class="mb-0"><span class="price mr-1">17.000.000VNĐ</span> <span class="per">một đêm</span></p>
+	    						<h3 class="mb-3"><a href="rooms.html">Phòng Deluxe</a></h3>
 	    						<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
@@ -340,8 +340,8 @@
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-    							<p class="mb-0"><span class="price mr-1">20.000.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms.html">Phòng Executive Đôi</a></h3>
+    							<p class="mb-0"><span class="price mr-1">25.000.000VNĐ</span> <span class="per">một đêm</span></p>
+	    						<h3 class="mb-3"><a href="rooms.html">Phòng Thượng Hạng</a></h3>
 	    						<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
@@ -404,7 +404,7 @@
 		                  </div>
 		                  <div class="text text-center">
 		                  	<p class="star"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-		                    <p class="mb-4">Dịch vụ tốt?</p>
+		                    <p class="mb-4">Dịch vụ tốt</p>
 		                    <p class="name">Trần Ngọc Hiệp</p>
 		                    <span class="position">Khách hàng</span>
 		                  </div>

@@ -2,6 +2,7 @@
 	include('./header.php')
 
 ?>
+
 		<div class="hero-wrap" style="background-image: url('images/bg_1.jpg');">
       <div class="overlay"></div>
       <div class="container">
