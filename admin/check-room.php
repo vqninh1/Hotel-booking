@@ -38,7 +38,7 @@
 <div id="wrapper">
  
   <!--Start sidebar-wrapper-->
-   <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
+  <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
       <a href="index.php">
        <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
@@ -60,8 +60,13 @@
       </li>
 
       <li>
-        <a href="./info.php">
-          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Thông tin</span>
+        <a href="./room.php">
+          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Thông tin phòng</span>
+        </a>
+      </li>
+      <li>
+        <a href="./service.php">
+          <i class="zmdi zmdi-grid"></i> <span>Dịch vụ</span>
         </a>
       </li>
    </div>
@@ -95,15 +100,6 @@
     <li class="nav-item dropdown-lg">
       <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">
       <i class="fa fa-bell-o"></i></a>
-    </li>
-    <li class="nav-item language">
-      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();"><i class="fa fa-flag"></i></a>
-      <ul class="dropdown-menu dropdown-menu-right">
-          <li class="dropdown-item"> <i class="flag-icon flag-icon-gb mr-2"></i> English</li>
-          <li class="dropdown-item"> <i class="flag-icon flag-icon-fr mr-2"></i> French</li>
-          <li class="dropdown-item"> <i class="flag-icon flag-icon-cn mr-2"></i> Chinese</li>
-          <li class="dropdown-item"> <i class="flag-icon flag-icon-de mr-2"></i> German</li>
-        </ul>
     </li>
     <li class="nav-item">
       <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
@@ -139,86 +135,36 @@
 	
   <div class="content-wrapper">
     <div class="container-fluid">
-
-    <div class="row mt-3">
-      <div class="col-lg-6">
-         <div class="card">
-           <div class="card-body">
-           <div class="card-title">Vertical Form</div>
-           <hr>
-            <form>
-           <div class="form-group">
-            <label for="input-1">Name</label>
-            <input type="text" class="form-control" id="input-1" placeholder="Enter Your Name">
-           </div>
-           <div class="form-group">
-            <label for="input-2">Email</label>
-            <input type="text" class="form-control" id="input-2" placeholder="Enter Your Email Address">
-           </div>
-           <div class="form-group">
-            <label for="input-3">Mobile</label>
-            <input type="text" class="form-control" id="input-3" placeholder="Enter Your Mobile Number">
-           </div>
-           <div class="form-group">
-            <label for="input-4">Password</label>
-            <input type="text" class="form-control" id="input-4" placeholder="Enter Password">
-           </div>
-           <div class="form-group">
-            <label for="input-5">Confirm Password</label>
-            <input type="text" class="form-control" id="input-5" placeholder="Confirm Password">
-           </div>
-           <div class="form-group py-2">
-             <div class="icheck-material-white">
-            <input type="checkbox" id="user-checkbox1" checked=""/>
-            <label for="user-checkbox1">I Agree Terms & Conditions</label>
-            </div>
-           </div>
-           <div class="form-group">
-            <button type="submit" class="btn btn-light px-5"><i class="icon-lock"></i> Register</button>
-          </div>
-          </form>
-         </div>
-         </div>
+    <div class="card-header">Bảng điều khiển phòng
+        <div class="card-action">
+              <div class="dropdown">
+              <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
+                <i class="icon-options"></i>
+              </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="javascript:void();">Thêm</a>
+                <a class="dropdown-item" href="javascript:void();">Sửa</a>
+                <a class="dropdown-item" href="javascript:void();">Xoá</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="javascript:void();">Separated link</a>
+                </div>
+                </div>
+              </div>
       </div>
-
-      <div class="col-lg-6">
-        <div class="card">
-           <div class="card-body">
-           <div class="card-title">Round Vertical Form</div>
-           <hr>
-            <form>
-           <div class="form-group">
-            <label for="input-6">Name</label>
-            <input type="text" class="form-control form-control-rounded" id="input-6" placeholder="Enter Your Name">
-           </div>
-           <div class="form-group">
-            <label for="input-7">Email</label>
-            <input type="text" class="form-control form-control-rounded" id="input-7" placeholder="Enter Your Email Address">
-           </div>
-           <div class="form-group">
-            <label for="input-8">Mobile</label>
-            <input type="text" class="form-control form-control-rounded" id="input-8" placeholder="Enter Your Mobile Number">
-           </div>
-           <div class="form-group">
-            <label for="input-9">Password</label>
-            <input type="text" class="form-control form-control-rounded" id="input-9" placeholder="Enter Password">
-           </div>
-           <div class="form-group">
-            <label for="input-10">Confirm Password</label>
-            <input type="text" class="form-control form-control-rounded" id="input-10" placeholder="Confirm Password">
-           </div>
-           <div class="form-group py-2">
-             <div class="icheck-material-white">
-            <input type="checkbox" id="user-checkbox2" checked=""/>
-            <label for="user-checkbox2">I Agree Terms & Conditions</label>
-            </div>
-           </div>
-           <div class="form-group">
-            <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i> Register</button>
-          </div>
-          </form>
-         </div>
-         </div>
+      <div class="table-responsive">
+                 <table class="table align-items-center table-flush table-borderless">
+                  <thead>
+                   <tr>
+                     <th>Họ tên</th>
+                     <th>SDT</th>
+                     <th>Email</th>
+                     <th>Check-in</th>
+                     <th>Check-out</th>
+                     <th>Số phòng</th>
+                     <th>Loại phòng</th>
+                   </tr>
+                   </thead>
+                  </table>
       </div>
     </div><!--End Row-->
 
@@ -233,16 +179,6 @@
    <!--Start Back To Top Button-->
     <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
     <!--End Back To Top Button-->
-	
-	<!--Start footer-->
-	<footer class="footer">
-      <div class="container">
-        <div class="text-center">
-          Copyright © 2018 Dashtreme Admin
-        </div>
-      </div>
-    </footer>
-	<!--End footer-->
 	
 	<!--start color switcher-->
    <div class="right-sidebar">
