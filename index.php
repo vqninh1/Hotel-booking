@@ -96,32 +96,54 @@
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
 				    					<label for="#">Ngày Đến</label>
+<<<<<<< HEAD
 				    					<input type="text" class="form-control checkin_date" placeholder="Ngày Đến">
+=======
+				    					<input type="text" class="form-control checkin_date" placeholder="Check-in date">
+>>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
 			    					</div>
 			    				</div>
 	        			</div>
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
+<<<<<<< HEAD
 				    					<label for="#">Ngày Trả phòng</label>
 				    					<input type="text" class="form-control checkout_date" placeholder="Ngày Trả Phòng">
+=======
+				    					<label for="#">Ngày Về</label>
+				    					<input type="text" class="form-control checkout_date" placeholder="Check-out date">
+>>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
 			    					</div>
 			    				</div>
 	        			</div>
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
+<<<<<<< HEAD
 			      					<label for="#">Phòng</label>
+=======
+			      					<label for="#">Loại Phòng</label>
+>>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
 			      					<div class="form-field">
 			        					<div class="select-wrap">
 			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
 			                    <select name="" id="" class="form-control">
+<<<<<<< HEAD
 			                    	<option value="">Phòng Cổ Điển</option>
 			                      <option value="">Phòng Gia Đình</option>
 			                      <option value="">Phòng Deluxe</option>
 			                      <option value="">Phòng Thượng Hạng</option>
 			                      <option value="">Phòng Sang Trọng</option>
 			                      <option value="">Phòng Superior</option>
+=======
+			                    	<option value="">Phòng Thượng Hạng</option>
+			                      <option value="">Phòng Gia Đình</option>
+			                      <option value="">Phòng Deluxe</option>
+			                      <option value="">Phòng Thường</option>
+			                      <option value="">Phòng Superior</option>
+			                      <option value="">Phòng Sang Trọng</option>
+>>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
 			                    </select>
 			                  </div>
 				              </div>
@@ -131,17 +153,30 @@
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
+<<<<<<< HEAD
 			      					<label for="#">Khách</label>
+=======
+			      					<label for="#">Số Khách</label>
+>>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
 			      					<div class="form-field">
 			        					<div class="select-wrap">
 			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
 			                    <select name="" id="" class="form-control">
+<<<<<<< HEAD
 			                      <option value="">1 Người </option>
 			                      <option value="">2 Người </option>
 			                      <option value="">3 Người </option>
 			                      <option value="">4 Người </option>
 			                      <option value="">5 Người </option>
 			                      <option value="">6 Người </option>
+=======
+			                    	<option value="">1 Người Lớn</option>
+			                      <option value="">2 Người Lớn</option>
+			                      <option value="">3 Người Lớn</option>
+			                      <option value="">4 Người Lớn</option>
+			                      <option value="">5 Người Lớn</option>
+			                      <option value="">6 Người Lớn</option>
+>>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
 			                    </select>
 			                  </div>
 				              </div>
