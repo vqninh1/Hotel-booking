@@ -95,10 +95,10 @@
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-				    					<label for="#">Ngày Đến</label>
+				    					<label for="#">Ngày Nhận Phòng</label>
 
 
-				    					<input type="text" class="form-control checkin_date" placeholder="Ngày Đến">
+				    					<input type="text" class="form-control checkin_date" placeholder="Ngày Nhận Phòng">
 
 			    					</div>
 			    				</div>
@@ -119,8 +119,6 @@
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
 
 			      					<label for="#">Phòng</label>
-
-			      					<label for="#">Loại Phòng</label>
 
 			      					<div class="form-field">
 			        					<div class="select-wrap">
