@@ -96,7 +96,7 @@
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-				    					<label for="#">Check-in Date</label>
+				    					<label for="#">Ngày Đến</label>
 				    					<input type="text" class="form-control checkin_date" placeholder="Check-in date">
 			    					</div>
 			    				</div>
@@ -104,7 +104,7 @@
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-				    					<label for="#">Check-out Date</label>
+				    					<label for="#">Ngày Về</label>
 				    					<input type="text" class="form-control checkout_date" placeholder="Check-out date">
 			    					</div>
 			    				</div>
@@ -112,17 +112,17 @@
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-			      					<label for="#">Room</label>
+			      					<label for="#">Loại Phòng</label>
 			      					<div class="form-field">
 			        					<div class="select-wrap">
 			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
 			                    <select name="" id="" class="form-control">
-			                    	<option value="">Suite</option>
-			                      <option value="">Family Room</option>
-			                      <option value="">Deluxe Room</option>
-			                      <option value="">Classic Room</option>
-			                      <option value="">Superior Room</option>
-			                      <option value="">Luxury Room</option>
+			                    	<option value="">Phòng Thượng Hạng</option>
+			                      <option value="">Phòng Gia Đình</option>
+			                      <option value="">Phòng Deluxe</option>
+			                      <option value="">Phòng Thường</option>
+			                      <option value="">Phòng Superior</option>
+			                      <option value="">Phòng Sang Trọng</option>
 			                    </select>
 			                  </div>
 				              </div>
@@ -132,17 +132,17 @@
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-			      					<label for="#">Guests</label>
+			      					<label for="#">Số Khách</label>
 			      					<div class="form-field">
 			        					<div class="select-wrap">
 			                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
 			                    <select name="" id="" class="form-control">
-			                    	<option value="">1 Adult</option>
-			                      <option value="">2 Adult</option>
-			                      <option value="">3 Adult</option>
-			                      <option value="">4 Adult</option>
-			                      <option value="">5 Adult</option>
-			                      <option value="">6 Adult</option>
+			                    	<option value="">1 Người Lớn</option>
+			                      <option value="">2 Người Lớn</option>
+			                      <option value="">3 Người Lớn</option>
+			                      <option value="">4 Người Lớn</option>
+			                      <option value="">5 Người Lớn</option>
+			                      <option value="">6 Người Lớn</option>
 			                    </select>
 			                  </div>
 				              </div>
