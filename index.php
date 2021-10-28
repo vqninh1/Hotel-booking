@@ -49,21 +49,16 @@
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-
 				    					<label for="#">Ngày Nhận Phòng</label>
-				    					<input type="text" class="form-control checkin_date" placeholder="Ngày Nhận Phòng">
-
-				    					
+				    					<input type="text" class="form-control checkin_date" placeholder="Ngày Nhận Phòng">				    					
 			    					</div>
 			    				</div>
 	        			</div>
 	        			<div class="col-md d-flex py-md-4">
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
-
 				    					<label for="#">Ngày Trả Phòng</label>
-				    					<input type="text" class="form-control checkout_date" placeholder="Ngày Trả Phòng">
-				    		
+				    					<input type="text" class="form-control checkout_date" placeholder="Ngày Trả Phòng">				    		
 			    					</div>
 			    				</div>
 	        			</div>
@@ -72,8 +67,6 @@
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
 
 			      					<label for="#">Loại Phòng</label>
-
-
 			      					
 			      					<div class="form-field">
 			        					<div class="select-wrap">
@@ -309,7 +302,7 @@
 		                  </div>
 		                  <div class="text text-center">
 		                  	<p class="star"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-		                    <p class="mb-4">Địt mẹ mày khách sạn ảo thật đấy</p>
+		                    <p class="mb-4">Khách sạn ảo thật đấy</p>
 		                    <p class="name">Lương Chí Thành</p>
 		                    <span class="position">Khách hàng</span>
 		                  </div>
@@ -339,7 +332,7 @@
 		                  </div>
 		                  <div class="text text-center">
 		                  	<p class="star"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-		                    <p class="mb-4">Na`Vi tuổi lồn à ?</p>
+		                    <p class="mb-4">Dịch vụ tốt?</p>
 		                    <p class="name">Trần Ngọc Hiệp</p>
 		                    <span class="position">Khách hàng</span>
 		                  </div>
@@ -403,117 +396,15 @@
 			</div>
 		</section>
 		
-		<?php
-			include('./restaurant-detail.php')
-		?>
+	<?php
 
-    <section class="ftco-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Blog</span>
-            <h2>Blog Gần Đây</h2>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="blog-single.php" class="block-20" style="background-image: url('images/image_1.jpg');">
-              </a>
-              <div class="text mt-3 text-center">
-              	<div class="meta mb-2">
-                  <div><a href="#">July 03, 2021</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                <p><a href="#" class="btn-custom">Đọc thêm</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="blog-single.php" class="block-20" style="background-image: url('images/image_2.jpg');">
-              </a>
-              <div class="text mt-3 text-center">
-              	<div class="meta mb-2">
-                  <div><a href="#">October 08, 2021</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                <p><a href="#" class="btn-custom">Đọc thêm</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="blog-single.php" class="block-20" style="background-image: url('images/image_3.jpg');">
-              </a>
-              <div class="text mt-3 text-center">
-              	<div class="meta mb-2">
-                  <div><a href="#">May 25, 2021</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                <p><a href="#" class="btn-custom">Đọc thêm</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		include('./restaurant-detail.php')
+	
+	?>
 
-    <section class="instagram">
-      <div class="container-fluid">
-        <div class="row no-gutters justify-content-center pb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-          	<span class="subheading">Ảnh</span>
-            <h2><span>Instagram</span></h2>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-sm-12 col-md ftco-animate">
-            <a href="images/insta-1.jpg" class="insta-img image-popup" style="background-image: url(images/insta-1.jpg);">
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md ftco-animate">
-            <a href="images/insta-2.jpg" class="insta-img image-popup" style="background-image: url(images/insta-2.jpg);">
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md ftco-animate">
-            <a href="images/insta-3.jpg" class="insta-img image-popup" style="background-image: url(images/insta-3.jpg);">
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md ftco-animate">
-            <a href="images/insta-4.jpg" class="insta-img image-popup" style="background-image: url(images/insta-4.jpg);">
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md ftco-animate">
-            <a href="images/insta-5.jpg" class="insta-img image-popup" style="background-image: url(images/insta-5.jpg);">
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <?php
+
 		include('./footer.php')
 
 	?>
