@@ -71,7 +71,7 @@
 	        				<span class="price price-left"></span>
 	        			</div>
 	        			<div class="d-block">
-	        				<p>Ngũ vị hương được ủ trong lò cấp đông 77 49 ngày được hòa quyện cùng thịt dê được nhập nguyên đàn từ Ninh Bình</p>
+	        				<p>Ngũ vị hương được ủ trong lò cấp đông 77 49 ngày được hòa quyện cùng thịt dê Ninh Bình</p>
 	        			</div>
 	        		</div>
         		</div>

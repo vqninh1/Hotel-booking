@@ -39,11 +39,11 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Trang Chủ</a></li>
-	          <li class="nav-item"><a href="rooms.html" class="nav-link">Phòng</a></li>
-	          <li class="nav-item"><a href="restaurant.html" class="nav-link">Nhà Hàng</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">Giới Thiệu</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Liên Hệ</a></li>
+	          <li class="nav-item active"><a href="index.php" class="nav-link">Trang Chủ</a></li>
+	          <li class="nav-item"><a href="rooms.php" class="nav-link">Phòng</a></li>
+	          <li class="nav-item"><a href="restaurant.php" class="nav-link">Nhà Hàng</a></li>
+	          <li class="nav-item"><a href="about.php" class="nav-link">Giới Thiệu</a></li>
+	          <li class="nav-item"><a href="contact.php" class="nav-link">Liên Hệ</a></li>
 	        </ul>
 	      </div>
 	    </div>
