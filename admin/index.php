@@ -63,7 +63,7 @@
       </li>
    </div>
    <!--End sidebar-wrapper-->
- </div>
+ 
 <!--Start topbar header-->
 <header class="topbar-nav">
  <nav class="navbar navbar-expand fixed-top">

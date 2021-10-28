@@ -63,7 +63,7 @@
           <i class="zmdi zmdi-format-list-bulleted"></i> <span>Thông tin</span>
         </a>
       </li>
-  </div>
+
  
 </div>
 <!--Start topbar header-->
