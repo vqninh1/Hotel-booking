@@ -39,7 +39,7 @@
   <!--Start sidebar-wrapper-->
    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
-      <a href="index.html">
+      <a href="index.php">
        <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
        <h5 class="logo-text">Dashtreme Admin</h5>
      </a>
@@ -47,50 +47,50 @@
    <ul class="sidebar-menu do-nicescrol">
       <li class="sidebar-header">MAIN NAVIGATION</li>
       <li>
-        <a href="index.html">
+        <a href="./index.php">
           <i class="zmdi zmdi-view-dashboard"></i> <span>Dashboard</span>
         </a>
       </li>
 
       <li>
-        <a href="icons.html">
+        <a href="./icons.php">
           <i class="zmdi zmdi-invert-colors"></i> <span>UI Icons</span>
         </a>
       </li>
 
       <li>
-        <a href="forms.html">
+        <a href="./forms.php">
           <i class="zmdi zmdi-format-list-bulleted"></i> <span>Forms</span>
         </a>
       </li>
 
       <li>
-        <a href="tables.html">
+        <a href="./tables.php">
           <i class="zmdi zmdi-grid"></i> <span>Tables</span>
         </a>
       </li>
 
       <li>
-        <a href="calendar.html">
+        <a href="./calendar.php">
           <i class="zmdi zmdi-calendar-check"></i> <span>Calendar</span>
           <small class="badge float-right badge-light">New</small>
         </a>
       </li>
 
       <li>
-        <a href="profile.html">
+        <a href="./profile.php">
           <i class="zmdi zmdi-face"></i> <span>Profile</span>
         </a>
       </li>
 
       <li>
-        <a href="login.html" target="_blank">
+        <a href="./login.php" target="_blank">
           <i class="zmdi zmdi-lock"></i> <span>Login</span>
         </a>
       </li>
 
        <li>
-        <a href="register.html" target="_blank">
+        <a href="./register.php" target="_blank">
           <i class="zmdi zmdi-account-circle"></i> <span>Registration</span>
         </a>
       </li>
