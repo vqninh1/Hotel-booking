@@ -96,7 +96,7 @@
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
 				    					<label for="#">Ngày Đến</label>
-				    					<input type="text" class="form-control checkin_date" placeholder="Check-in date">
+				    					<input type="text" class="form-control checkin_date" placeholder="Ngày Đến">
 			    					</div>
 			    				</div>
 	        			</div>
@@ -104,7 +104,7 @@
 	        				<div class="form-group align-self-stretch d-flex align-items-end">
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
 				    					<label for="#">Ngày Về</label>
-				    					<input type="text" class="form-control checkout_date" placeholder="Check-out date">
+				    					<input type="text" class="form-control checkout_date" placeholder="Ngày Về">
 			    					</div>
 			    				</div>
 	        			</div>
@@ -150,7 +150,7 @@
 	        			</div>
 	        			<div class="col-md d-flex">
 	        				<div class="form-group d-flex align-self-stretch">
-			              <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Check Availability <small>Best Price Guaranteed!</small></span></a>
+			              <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Tìm Phòng</span></a>
 			            </div>
 	        			</div>
 	        		</div>
