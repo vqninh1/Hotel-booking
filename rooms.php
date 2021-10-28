@@ -29,7 +29,7 @@
     		<div class="row no-gutters">
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="rooms-single.html" class="img" style="background-image: url(images/room-1.jpg);"></a>
+    					<a href="rooms-single.php" class="img" style="background-image: url(images/room-1.jpg);"></a>
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
@@ -43,7 +43,7 @@
     			</div>
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="rooms-single.html" class="img" style="background-image: url(images/room-5.jpg);"></a>
+    					<a href="rooms-single.php" class="img" style="background-image: url(images/room-5.jpg);"></a>
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
@@ -58,7 +58,7 @@
 
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="#" class="img order-md-last" style="background-image: url(images/room-2.jpg);"></a>
+    					<a href="rooms-single.php" class="img order-md-last" style="background-image: url(images/room-2.jpg);"></a>
     					<div class="half right-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
@@ -72,7 +72,7 @@
     			</div>
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="#" class="img order-md-last" style="background-image: url(images/room-3.jpg);"></a>
+    					<a href="rooms-single.php" class="img order-md-last" style="background-image: url(images/room-3.jpg);"></a>
     					<div class="half right-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
@@ -87,7 +87,7 @@
 
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="rooms-single.html" class="img" style="background-image: url(images/room-4.jpg);"></a>
+    					<a href="rooms-single.php" class="img" style="background-image: url(images/room-4.jpg);"></a>
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
@@ -101,7 +101,7 @@
     			</div>
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="rooms-single.html" class="img" style="background-image: url(images/room-6.jpg);"></a>
+    					<a href="rooms-single.php" class="img" style="background-image: url(images/room-6.jpg);"></a>
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
