@@ -97,10 +97,14 @@
 	        					<div class="wrap bg-white align-self-stretch py-3 px-4">
 				    					<label for="#">Ngày Đến</label>
 <<<<<<< HEAD
+<<<<<<< HEAD
 				    					<input type="text" class="form-control checkin_date" placeholder="Ngày Đến">
 =======
 				    					<input type="text" class="form-control checkin_date" placeholder="Check-in date">
 >>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
+=======
+				    					<input type="text" class="form-control checkin_date" placeholder="Ngày Đến">
+>>>>>>> 0db9e3715819a3fc65d19aff32901ee045423576
 			    					</div>
 			    				</div>
 	        			</div>
@@ -112,8 +116,12 @@
 				    					<input type="text" class="form-control checkout_date" placeholder="Ngày Trả Phòng">
 =======
 				    					<label for="#">Ngày Về</label>
+<<<<<<< HEAD
 				    					<input type="text" class="form-control checkout_date" placeholder="Check-out date">
 >>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
+=======
+				    					<input type="text" class="form-control checkout_date" placeholder="Ngày Về">
+>>>>>>> 0db9e3715819a3fc65d19aff32901ee045423576
 			    					</div>
 			    				</div>
 	        			</div>
@@ -185,7 +193,11 @@
 	        			</div>
 	        			<div class="col-md d-flex">
 	        				<div class="form-group d-flex align-self-stretch">
+<<<<<<< HEAD
 			              <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Kiểm Tra Phòng Trống<small>Đảm Bảo Mức Giá Tốt Nhất</small></span></a>
+=======
+			              <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Tìm Phòng</span></a>
+>>>>>>> 0db9e3715819a3fc65d19aff32901ee045423576
 			            </div>
 	        			</div>
 	        		</div>
