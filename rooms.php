@@ -9,7 +9,7 @@
         <div class="row no-gutters slider-text d-flex align-itemd-end justify-content-center">
           <div class="col-md-9 ftco-animate text-center d-flex align-items-end justify-content-center">
           	<div class="text">
-	            <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Trang Chủ</a></span> <span><a href="about.html">Giới Thiệu</a></span></p>
+	            <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.php">Trang Chủ</a></span> <span><a href="about.php">Giới Thiệu</a></span></p>
 	            <h1 class="mb-4 bread">Phòng</h1>
             </div>
           </div>
@@ -18,8 +18,7 @@
     </div>
 
 
-
-    <section class="ftco-section bg-light ftco-no-pb">
+	<section class="ftco-section bg-light ftco-no-pb">
     	<div class="container-fluid px-0">
     		<div class="row no-gutters justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -30,31 +29,26 @@
     		<div class="row no-gutters">
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="rooms-single.html" class="img" style="background-image: url(images/room-1.jpg);"></a>
+    					<a href="rooms-single.php" class="img" style="background-image: url(images/room-1.jpg);"></a>
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
     							<p class="mb-0"><span class="price mr-1">10.000.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms-single.html">Phòng Cổ Điển</a></h3>
-	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">Xem Chi Tiết Phòng <span class="icon-long-arrow-right"></span></a></p>
+	    						<h3 class="mb-3"><a href="rooms-single.php">Phòng Thượng Hạng</a></h3>
+	    						<p class="pt-1"><a href="rooms-single.php" class="btn-custom px-3 py-2">Xem Chi Tiết Phòng <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
     				</div>
     			</div>
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="rooms-single.html" class="img" style="background-image: url(images/room-5.jpg);"></a>
+    					<a href="rooms-single.php" class="img" style="background-image: url(images/room-5.jpg);"></a>
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-<<<<<<< HEAD
-    							<p class="mb-0"><span class="price mr-1">15.000.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms-single.html">Phòng Gia Đình</a></h3>
-=======
     							<p class="mb-0"><span class="price mr-1">1.500.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms-single.html">Phòng Thường</a></h3>
->>>>>>> 35be8a6f781c05a7d2d0f123e2ecbe3e1398342e
-	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">Xem Chi Tiết Phòng <span class="icon-long-arrow-right"></span></a></p>
+	    						<h3 class="mb-3"><a href="rooms-single.php">Phòng Thường</a></h3>
+	    						<p class="pt-1"><a href="rooms-single.php" class="btn-custom px-3 py-2">Xem Chi Tiết Phòng <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
     				</div>
@@ -66,9 +60,9 @@
     					<div class="half right-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-    							<p class="mb-0"><span class="price mr-1">17.000.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms-single.html">Phòng Deluxe</a></h3>
-	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">Xem Chi Tiết Phòng  <span class="icon-long-arrow-right"></span></a></p>
+    							<p class="mb-0"><span class="price mr-1">7.000.000VNĐ</span> <span class="per">một đêm</span></p>
+	    						<h3 class="mb-3"><a href="rooms-single.php">Phòng Gia Đình</a></h3>
+	    						<p class="pt-1"><a href="rooms-single.php" class="btn-custom px-3 py-2">Xem Chi Tiết Phòng  <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
     				</div>
@@ -79,9 +73,9 @@
     					<div class="half right-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-    							<p class="mb-0"><span class="price mr-1">25.000.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms-single.html">Phòng Thượng Hạng</a></h3>
-	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">Xem Chi Tiết Phòng  <span class="icon-long-arrow-right"></span></a></p>
+    							<p class="mb-0"><span class="price mr-1">1.500.000VNĐ</span> <span class="per">một đêm</span></p>
+	    						<h3 class="mb-3"><a href="rooms-single.php">Phòng Deluxe</a></h3>
+	    						<p class="pt-1"><a href="rooms-single.php" class="btn-custom px-3 py-2">Xem Chi Tiết Phòng  <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
     				</div>
@@ -89,26 +83,26 @@
 
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="rooms-single.html" class="img" style="background-image: url(images/room-4.jpg);"></a>
+    					<a href="rooms-single.php" class="img" style="background-image: url(images/room-4.jpg);"></a>
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-    							<p class="mb-0"><span class="price mr-1">30.000.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms-single.html">Phòng Sang Trọng</a></h3>
-	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">Xem Chi Tiết Phòng  <span class="icon-long-arrow-right"></span></a></p>
+    							<p class="mb-0"><span class="price mr-1">10.000.000VNĐ</span> <span class="per">một đêm</span></p>
+	    						<h3 class="mb-3"><a href="rooms-single.php">Phòng Sang Trọng</a></h3>
+	    						<p class="pt-1"><a href="rooms-single.php" class="btn-custom px-3 py-2">Xem Chi Tiết Phòng  <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
     				</div>
     			</div>
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="rooms-single.html" class="img" style="background-image: url(images/room-6.jpg);"></a>
+    					<a href="rooms-single.php" class="img" style="background-image: url(images/room-6.jpg);"></a>
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-    							<p class="mb-0"><span class="price mr-1">50.000.000VNĐ</span> <span class="per">một đêm</span></p>
-	    						<h3 class="mb-3"><a href="rooms-single.html">Phòng Superior</a></h3>
-	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">Xem Chi Tiết Phòng  <span class="icon-long-arrow-right"></span></a></p>
+    							<p class="mb-0"><span class="price mr-1">10.000.000VNĐ</span> <span class="per">một đêm</span></p>
+	    						<h3 class="mb-3"><a href="rooms-single.php">Phòng Superior</a></h3>
+	    						<p class="pt-1"><a href="rooms-single.php" class="btn-custom px-3 py-2">Xem Chi Tiết Phòng  <span class="icon-long-arrow-right"></span></a></p>
     						</div>
     					</div>
     				</div>
