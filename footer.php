@@ -16,19 +16,11 @@
             <div class="ftco-footer-widget mb-4 ml-md-5">
               <h2 class="ftco-heading-2">Đường Dẫn Hữu Ích</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Blog</a></li>
-                <li><a href="#" class="py-2 d-block">Phòng</a></li>
-                <li><a href="#" class="py-2 d-block">Quà Tặng</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Chính Sách</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Về Chúng Tôi</a></li>
-                <li><a href="#" class="py-2 d-block">Liên Hệ</a></li>
-                <li><a href="#" class="py-2 d-block">Dịch Vụ</a></li>
+
+                <li><a href="./rooms.php" class="py-2 d-block">Phòng</a></li>
+                <li><a href="./about.php" class="py-2 d-block">Giới Thiệu</a></li>
+                <li><a href="./restaurant.php" class="py-2 d-block">Nhà Hàng</a></li>
+
               </ul>
             </div>
           </div>

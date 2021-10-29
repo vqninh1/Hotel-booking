@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</title>
+  <link rel="shortcut icon" href="./images/hiltonHotelsLogo.svg.png" />
+  <title>Hilton Hotel Admin</title>
   <!-- loader-->
   <link href="assets/css/pace.min.css" rel="stylesheet"/>
   <script src="assets/js/pace.min.js"></script>
@@ -57,8 +58,13 @@
       </li>
 
       <li>
-        <a href="./info.php">
-          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Thông tin</span>
+        <a href="./room.php">
+          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Thông tin phòng</span>
+        </a>
+      </li>
+      <li>
+        <a href="service.php">
+          <i class="zmdi zmdi-grid"></i> <span>Dịch vụ</span>
         </a>
       </li>
    </div>

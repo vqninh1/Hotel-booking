@@ -25,7 +25,6 @@
   <!-- Custom Style-->
   <link href="assets/css/app-style.css" rel="stylesheet"/>
   
-  
 </head>
 
 <body class="bg-theme bg-theme1">
@@ -35,8 +34,8 @@
    <!-- end loader -->
 
 <!-- Start wrapper-->
-<div id="wrapper">
- 
+ <div id="wrapper">
+
   <!--Start sidebar-wrapper-->
   <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
@@ -71,9 +70,6 @@
       </li>
    </div>
    <!--End sidebar-wrapper-->
-
-   <!--End sidebar-wrapper-->
-  
 
 <!--Start topbar header-->
 <header class="topbar-nav">
@@ -131,51 +127,54 @@
 </nav>
 </header>
 <!--End topbar header-->
+
 <div class="clearfix"></div>
 	
-  <div class="content-wrapper">
+<div class="content-wrapper">
     <div class="container-fluid">
-    <div class="card-header">Bảng điều khiển phòng
+
+    <!--Start Dashboard Content-->
+
+    <div class="row">
+    <div class="col-12 col-lg-12">
+      <div class="card">
+        <div class="card-header">Bảng điều khiển phòng
         <div class="card-action">
               <div class="dropdown">
               <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
                 <i class="icon-options"></i>
               </a>
                 <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="javascript:void();">Thêm</a>
-                <a class="dropdown-item" href="javascript:void();">Sửa</a>
                 <a class="dropdown-item" href="javascript:void();">Xoá</a>
+                <a class="dropdown-item" href="javascript:void();">Another action</a>
+                <a class="dropdown-item" href="javascript:void();">Something else here</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="javascript:void();">Separated link</a>
                 </div>
                 </div>
               </div>
       </div>
-      <div class="table-responsive">
-                 <table class="table align-items-center table-flush table-borderless">
-                  <thead>
-                   <tr>
-                     <th>Họ tên</th>
-                     <th>SDT</th>
-                     <th>Email</th>
-                     <th>Check-in</th>
-                     <th>Check-out</th>
-                     <th>Số phòng</th>
-                     <th>Loại phòng</th>
-                   </tr>
-                   </thead>
-                  </table>
+          <div class="table-responsive">
+                  <table class="table align-items-center table-flush table-borderless">
+                    <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Số phòng</th>
+                      <th>Loại phòng</th>
+                      <th>Diện tích</th>
+                      <th>Số giường</th>
+                      <th>Số cửa sổ</th>
+                      <th>Không Hoàn tiền</th>
+                    </tr>
+                    </thead>
+                    </table>
+                </div>
       </div>
+    </div>
     </div><!--End Row-->
 
-	<!--start overlay-->
-		  <div class="overlay toggle-menu"></div>
-		<!--end overlay-->
-
-    </div>
-    <!-- End container-fluid-->
-    
-   </div><!--End content-wrapper-->
+      <!--End Dashboard Content-->
+	  
    <!--Start Back To Top Button-->
     <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
     <!--End Back To Top Button-->
@@ -226,7 +225,7 @@
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
 	
- <!-- simplebar js -->
+  <!-- simplebar js -->
   <script src="assets/plugins/simplebar/js/simplebar.js"></script>
   <!-- sidebar-menu js -->
   <script src="assets/js/sidebar-menu.js"></script>
