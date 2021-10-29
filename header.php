@@ -41,7 +41,6 @@
 	          <li class="nav-item"><a href="rooms.php" class="nav-link">Phòng</a></li>
 	          <li class="nav-item"><a href="restaurant.php" class="nav-link">Nhà Hàng</a></li>
 	          <li class="nav-item"><a href="about.php" class="nav-link">Giới Thiệu</a></li>
-	          <li class="nav-item"><a href="contact.php" class="nav-link">Liên Hệ</a></li>
 	        </ul>
 	      </div>
 	    </div>
