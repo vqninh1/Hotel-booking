@@ -9,7 +9,7 @@
 				<div class="row">
         	<div class="col-md-6">
         		<div class="pricing-entry d-flex ftco-animate">
-        			<div class="img order-md-last" style="background-image: url(images/menu-1.jpg);"></div>
+        			<div class="img order-md-last" style="background-image: url(images/menu1.jpg);"></div>
         			<div class="desc pr-3 text-md-right">
 	        			<div class="d-md-flex text align-items-center">
 	        				<h3 class="order-md-last heading-left"><span>Cua nướng mỡ hành</span></h3>
@@ -21,7 +21,7 @@
         			</div>
         		</div>
         		<div class="pricing-entry d-flex ftco-animate">
-        			<div class="img order-md-last" style="background-image: url(images/menu-2.jpg);"></div>
+        			<div class="img order-md-last" style="background-image: url(images/menu2.jpg);"></div>
         			<div class="desc pr-3 text-md-right">
 	        			<div class="d-md-flex text align-items-center">
 	        				<h3 class="order-md-last heading-left"><span>Bò nướng kèm khoai tây</span></h3>
@@ -33,7 +33,7 @@
 	        		</div>
         		</div>
         		<div class="pricing-entry d-flex ftco-animate">
-        			<div class="img order-md-last" style="background-image: url(images/menu-3.jpg);"></div>
+        			<div class="img order-md-last" style="background-image: url(images/menu3.jpg);"></div>
         			<div class="desc pr-3 text-md-right">
 	        			<div class="d-md-flex text align-items-center">
 	        				<h3 class="order-md-last heading-left"><span>Bún đậu mắm tôm</span></h3>
@@ -45,7 +45,7 @@
 	        		</div>
         		</div>
         		<div class="pricing-entry d-flex ftco-animate">
-        			<div class="img order-md-last" style="background-image: url(images/menu-4.jpg);"></div>
+        			<div class="img order-md-last" style="background-image: url(images/menu4.jpg);"></div>
         			<div class="desc pr-3 text-md-right">
 	        			<div class="d-md-flex text align-items-center">
 	        				<h3 class="order-md-last heading-left"><span>Dê nướng ngũ vị hương</span></h3>
@@ -60,7 +60,7 @@
 
         	<div class="col-md-6">
         		<div class="pricing-entry d-flex ftco-animate">
-        			<div class="img" style="background-image: url(images/menu-5.jpg);"></div>
+        			<div class="img" style="background-image: url(images/menu5.jpg);"></div>
         			<div class="desc pl-3">
 	        			<div class="d-md-flex text align-items-center">
 	        				<h3><span>Kiên kê xào tỏi</span></h3>
@@ -72,7 +72,7 @@
 	        		</div>
         		</div>
         		<div class="pricing-entry d-flex ftco-animate">
-        			<div class="img" style="background-image: url(images/menu-6.jpg);"></div>
+        			<div class="img" style="background-image: url(images/menu6.jpg);"></div>
         			<div class="desc pl-3">
 	        			<div class="d-md-flex text align-items-center">
 	        				<h3><span>Bò Kobe dát vàng</span></h3>
@@ -84,7 +84,7 @@
 	        		</div>
         		</div>
         		<div class="pricing-entry d-flex ftco-animate">
-        			<div class="img" style="background-image: url(images/menu-7.jpg);"></div>
+        			<div class="img" style="background-image: url(images/menu7.jpg);"></div>
         			<div class="desc pl-3">
 	        			<div class="d-md-flex text align-items-center">
 	        				<h3><span>Tráng miệng đẳng cấp</span></h3>
@@ -96,7 +96,7 @@
 	        		</div>
         		</div>
         		<div class="pricing-entry d-flex ftco-animate">
-        			<div class="img" style="background-image: url(images/menu-8.jpg);"></div>
+        			<div class="img" style="background-image: url(images/menu8.png);"></div>
         			<div class="desc pl-3">
 	        			<div class="d-md-flex text align-items-center">
 	        				<h3><span>Điểm tâm &amp; Đồ uống</span></h3>
@@ -111,3 +111,4 @@
         </div>
 			</div>
 		</section>
+

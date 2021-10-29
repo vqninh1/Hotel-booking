@@ -9,10 +9,8 @@
         <div class="row no-gutters slider-text d-flex align-itemd-end justify-content-center">
           <div class="col-md-9 ftco-animate text-center d-flex align-items-end justify-content-center">
           	<div class="text">
-
 	            <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.php">Trang Chủ</a></span> <span>Phòng</span></p>
 	            <h2 class="mb-4">Phòng</h2>
-
             </div>
           </div>
         </div>
@@ -117,14 +115,15 @@
     	</div>
     </section>
 
+
     <?php
 		include('./footer.php')
 
 	?>
+
     
   
 
-  <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
