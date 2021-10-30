@@ -13,7 +13,7 @@
   <meta name="description" content=""/>
   <meta name="author" content=""/>
   <link rel="shortcut icon" href="./images/hiltonHotelsLogo.svg.png" />
-  <title>Hilton Hotel Admin</title>
+  <title>Quản lý tài khoản</title>
   <!-- loader-->
   <link href="assets/css/pace.min.css" rel="stylesheet"/>
   <script src="assets/js/pace.min.js"></script>
@@ -42,43 +42,7 @@
  <div id="wrapper">
  
   <!--Start sidebar-wrapper-->
-   <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
-     <div class="brand-logo">
-      <a href="index.php">
-       <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
-       <h5 class="logo-text">Hilton Hotel Admin</h5>
-      </a>
-    </div>
-   <ul class="sidebar-menu do-nicescrol">
-      <li class="sidebar-header">MENU</li>
-      <li>
-        <a href="./index.php">
-          <i class="zmdi zmdi-view-dashboard"></i> <span>Tài khoản</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="./check-room.php">
-          <i class="zmdi zmdi-invert-colors"></i> <span>Đặt phòng</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="./room.php">
-          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Thông tin phòng</span>
-        </a>
-      </li>
-      <li>
-        <a href="service.php">
-          <i class="zmdi zmdi-grid"></i> <span>Dịch vụ</span>
-        </a>
-      </li>
-      <li>
-        <a href="register.php">
-          <span>Tạo tài khoản admin</span>
-        </a>
-      </li>
-   </div>
+   <?php include('menu.php')?>
    <!--End sidebar-wrapper-->
  
 <!--Start topbar header-->
@@ -92,21 +56,13 @@
     </li>
     <li class="nav-item">
       <form class="search-bar">
-        <input type="text" class="form-control" placeholder="Enter keywords">
+        <input type="text" class="form-control" placeholder="Nhập từ khóa">
          <a href="javascript:void();"><i class="icon-magnifier"></i></a>
       </form>
     </li>
   </ul>
      
   <ul class="navbar-nav align-items-center right-nav-link">
-    <li class="nav-item dropdown-lg">
-      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">
-      <i class="fa fa-envelope-open-o"></i></a>
-    </li>
-    <li class="nav-item dropdown-lg">
-      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">
-      <i class="fa fa-bell-o"></i></a>
-    </li>
     <li class="nav-item">
       <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
         <span class="user-profile"><img src="https://via.placeholder.com/110x110" class="img-circle" alt="user avatar"></span>
@@ -132,9 +88,9 @@
           </a>
         </li>
         <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li>
+        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Tài Khoản</li>
         <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-power mr-2"></i><a href="./logout.php">Log Out</a> </li>
+        <li class="dropdown-item"><i class="icon-power mr-2"></i><a href="./logout.php">Đăng Xuất</a> </li>
       </ul>
     </li>
   </ul>
@@ -162,9 +118,6 @@
               <a class="dropdown-item" href="javascript:void();">Xoá</a>
               <a class="dropdown-item" href="javascript:void();">Another action</a>
               <a class="dropdown-item" href="javascript:void();">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="javascript:void();">Separated link</a>
-               </div>
               </div>
              </div>
 		 </div>
