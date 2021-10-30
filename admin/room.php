@@ -163,11 +163,14 @@
                       <th>Loại phòng</th>
                       <th>Diện tích</th>
                       <th>Số giường</th>
-                      <th>Số cửa sổ</th>
-                      <th>Không Hoàn tiền</th>
+                      <th>Tầm nhìn</th>
+                      <th>Số người</th>
+                      <th>Số phòng trống</th>
+                      <th>Giá phòng (VNĐ)</th>
                     </tr>
                     </thead>
-                    </table>
+                        
+                  </table>
                 </div>
       </div>
     </div>
@@ -208,7 +211,7 @@
         <li id="theme10"></li>
         <li id="theme11"></li>
         <li id="theme12"></li>
-		<li id="theme13"></li>
+		    <li id="theme13"></li>
         <li id="theme14"></li>
         <li id="theme15"></li>
       </ul>
