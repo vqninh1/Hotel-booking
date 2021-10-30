@@ -66,7 +66,7 @@ if (mysqli_num_rows($result_1) > 0) {
             echo 'Lỗi. Thư chưa gửi được';
         }
     } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        echo "Message could not be sent. Mailer Error: {$email->ErrorInfo}";
     }
 
     if ($result_2 > 0) {
