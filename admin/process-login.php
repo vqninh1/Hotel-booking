@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require('config/db.php');
+    require('./config/db.php');
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -15,8 +15,10 @@
            header("Location:index.php");
        }else{
         $response = 'failed_pass';
+        header("Location: login.php?response=$response");
        }
     }else{
         $response = 'failed_user';
+        header("Location: login.php?response=$response");
     }
 ?>
