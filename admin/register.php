@@ -118,22 +118,10 @@
                 </div>
               </div>
             </div>
-
-            <div class="form-group">
-              <div class="icheck-material-white">
-                <input type="checkbox" id="user-checkbox" checked="" />
-                <label for="user-checkbox">I Agree With Terms & Conditions</label>
-              </div>
-            </div>
-
-            <button type="submit" class="btn btn-light btn-block waves-effect waves-light">Sign Up</button>
+            <button type="submit" class="btn btn-light btn-block waves-effect waves-light">Tạo</button>
         </div>
-
         </form>
       </div>
-    </div>
-    <div class="card-footer text-center py-3">
-      <p class="text-warning mb-0">Already have an account? <a href="login.html"> Sign In here</a></p>
     </div>
   </div>
 
