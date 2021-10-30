@@ -9,9 +9,9 @@ require 'Exception.php';
 require 'PHPMailer.php';
 require 'SMTP.php';
 $username = $_POST['username'];
+$email = $_POST['email'];
 $pass1 = $_POST['pass1'];
 $pass2 = $_POST['pass2'];
-$email = $_POST['email'];
 $phonenumber = $_POST['phonenumber'];
 $address = $_POST['address'];
 $str=rand();
@@ -24,7 +24,7 @@ if (mysqli_num_rows($result_1) > 0) {
     header("Location: register.php?response=$value");
 } else {
     $pass_hash = password_hash($pass1, PASSWORD_DEFAULT);
-    $sql_2 = "insert into db_users(name_user, password_user, type_user, email_user, phone, address) 
+    $sql_2 = "insert into db_users(name_user, password_user, email_user, phone, address, type_user) 
     values ('$username','$pass_hash','$email','$phonenumber','$address','$code')";
     $result_2 = mysqli_query($conn, $sql_2);
     $mail = new PHPMailer(true);
@@ -43,7 +43,7 @@ if (mysqli_num_rows($result_1) > 0) {
         //Recipients
         $mail->setFrom('tuanmanucian2001@gmail.com', ' Đăng ký tài khoản Hilton Hotel');
 
-        $mail->addReplyTo('tuanmanucian2001@gmail.com', 'Dăng kí tài khoản Hilton Hotel');
+        $mail->addReplyTo('tuanmanucian2001@gmail.com', 'Đăng kí tài khoản Hilton Hotel');
 
         $mail->addAddress($email); // Add a recipient
 
@@ -56,7 +56,6 @@ if (mysqli_num_rows($result_1) > 0) {
         // Mail body content 
         $bodyContent = '<p>Chào mừng bạn đến với dbdt</h1>';
         $bodyContent .= '<p>Bạn vui lòng nhấp vào đường link dưới đây để kích hoạt tài khoản</p>';
-        $bodyContent .= '<p><a href="http://localhost/Hotel-booking/admin/activation.php?email='.$email.'&code='.$code.'">Click here</a></p>';
         
         $mail->Body = $bodyContent;
         // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';

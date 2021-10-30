@@ -1,7 +1,7 @@
 <?php
   session_start();
   if(!isset($_SESSION['login_ok'])){
-    header("Location:login.php");
+    header("Location: login.php");
   }
 ?>
 <!DOCTYPE html>
@@ -112,20 +112,24 @@
            <div class="media">
              <div class="avatar"><img class="align-self-start mr-3" src="https://via.placeholder.com/110x110" alt="user avatar"></div>
             <div class="media-body">
-            <h6 class="mt-2 user-title">Sarajhon Mccoy</h6>
-            <p class="user-subtitle">mccoy@example.com</p>
+            <h6 class="mt-2 user-title">
+              <?php
+                echo $_SESSION['login_ok']['name_user'];
+              ?>
+            </h6>
+            <p class="user-subtitle">
+            <?php
+                echo $_SESSION['login_ok']['email_user'];
+              ?>
+            </p>
             </div>
            </div>
           </a>
         </li>
         <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-envelope mr-2"></i> Inbox</li>
-        <li class="dropdown-divider"></li>
         <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li>
         <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-settings mr-2"></i> Setting</li>
-        <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-power mr-2"></i> Logout</li>
+        <li class="dropdown-item"><i class="icon-power mr-2"></i><a href="./logout.php">Log Out</a> </li>
       </ul>
     </li>
   </ul>
