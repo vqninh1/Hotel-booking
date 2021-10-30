@@ -10,7 +10,7 @@
     if (mysqli_num_rows($result_1)>0){
        $row=mysqli_fetch_assoc($result_1);
        $pass_saved = $row['password_user'];
-       if(password_verify($password, $pass_saved)){
+       if(password_verify($password, $pass_saved) and $row['status'] == 0 ){
            $_SESSION['login_ok']=$username;
            header("Location:index.php");
        }else{
