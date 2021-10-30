@@ -169,7 +169,24 @@
                       <th>Giá phòng (VNĐ)</th>
                     </tr>
                     </thead>
-                        
+                        <?php
+                            //lấy dữ liệu từ CSDL và để ra bảng (phần lặp lại)
+                            //bước 1:kết nối tới csdl(mysql)
+                            $conn = mysqli_connect('localhost','root','','hotel-booking');
+                            if(!$conn){
+                              die("Không thể kết nối,kiểm tra lại các tham số kết nối");
+                                    }
+
+                            //bước 2 khai báo câu lệnh thực thi và thực hiện truy vấn
+                            $sql = "SELECT * from db_rooms";
+                                    $result = mysqli_query($conn,$sql);
+
+                            //bước 3 xử lý kết quả trả về
+                            if(mysqli_num_rows($result) > 0){
+                              $i=1;
+                              while($row = mysqli_fetch_assoc($result)){}}
+                          ?>
+                          
                   </table>
                 </div>
       </div>
