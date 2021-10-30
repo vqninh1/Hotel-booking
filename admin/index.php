@@ -1,9 +1,18 @@
+<<<<<<< HEAD
+
+
+
+
+
+
+=======
 <?php
   session_start();
   if(!isset($_SESSION['login_ok'])){
     header("Location:login.php");
   }
 ?>
+>>>>>>> b6bc4de602170f9b721be501a7c54abf180c765c
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +55,7 @@
      <div class="brand-logo">
       <a href="index.php">
        <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
-       <h5 class="logo-text">HiltonHotel Admin</h5>
+       <h5 class="logo-text">Hilton Hotel Admin</h5>
       </a>
     </div>
    <ul class="sidebar-menu do-nicescrol">
