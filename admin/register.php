@@ -38,32 +38,76 @@
 		 	<div class="text-center">
 		 		<img src="assets/images/logo-icon.png" alt="logo icon">
 		 	</div>
-		  <div class="card-title text-uppercase text-center py-3">Sign Up</div>
-		    <form>
+		  <div class="card-title text-uppercase text-center py-3">Đăng ký</div>
+        <?php 
+            if(isset($_GET['response'])){
+              if($_GET['response'] == 'successfully'){
+                echo "<p class='text-danger'>Bạn đã đăng ký thành công</p>";
+              }
+              if($_GET['response'] == 'existed'){
+                echo "<p class='text-danger'>email đã tồn tại</p>";
+              }
+            }
+          ?>
+
+		    <form class="mx-1 mx-md-4" action="./process-register.php" method="POST">
 			  <div class="form-group">
-			  <label for="exampleInputName" class="sr-only">Name</label>
+			  <label for="exampleInputName" class="sr-only">Họ tên</label>
 			   <div class="position-relative has-icon-right">
-				  <input type="text" id="exampleInputName" class="form-control input-shadow" placeholder="Enter Your Name">
+				  <input type="text" id="exampleInputName" class="form-control input-shadow" placeholder="Nhập họ tên">
 				  <div class="form-control-position">
 					  <i class="icon-user"></i>
 				  </div>
 			   </div>
 			  </div>
 			  <div class="form-group">
-			  <label for="exampleInputEmailId" class="sr-only">Email ID</label>
+			  <label for="exampleInputEmailId" class="sr-only">Nhập email</label>
 			   <div class="position-relative has-icon-right">
-				  <input type="text" id="exampleInputEmailId" class="form-control input-shadow" placeholder="Enter Your Email ID">
+				  <input type="text" id="exampleInputEmailId" class="form-control input-shadow" placeholder="Nhập email">
 				  <div class="form-control-position">
 					  <i class="icon-envelope-open"></i>
 				  </div>
 			   </div>
 			  </div>
 			  <div class="form-group">
-			   <label for="exampleInputPassword" class="sr-only">Password</label>
+			   <label for="exampleInputPassword" class="sr-only">Mật khẩu</label>
 			   <div class="position-relative has-icon-right">
-				  <input type="text" id="exampleInputPassword" class="form-control input-shadow" placeholder="Choose Password">
+				  <input type="password" id="exampleInputPassword" class="form-control input-shadow" placeholder="Nhập mật khẩu">
 				  <div class="form-control-position">
 					  <i class="icon-lock"></i>
+				  </div>
+			   </div>
+			  </div>
+        <div class="form-group">
+			   <label for="exampleInputPassworda" class="sr-only">Nhập lại mật khẩu</label>
+			   <div class="position-relative has-icon-right">
+				  <input type="password" id="exampleInputPassworda" class="form-control input-shadow" placeholder="Nhập lại mật khẩu">
+				  <div class="form-control-position">
+					  <i class="icon-lock"></i>
+				  </div>
+			   </div>
+			  </div>
+        <div class="form-group">
+			   <label for="phonenumber" class="sr-only">Số điện thoại</label>
+			   <div class="position-relative has-icon-right">
+				  <input type="text" id="phonenumber" class="form-control input-shadow" placeholder="Nhập số điện thoại">
+				  <div class="form-control-position">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+              <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+              <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+            </svg>
+				  </div>
+			   </div>
+			  </div>
+        <div class="form-group">
+			   <label for="address" class="sr-only">Địa chỉ</label>
+			   <div class="position-relative has-icon-right">
+				  <input type="text" id="address" class="form-control input-shadow" placeholder="Nhập địa chỉ">
+				  <div class="form-control-position">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+              <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+            </svg>
 				  </div>
 			   </div>
 			  </div>
@@ -76,15 +120,6 @@
 			    </div>
 			  
 			 <button type="button" class="btn btn-light btn-block waves-effect waves-light">Sign Up</button>
-			  <div class="text-center mt-3">Sign Up With</div>
-			  
-			 <div class="form-row mt-4">
-			  <div class="form-group mb-0 col-6">
-			   <button type="button" class="btn btn-light btn-block"><i class="fa fa-facebook-square"></i> Facebook</button>
-			 </div>
-			 <div class="form-group mb-0 col-6 text-right">
-			  <button type="button" class="btn btn-light btn-block"><i class="fa fa-twitter-square"></i> Twitter</button>
-			 </div>
 			</div>
 			
 			 </form>
