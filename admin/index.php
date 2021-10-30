@@ -73,6 +73,11 @@
           <i class="zmdi zmdi-grid"></i> <span>Dịch vụ</span>
         </a>
       </li>
+      <li>
+        <a href="register.php">
+          <span>Tạo tài khoản admin</span>
+        </a>
+      </li>
    </div>
    <!--End sidebar-wrapper-->
  
