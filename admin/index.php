@@ -1,18 +1,9 @@
-<<<<<<< HEAD
-
-
-
-
-
-
-=======
 <?php
   session_start();
   if(!isset($_SESSION['login_ok'])){
     header("Location:login.php");
   }
 ?>
->>>>>>> b6bc4de602170f9b721be501a7c54abf180c765c
 <!DOCTYPE html>
 <html lang="en">
 <head>
