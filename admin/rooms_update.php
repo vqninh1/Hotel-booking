@@ -104,81 +104,61 @@
 	
 <div class="content-wrapper">
     <div class="container-fluid">
-
-    <!--Start Dashboard Content-->
-
     <div class="row">
-    <div class="col-12 col-lg-12">
-      <div class="card">
-        <div class="card-header">Bảng điều khiển phòng
-        <div class="card-action">
-              <div class="dropdown">
-              <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
-                <i class="icon-options"></i>
-              </a>
-                <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="rooms_add.php">Thêm</a>
-                </div>
-              </div>
-      </div>
-          <div class="table-responsive">
-                  <table class="table align-items-center table-flush table-borderless">
-                    <thead>
-                    <tr>
-                      <th>STT</th>
-                      <th>ID</th>
-                      <th>Số phòng</th>
-                      <th>Loại phòng</th>
-                      <th>Diện tích</th>
-                      <th>Số giường</th>
-                      <th>Hướng Nhìn</th>
-                      <th>Số người</th>
-                      <th>Số phòng trống</th>
-                      <th>Giá phòng (VNĐ)</th>
-                    </tr>
-                    </thead>
-                        <?php
-                            //lấy dữ liệu từ CSDL và để ra bảng (phần lặp lại)
-                            //bước 1:kết nối tới csdl(mysql)
-                            $conn = mysqli_connect('localhost','root','','hotel-booking');
-                            if(!$conn){
-                              die("Không thể kết nối,kiểm tra lại các tham số kết nối");
-                                    }
-
-                            //bước 2 khai báo câu lệnh thực thi và thực hiện truy vấn
-                            $sql = "SELECT * from db_rooms";
-                                    $result = mysqli_query($conn,$sql);
-
-                            //bước 3 xử lý kết quả trả về
-                            if(mysqli_num_rows($result) > 0){
-                              $i=1;
-                              while($row = mysqli_fetch_assoc($result)){
-                          ?>
-                         <tr>
-                    <th scope="row"><?php echo $i; ?> </th>
-                    <td><?php echo $row['id_rm']; ?> </td>
-                    <td><?php echo $row['number_rm']; ?> </td>
-                    <td><?php echo $row['type_rm']; ?> </td>
-                    <td><?php echo $row['area_rm']; ?> </td>
-                    <td><?php echo $row['bed_rm']; ?> </td>
-                    <td><?php echo $row['view_rm']; ?> </td>
-                    <td><?php echo $row['capacity_rm']; ?> </td>
-                    <td><?php echo $row['available_rm']; ?> </td>
-                    <td><?php echo $row['refund_rm']; ?> </td>
-                    <td><a href="rooms_update.php?id_rm=<?php echo $row['id_rm']; ?>"><i class="fas fa-edit"></i></a></td>
-                    <td><a href="rooms_delete.php?id_rm=<?php echo $row['id_rm']; ?>"><i class="fas fa-trash"></i></a></td>
-                    </tr>
-                    <?php 
-                        $i++;
-                        }
-                      }
-                    ?>
-                  </table>
-                </div>
-      </div>
-    </div>
-    </div><!--End Row-->
-
+    <?php
+    require('./config/db.php');
+    $id_rm = $_GET['id_rm'];
+    $query = mysqli_query($conn, "SELECT * from db_rooms where id_rm='$id_rm'");
+    $row = mysqli_fetch_assoc($query);
+    ?>
+    <form action="rooms_update-process.php" method="POST">
+        <table>
+            <tr>
+                <td colspan="2"><h3>Sửa Thông Tin Phòng</h3></td>
+            </tr>
+            <tr>
+                <td>Mã Phòng</td>
+                <td><input type="text" name="id_rm" value="<?php echo $row['id_rm'];?>" readonly ></td>
+            </tr>
+            <tr>
+                <td>Số Phòng</td>
+                <td><input type="text" name="number_rm" value="<?php echo $row['number_rm'];?>" size="30"></td>
+            </tr>
+            <tr>
+                <td>Loại Phòng</td>
+                <td><input type="text" name="type_rm" value="<?php echo $row['type_rm'];?>" size="30"></td>
+            </tr>
+            <tr>
+                <td>Diện Tích</td>
+                <td><input type="text" name="area_rm" value="<?php echo $row['area_rm'];?>" size="30"></td>
+            </tr>
+            <tr>
+                <td>Số Giường</td>
+                <td><input type="text" name="bed_rm" value="<?php echo $row['bed_rm'];?>" size="30"></td>
+            </tr>
+            <tr>
+                <td>Hướng Nhìn</td>
+                <td><input type="text" name="view_rm" value="<?php echo $row['view_rm'];?>" size="30"></td>
+            </tr>
+            <tr>
+                <td>Sức Chứa</td>
+                <td><input type="text" name="capacity_rm" value="<?php echo $row['capacity_rm'];?>" size="30"></td>
+            </tr>
+            <tr>
+                <td>Phòng Trống</td>
+                <td><input type="text" name="available_rm" value="<?php echo $row['available_rm'];?>" size="30"></td>
+            </tr>
+            <tr>
+                <td>Hoàn Tiền</td>
+                <td><input type="text" name="refund_rm" value="<?php echo $row['refund_rm'];?>" size="30"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Lưu"  name="btnSave">
+                </td>
+            </tr>
+        </table>
+    </form>
       <!--End Dashboard Content-->
 	  
    <!--Start Back To Top Button-->
@@ -224,20 +204,3 @@
   <!--end color switcher-->
    
   </div><!--End wrapper-->
-
-
-  <!-- Bootstrap core JavaScript-->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-	
-  <!-- simplebar js -->
-  <script src="assets/plugins/simplebar/js/simplebar.js"></script>
-  <!-- sidebar-menu js -->
-  <script src="assets/js/sidebar-menu.js"></script>
-  
-  <!-- Custom scripts -->
-  <script src="assets/js/app-script.js"></script>
-	
-</body>
-</html>
