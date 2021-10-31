@@ -8582,7 +8582,7 @@ h1, h2, h3, h4, h5,
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
-  border-radius: 0;
+  border-radius: 0px;
   -webkit-box-shadow: none !important;
   box-shadow: none !important; }
   .btn:hover, .btn:active, .btn:focus {
@@ -8624,7 +8624,6 @@ h1, h2, h3, h4, h5,
       background: #fff;
       border-color: #fff;
       color: #b69100; }
-
 .ftco-booking {
   padding: 5em 0;
   width: 100%;

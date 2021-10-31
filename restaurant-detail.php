@@ -22,18 +22,19 @@
             <h2>Astralis</h2>
           </div>
         </div>
-				<div class="row">
+		<div class="row">
         	<div class="col-md-6">
         		<div class="pricing-entry d-flex ftco-animate">
         			<div class="img order-md-last" style="background-image: url(images/menu1.jpg);"></div>
         			<div class="desc pr-3 text-md-right">
 	        			<div class="d-md-flex text align-items-center">
-	        				<h3 class="order-md-last heading-left"><span>Cua nướng mỡ hành</span></h3>
-	        				<a role="button" href="order.php" class="btn btn-outline-secondary">Order</a>
-	        			</div>
+							<h3 class="order-md-last heading-left"><span>Cua nướng mỡ hành</span></h3>
+							<a role="button" href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id ?>" class="btn btn-outline-info">Đặt Món</a>
+	        			</div>						
 	        			<div class="d-block">
 	        				<p>Cua được nướng trong ở nhiệt độ cao cùng ủ hấp 3 phút tạo cho món ắn có hương vị tươi nhất</p>
 	        			</div>
+						
         			</div>
         		</div>
         		<div class="pricing-entry d-flex ftco-animate">
@@ -41,10 +42,11 @@
         			<div class="desc pr-3 text-md-right">
 	        			<div class="d-md-flex text align-items-center">
 	        				<h3 class="order-md-last heading-left"><span>Bò nướng kèm khoai tây</span></h3>
-	        				<span class="price price-left"></span>
+	        				<a role="button" href="order.php" class="btn btn-outline-info">Đặt Món</a>
 	        			</div>
 	        			<div class="d-block">
-	        				<p>Bò nướng than hoa kèm khoai tây nhào bột hình rồng bay phượng múa</p>
+	        				<p>Bò nướng than hoa kèm khoai tây nhào bột</p>
+					
 	        			</div>
 	        		</div>
         		</div>
@@ -53,7 +55,8 @@
         			<div class="desc pr-3 text-md-right">
 	        			<div class="d-md-flex text align-items-center">
 	        				<h3 class="order-md-last heading-left"><span>Bún đậu mắm tôm</span></h3>
-	        				<span class="price price-left"></span>
+							
+	        				<a role="button" href="order.php" class="btn btn-outline-info">Đặt Món</a>
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Ai mà chưa ăn món này chưa phải là hản hán</p>
@@ -65,7 +68,7 @@
         			<div class="desc pr-3 text-md-right">
 	        			<div class="d-md-flex text align-items-center">
 	        				<h3 class="order-md-last heading-left"><span>Dê nướng ngũ vị hương</span></h3>
-	        				<span class="price price-left"></span>
+	        				<a role="button" href="order.php" class="btn btn-outline-info">Đặt Món</a>
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Ngũ vị hương được ủ trong lò cấp đông 77 49 ngày được hòa quyện cùng thịt dê Ninh Bình</p>
@@ -80,7 +83,7 @@
         			<div class="desc pl-3">
 	        			<div class="d-md-flex text align-items-center">
 	        				<h3><span>Kiên kê xào tỏi</span></h3>
-	        				<span class="price"></span>
+	        				<a role="button" href="order.php" class="btn btn-outline-info">Đặt Món</a>
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Kiên kê - vừa lạ vừa quen được ninh trong vòng 48h hào quyện cùng tỏi Lý Sơn</p>
@@ -92,7 +95,7 @@
         			<div class="desc pl-3">
 	        			<div class="d-md-flex text align-items-center">
 	        				<h3><span>Bò Kobe dát vàng</span></h3>
-	        				<span class="price"></span>
+	        				<a role="button" href="order.php" class="btn btn-outline-info">Đặt Món</a>
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Bò KOBE + Vàng miếng phủ bên ngoài</p>
@@ -104,7 +107,7 @@
         			<div class="desc pl-3">
 	        			<div class="d-md-flex text align-items-center">
 	        				<h3><span>Tráng miệng đẳng cấp</span></h3>
-	        				<span class="price"></span>
+	        				<a role="button" href="order.php" class="btn btn-outline-info">Đặt Món</a>
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Bánh Gato,Các loại pudding,Nho xấy,...</p>
@@ -116,10 +119,10 @@
         			<div class="desc pl-3">
 	        			<div class="d-md-flex text align-items-center">
 	        				<h3><span>Điểm tâm &amp; Đồ uống</span></h3>
-	        				<span class="price"></span>
+	        				<a role="button" href="order.php" class="btn btn-outline-info">Đặt Món</a>
 	        			</div>
 	        			<div class="d-block">
-	        				<p>Bánh quy,Ngũ cốc,Nước ép dư hấu,Sinh tố lúa mạch,...</p>
+	        				<p>Bánh quy,Ngũ cốc,Nước ép dưa hấu,Sinh tố lúa mạch,Vodka Cá Sấu,...</p>
 	        			</div>
 	        		</div>
         		</div>
