@@ -65,31 +65,26 @@
           				<div class="col-md-6">
           					<form method="post" class="star-rating">
 										  <div class="form-check">
-												<input type="checkbox" class="form-check-input" id="exampleCheck1">
 												<label class="form-check-label" for="exampleCheck1">
 													<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i> 100 Đánh Giá</span></p>
 												</label>
 										  </div>
 										  <div class="form-check">
-									      <input type="checkbox" class="form-check-input" id="exampleCheck1">
 									      <label class="form-check-label" for="exampleCheck1">
 									    	   <p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i> 30 Đánh Giá</span></p>
 									      </label>
 										  </div>
 										  <div class="form-check">
-									      <input type="checkbox" class="form-check-input" id="exampleCheck1">
 									      <label class="form-check-label" for="exampleCheck1">
 									      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i> 5 Đánh Giá</span></p>
 									     </label>
 										  </div>
 										  <div class="form-check">
-										    <input type="checkbox" class="form-check-input" id="exampleCheck1">
 									      <label class="form-check-label" for="exampleCheck1">
 									      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i> 0 Đánh Giá</span></p>
 									      </label>
 										  </div>
 										  <div class="form-check">
-									      <input type="checkbox" class="form-check-input" id="exampleCheck1">
 									      <label class="form-check-label" for="exampleCheck1">
 									      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i> 0 Đánh Giá</span></p>
 										    </label>
@@ -116,7 +111,7 @@
                 <a href="#" class="tag-cloud-link">Thực Đơn</a>
                 <a href="#" class="tag-cloud-link">Đồ Ăn</a>
                 <a href="#" class="tag-cloud-link">Ngọt</a>
-                <a href="#" class="tag-cloud-link">Ngọn</a>
+                <a href="#" class="tag-cloud-link">Ngon</a>
                 <a href="#" class="tag-cloud-link">Tráng Miệng</a>
                 <a href="#" class="tag-cloud-link">Đồ uống</a>
               </div>
