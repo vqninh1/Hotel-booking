@@ -1,3 +1,19 @@
+<?php
+	include('header.php')
+?>
+		<div class="hero-wrap" style="background-image: url('./images/Khách-sạn-Hilton-Hà-Nội-Opera-4-1290x860.jpg');">
+			<div class="overlay"></div>
+			<div class="container">
+        		<div class="row no-gutters slider-text d-flex align-itemd-end justify-content-center">
+          			<div class="col-md-9 ftco-animate text-center d-flex align-items-end justify-content-center">
+          				<div class="text">
+							<p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.php">Trang Chủ</a></span> <span>Nhà Hàng</span></p>
+							<h2 class="mb-4">Nhà Hàng</h2>
+            			</div>
+          			</div>
+        		</div>
+      		</div>
+    	</div>
 		<section class="ftco-section ftco-menu" style="background-image: url(images/restaurant-pattern.jpg);">
 			<div class="container">
 				<div class="row justify-content-center mb-5 pb-3">
@@ -13,7 +29,7 @@
         			<div class="desc pr-3 text-md-right">
 	        			<div class="d-md-flex text align-items-center">
 	        				<h3 class="order-md-last heading-left"><span>Cua nướng mỡ hành</span></h3>
-	        				<span class="price price-left"></span>
+	        				<a role="button" href="order.php" class="btn btn-outline-secondary">Order</a>
 	        			</div>
 	        			<div class="d-block">
 	        				<p>Cua được nướng trong ở nhiệt độ cao cùng ủ hấp 3 phút tạo cho món ắn có hương vị tươi nhất</p>
@@ -112,3 +128,6 @@
 			</div>
 		</section>
 
+<?php
+	include('footer.php')
+?>

@@ -128,7 +128,7 @@
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
           	<span class="subheading">Chào mừng đến khách sạn Hilton</span>
-            <h2 class="mb-4">Các dịch vụ khác</h2>
+            <h2 class="mb-4">Các Dịch Vụ Khác</h2>
           </div>
         </div>  
         <div class="row d-flex">
@@ -140,33 +140,21 @@
               	</div>
               </div>
               <div class="media-body">
-                <h3 class="heading mb-3">Dịch Vụ Thân Thiện</h3>
+                <a href="restaurant.php"><h3 class="heading mb-3">Nhà Hàng</h3></a>
               </div>
             </div>      
           </div>
           <div class="col-md px-md-1 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services active py-4 d-block text-center">
+            <div class="media block-6 services py-4 d-block text-center">
               <div class="d-flex justify-content-center">
               	<div class="icon d-flex align-items-center justify-content-center">
               		<span class="flaticon-serving-dish"></span>
               	</div>
               </div>
               <div class="media-body">
-                <h3 class="heading mb-3">Bữa sáng</h3>
+            	<h3 class="heading mb-3">Tiệc Cưới</h3>
               </div>
             </div>    
-          </div>
-          <div class="col-md px-md-1 d-flex align-sel Searchf-stretch ftco-animate">
-            <div class="media block-6 services py-4 d-block text-center">
-              <div class="d-flex justify-content-center">
-              	<div class="icon d-flex align-items-center justify-content-center">
-              		<span class="flaticon-car"></span>
-              	</div>
-              </div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Dịch vụ di chuyển</h3>
-              </div>
-            </div>      
           </div>
           <div class="col-md px-md-1 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services py-4 d-block text-center">
@@ -377,7 +365,7 @@
 			<div class="container-fluid px-0">
 				<div class="row no-gutters justify-content-end">
 					<div class="col-md-12">
-						<div id="home" class="video-hero" style="height: 800px; background-image: url(images/bg_1.jpg); background-size:cover; background-position: center center;">
+						<div id="home" class="video-hero" style="height: 800px; background-image: url(images/Khách-sạn-Hilton-Hà-Nội-Opera-4-1290x860.jpg); background-size:cover; background-position: center center;">
 							<a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=En_tBwfm4d8',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a>
 							<div class="container">
 								<div class="row justify-content-start d-flex align-items-end height-text ">
@@ -395,37 +383,13 @@
 		
 	<?php
 
-		include('./restaurant-detail.php')
+		include('restaurant.php')
 	
 	?>
 
 
     <?php
 
-		include('./footer.php')
+		include('footer.php')
 
 	?>
-    
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/jquery.mb.YTPlayer.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <!-- // <script src="js/jquery.timepicker.min.js"></script> -->
-  <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
-    
-  </body>
-</html>
