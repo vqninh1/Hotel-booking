@@ -1,4 +1,3 @@
-
 <?php
   include('./header.php')
 
@@ -37,26 +36,25 @@
           			</div>
           		</div>
           		<div class="col-md-12 room-single mt-4 mb-5 ftco-animate">
-          			<h2 class="mb-4">Phòng Thượng Hạng <span>- (10 Phòng Trống)</span></h2>
-    						<div class="d-md-flex mt-5 mb-5">
-    							<ul class="list">
-	    							<li><span>Tối đa:</span> 3 Người</li>
-	    							<li><span>Diện Tích:</span> 45 m2</li>
-	    						</ul>
-	    						<ul class="list ml-md-5">
-	    							<li><span>Tầm Nhìn:</span> Hướng Ra Biển</li>
-	    							<li><span>Giường:</span> 1</li>
-	    						</ul>
-    						</div>
+          			<h2 class="mb-4">Phòng Deluxe <span>- (10 Phòng Trống)</span></h2>
+								<p>Nhìn ra thành phố / công viên / Opera, bồn tắm & vòi sen riêng biệt</p>
+
+								<p>Thức dậy trong căn phòng rộng 36 mét vuông này, với các khu vực làm việc và sinh hoạt riêng biệt, truy cập Wi-Fi và đồ nội thất thủ công tuyệt đẹp của nội địa. Báo mới, áo choàng tắm và hoa tạo thêm nét đặc biệt cho kỳ nghỉ của bạn.</p>
+
+								<p>Phòng có 1 giường cỡ lớn, bồn tắm và vòi sen riêng biệt, có thể chứa tối đa 2 người lớn và 1 trẻ em. Tối đa một giường phụ hoặc một cũi trẻ em.</p>
           		</div>
           		<div class="col-md-12 room-single ftco-animate mb-5 mt-4">
-          			<h3 class="mb-4">Mô Tả</h3>
-          			<div class="block-16">
-		              <figure>
-		                <img src="images/room-4.jpg" alt="Image placeholder" class="img-fluid">
-		                <a href="https://vimeo.com/45830194" class="play-button popup-vimeo"><span class="icon-play"></span></a>
-		              </figure>
-		            </div>
+          			<h3 class="mb-4">Nổi Bật</h3>
+					<ul>
+						<li>3 người ngủ</li>
+						<li>Tủ lạnh mini</li>
+						<li>Vòi hoa sen cầm tay</li>
+						<li>Bình nóng lạnh</li>
+						<li>Máy sấy tóc</li>
+						<li>Áo choàng tắm</li>
+						<li>Quầy bar mini</li>
+						<li>Giường xếp</li>
+					</ul>
           		</div>
 
           		<div class="col-md-12 properties-single ftco-animate mb-5 mt-4">
