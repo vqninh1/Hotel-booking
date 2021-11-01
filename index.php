@@ -34,8 +34,8 @@
 				</div>
 			</div>
 		</div>
+	</section>
 </div>
-</section>
 
 <section class="ftco-booking ftco-section ftco-no-pt ftco-no-pb">
 	<div class="container">
