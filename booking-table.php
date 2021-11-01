@@ -70,7 +70,7 @@ include('header.php')
                             <div class="row">
                                 <div class="col-sm-5">
                                     <div class="form-group">
-                                        <span class="form-label">Pickup Date</span>
+                                        <span class="form-label">Chọn Ngày</span>
                                         <input class="form-control" type="date" required>
                                     </div>
                                 </div>

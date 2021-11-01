@@ -9,9 +9,9 @@ if(isset($_POST['btnSave'])){
     $view_rm    =$_POST['view_rm'];
     $capacity_rm=$_POST['capacity_rm'];
     $available_rm=$_POST['available_rm'];
-    $refund_rm  =$_POST['refund_rm'];
+    $price_rm  =$_POST['price_rm'];
 }
-$sql = "UPDATE db_rooms SET number_rm='$number_rm',type_rm='$type_rm' , area_rm='$area_rm',bed_rm='$bed_rm' , view_rm='$view_rm', capacity_rm='$capacity_rm' , available_rm='$available_rm' , refund_rm='$refund_rm' where id_rm='$id_rm'";
+$sql = "UPDATE db_rooms SET number_rm='$number_rm',type_rm='$type_rm' , area_rm='$area_rm',bed_rm='$bed_rm' , view_rm='$view_rm', capacity_rm='$capacity_rm' , available_rm='$available_rm' , price_rm='$price_rm' where id_rm='$id_rm'";
 if(mysqli_query($conn,$sql))
 {
     header('Location:room.php');

@@ -126,13 +126,13 @@
                     <thead>
                     <tr>
                       <th>STT</th>
-                      <th>ID</th>
+                      <th>Mã Phòng</th>
                       <th>Số phòng</th>
                       <th>Loại phòng</th>
                       <th>Diện tích</th>
                       <th>Số giường</th>
                       <th>Hướng Nhìn</th>
-                      <th>Số người</th>
+                      <th>Sức Chứa</th>
                       <th>Số phòng trống</th>
                       <th>Giá phòng (VNĐ)</th>
                     </tr>
@@ -164,7 +164,7 @@
                     <td><?php echo $row['view_rm']; ?> </td>
                     <td><?php echo $row['capacity_rm']; ?> </td>
                     <td><?php echo $row['available_rm']; ?> </td>
-                    <td><?php echo $row['refund_rm']; ?> </td>
+                    <td><?php echo $row['price_rm']; ?> </td>
                     <td><a href="rooms_update.php?id_rm=<?php echo $row['id_rm']; ?>"><i class="fas fa-edit"></i></a></td>
                     <td><a href="rooms_delete.php?id_rm=<?php echo $row['id_rm']; ?>"><i class="fas fa-trash"></i></a></td>
                     </tr>
