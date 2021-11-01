@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -39,6 +39,7 @@
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -8582,7 +8583,7 @@ h1, h2, h3, h4, h5,
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
-  border-radius: 0px;
+  border-radius: 0;
   -webkit-box-shadow: none !important;
   box-shadow: none !important; }
   .btn:hover, .btn:active, .btn:focus {
@@ -8624,6 +8625,7 @@ h1, h2, h3, h4, h5,
       background: #fff;
       border-color: #fff;
       color: #b69100; }
+
 .ftco-booking {
   padding: 5em 0;
   width: 100%;
