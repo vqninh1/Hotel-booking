@@ -1,5 +1,5 @@
 <?php
-include('header.php')
+	include('header.php')
 ?>
 <div class="hero-wrap" style="background-image: url('./images/Khách-sạn-Hilton-Hà-Nội-Opera-4-1290x860.jpg');">
 	<div class="overlay"></div>
@@ -29,7 +29,7 @@ include('header.php')
 					<div class="desc pr-3 text-md-right">
 						<div class="d-md-flex text align-items-center">
 							<h3 class="order-md-last heading-left"><span>Cua nướng mỡ hành</span></h3>
-							<a role="button" href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id ?>" class="btn btn-outline-info">Đặt Món</a>
+							<a role="button"class="btn btn-outline-info">Đặt Món</a>
 						</div>
 						<div class="d-block">
 							<p>Cua được nướng trong ở nhiệt độ cao cùng ủ hấp 3 phút tạo cho món ắn có hương vị tươi nhất</p>
