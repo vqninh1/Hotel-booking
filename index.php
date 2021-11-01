@@ -140,7 +140,7 @@
               	</div>
               </div>
               <div class="media-body">
-                <a href="restaurant.php"><h3 class="heading mb-3">Nhà Hàng</h3></a>
+                <a href="booking-table.php"><h3 class="heading mb-3">Đặt Bàn</h3></a>
               </div>
             </div>      
           </div>
