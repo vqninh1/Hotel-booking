@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>Dịch Vụ</title>
+  <title>Dịch Vụ Đặt Bàn</title>
   <!-- loader-->
   <link href="assets/css/pace.min.css" rel="stylesheet"/>
   <script src="assets/js/pace.min.js"></script>
@@ -30,6 +30,7 @@
   <link href="assets/css/sidebar-menu.css" rel="stylesheet"/>
   <!-- Custom Style-->
   <link href="assets/css/app-style.css" rel="stylesheet"/>
+  <link href="../fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet"/>
   
 </head>
 
@@ -89,7 +90,7 @@
         <li class="dropdown-divider"></li>
         <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Tài Khoản</li>
         <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-power mr-2"></i> Đăng Xuất</li>
+        <li class="dropdown-item"><i class="icon-power mr-2"></i><a href="logout.php">Đăng Xuất</a></li>
       </ul>
     </li>
   </ul>
@@ -124,11 +125,44 @@
                   <table class="table align-items-center table-flush table-borderless">
                     <thead>
                     <tr>
-                      <th>Tên Dịch vụ</th>
-                      <th>Ngày đặt</th>
-                      <th>Giá</th>
+                      <th>STT</th>
+                      <th>ID</th>
+                      <th>Tên Khách Hàng</th>
+                      <th>Email</th>
+                      <th>Số Điện Thoại</th>
+                      <th>Bàn</th>
+                      <th>Số Người</th>
+                      <th>Ngày</th>
+                      <th>Thời Gian</th>
                     </tr>
                     </thead>
+                      <?php
+                          include('config/db.php');
+
+                          $sql_1 = "SELECT * FROM db_bookingtable";
+                          $result_1 = mysqli_query($conn,$sql_1);
+
+                          if(mysqli_num_rows($result_1) > 0){
+                            $i=1;
+                            while($row = mysqli_fetch_assoc($result_1)){
+                          ?>
+                          <tr>
+                    <th scope = "row"><?php echo $i; ?> </th>
+                    <td><?php echo $row['id_bt']; ?></td>
+                    <td><?php echo $row['name_bt']; ?></td>
+                    <td><?php echo $row['email_bt']; ?></td>
+                    <td><?php echo $row['phone_bt']; ?></td>
+                    <td><?php echo $row['type_bt']; ?></td>
+                    <td><?php echo $row['person_bt']; ?></td>
+                    <td><?php echo $row['date_bt']; ?></td>
+                    <td><?php echo $row['time_bt']; ?></td>
+                    <td><a href="rooms_update.php?id_rm=<?php echo $row['id_bt']; ?>"><i class="fas fa-edit"></i></a></td>
+                          </tr>
+                          <?php
+                              $i++;
+                        }
+                          }
+                      ?>
                     </table>
                 </div>
       </div>

@@ -147,7 +147,7 @@
 
                             //bước 2 khai báo câu lệnh thực thi và thực hiện truy vấn
                             $sql = "SELECT * from db_rooms";
-                                    $result = mysqli_query($conn,$sql);
+                            $result = mysqli_query($conn,$sql);
 
                             //bước 3 xử lý kết quả trả về
                             if(mysqli_num_rows($result) > 0){
