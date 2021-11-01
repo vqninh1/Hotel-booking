@@ -7,9 +7,9 @@
     $view_rm    =$_POST['view_rm'];
     $capacity_rm=$_POST['capacity_rm'];
     $available_rm=$_POST['available_rm'];
-    $refund_rm  =$_POST['refund_rm'];
+    $price_rm  =$_POST['price_rm'];
     require('./config/db.php');
-    $sql ="INSERT INTO db_rooms(number_rm,type_rm,area_rm,bed_rm,view_rm,capacity_rm,available_rm,refund_rm) VALUES('$number_rm','$type_rm','$area_rm','$bed_rm','$view_rm','$capacity_rm','$available_rm','$refund_rm')";
+    $sql ="INSERT INTO db_rooms(number_rm,type_rm,area_rm,bed_rm,view_rm,capacity_rm,available_rm,price_rm) VALUES('$number_rm','$type_rm','$area_rm','$bed_rm','$view_rm','$capacity_rm','$available_rm','$price_rm')";
     if(mysqli_query($conn,$sql)==TRUE){
         echo "Thêm thành công";
         header("Location:room.php");
@@ -18,5 +18,4 @@
     }
     mysqli_close($conn);
     } 
-    
 ?>
