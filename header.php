@@ -25,10 +25,6 @@
 
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-<<<<<<< HEAD
-=======
-
->>>>>>> master
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
     
