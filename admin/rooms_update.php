@@ -40,25 +40,17 @@
 ?>
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form action="rooms_update-process.php" class="contact100-form validate-form" method="POST">
+			<form action="rooms_update-process.php" class="contact100-form validate-form" method="POST" enctype="multipart/form-data">
 				<span class="contact100-form-title">
-					Sửa Thông Tin Phòng
+					Thông Tin Phòng
 				</span>
 				<div class="wrap-input100 validate-input">
 					<span class="label-input100">Mã Phòng</span>
 					<input class="input100" type="text" name="id_rm" value="<?php echo $row['id_rm'];?>" readonly>
-					<span class="focus-input100"></span>
 				</div>
-				
 				<div class="wrap-input100 validate-input">
-					<span class="label-input100">Số Phòng</span>
-					<input class="input100" type="text" name="number_rm" value="<?php echo $row['number_rm'];?>" size="30">
-					<span class="focus-input100"></span>
-				</div>
-				
-				<div class="wrap-input100 validate-input">
-					<span class="label-input100">Loại Phòng</span>
-					<input class="input100" type="text" name="type_rm" value="<?php echo $row['type_rm'];?>" size="30">
+					<span class="label-input100">Tên Phòng</span>
+					<input class="input100" type="text" name="name_rm" value="<?php echo $row['name_rm'];?>" size="30">
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100 validate-input">
@@ -72,14 +64,22 @@
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100 validate-input">
-					<span class="label-input100">Hướng Nhìn</span>
-					<input class="input100" type="text" name="view_rm" value="<?php echo $row['view_rm'];?>" size="30">
-					<span class="focus-input100"></span>
-				</div>
-				<div class="wrap-input100 validate-input">
 					<span class="label-input100">Sức Chứa</span>
 					<input class="input100" type="text" name="capacity_rm" value="<?php echo $row['capacity_rm'];?>" size="30">
 					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input">
+					<span class="label-input100">Mô Tả</span>
+					<textarea class="input100" name="des_rm" id="des_rm" rows="10"><?php echo $row['des_rm'];?></textarea>
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input">
+					<span class="label-input100">Hình Ảnh</span>
+                    <img src="../images/<?php echo $row['image_rm']; ?>" width="150 px">
+				</div>
+				<div class="wrap-input100 validate-input">
+					<span class="label-input100">Chọn Hình Ảnh Mới</span>
+					<input type="file" name="image" id="image">
 				</div>
 				<div class="wrap-input100 validate-input">
 					<span class="label-input100">Phòng Trống</span>
@@ -98,6 +98,7 @@
 					<div class="wrap-contact100-form-btn">
 						<div class="contact100-form-bgbtn"></div>
 						<button class="contact100-form-btn" type="submit" name="btnSave">
+						<input type="hidden" name="current_image" value="<?php echo $row['image_rm']; ?>">
 							<span>
 								Sửa
 							</span>
@@ -110,6 +111,7 @@
 
 
 
+	<div id="dropDownSelect1"></div>
 
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -131,9 +133,12 @@
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> ducanh
 </body>
 </html>
 
