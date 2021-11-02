@@ -98,7 +98,7 @@
 					<div class="wrap-contact100-form-btn">
 						<div class="contact100-form-bgbtn"></div>
 						<button class="contact100-form-btn" type="submit" name="btnSave">
-						<input type="hidden" name="current_image" value="<?php echo $row['image_rm']; ?>">
+						<input type="hidden" name="current_image" id="current_image" value="<?php echo $row['image_rm']; ?>">
 							<span>
 								Sửa
 							</span>
