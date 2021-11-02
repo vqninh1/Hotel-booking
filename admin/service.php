@@ -1,3 +1,9 @@
+<?php
+  session_start();
+  if(!isset($_SESSION['login_ok'])){
+    header("Location: login.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</title>
+  <title>Dịch Vụ</title>
   <!-- loader-->
   <link href="assets/css/pace.min.css" rel="stylesheet"/>
   <script src="assets/js/pace.min.js"></script>
@@ -37,38 +43,7 @@
  <div id="wrapper">
 
   <!--Start sidebar-wrapper-->
-  <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
-     <div class="brand-logo">
-      <a href="index.php">
-       <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
-       <h5 class="logo-text">HiltonHotel Admin</h5>
-      </a>
-    </div>
-   <ul class="sidebar-menu do-nicescrol">
-      <li class="sidebar-header">MENU</li>
-      <li>
-        <a href="./index.php">
-          <i class="zmdi zmdi-view-dashboard"></i> <span>Tài khoản</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="./check-room.php">
-          <i class="zmdi zmdi-invert-colors"></i> <span>Đặt phòng</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="./room.php">
-          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Thông tin phòng</span>
-        </a>
-      </li>
-      <li>
-        <a href="./service.php">
-          <i class="zmdi zmdi-grid"></i> <span>Dịch vụ</span>
-        </a>
-      </li>
-   </div>
+<?php include('menu.php')?>
 <!--Start topbar header-->
 <header class="topbar-nav">
  <nav class="navbar navbar-expand fixed-top">
@@ -80,21 +55,13 @@
     </li>
     <li class="nav-item">
       <form class="search-bar">
-        <input type="text" class="form-control" placeholder="Enter keywords">
+        <input type="text" class="form-control" placeholder="Nhập từ khóa">
          <a href="javascript:void();"><i class="icon-magnifier"></i></a>
       </form>
     </li>
   </ul>
      
   <ul class="navbar-nav align-items-center right-nav-link">
-    <li class="nav-item dropdown-lg">
-      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">
-      <i class="fa fa-envelope-open-o"></i></a>
-    </li>
-    <li class="nav-item dropdown-lg">
-      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">
-      <i class="fa fa-bell-o"></i></a>
-    </li>
     <li class="nav-item">
       <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
         <span class="user-profile"><img src="https://via.placeholder.com/110x110" class="img-circle" alt="user avatar"></span>
@@ -105,20 +72,24 @@
            <div class="media">
              <div class="avatar"><img class="align-self-start mr-3" src="https://via.placeholder.com/110x110" alt="user avatar"></div>
             <div class="media-body">
-            <h6 class="mt-2 user-title">Sarajhon Mccoy</h6>
-            <p class="user-subtitle">mccoy@example.com</p>
+            <h6 class="mt-2 user-title">
+              <?php
+                echo $_SESSION['login_ok']['name_user'];
+              ?>
+            </h6>
+            <p class="user-subtitle">
+            <?php
+                echo $_SESSION['login_ok']['email_user'];
+              ?>
+            </p>
             </div>
            </div>
           </a>
         </li>
         <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-envelope mr-2"></i> Inbox</li>
+        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Tài Khoản</li>
         <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li>
-        <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-settings mr-2"></i> Setting</li>
-        <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-power mr-2"></i> Logout</li>
+        <li class="dropdown-item"><i class="icon-power mr-2"></i> Đăng Xuất</li>
       </ul>
     </li>
   </ul>
@@ -146,9 +117,6 @@
                 <a class="dropdown-item" href="javascript:void();">Xoá</a>
                 <a class="dropdown-item" href="javascript:void();">Another action</a>
                 <a class="dropdown-item" href="javascript:void();">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="javascript:void();">Separated link</a>
-                </div>
                 </div>
               </div>
       </div>

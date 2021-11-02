@@ -9,11 +9,12 @@
 
     if (mysqli_num_rows($result_1)>0){
        $row=mysqli_fetch_assoc($result_1);
-       //$pass_saved = $row['password_user'];
-       
-       if($password==$row['password_user']){
-           $_SESSION['login_ok']=$username;
+       $pass_saved = $row['password_user'];
+
+       if(password_verify($password, $pass_saved)){
+           $_SESSION['login_ok']=$row;
            header("Location:index.php");
+           
        }else{
         $response = 'failed_pass';
         header("Location: login.php?response=$response");
@@ -22,4 +23,5 @@
         $response = 'failed_user';
         header("Location: login.php?response=$response");
     }
+    
 ?>

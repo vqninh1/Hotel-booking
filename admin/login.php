@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>Dashtreme Admin - Free Dashboard for Bootstrap 4 by Codervent</title>
+  <title>Đăng nhập</title>
   <!-- loader-->
   <link href="assets/css/pace.min.css" rel="stylesheet"/>
   <script src="assets/js/pace.min.js"></script>
@@ -60,10 +60,6 @@
 			  </div>
 			<div class="form-row">
 			 <div class="form-group col-6">
-			   <div class="icheck-material-white">
-                <input type="checkbox" id="user-checkbox" checked="" />
-                <label for="user-checkbox">Ghi nhớ đăng nhập</label>
-			  </div>
 			 </div>
 			 <div class="form-group col-6 text-right">
 			  <a href="reset-password.php">Quên mật khẩu</a>
@@ -108,7 +104,7 @@
         <li id="theme10"></li>
         <li id="theme11"></li>
         <li id="theme12"></li>
-		<li id="theme13"></li>
+		    <li id="theme13"></li>
         <li id="theme14"></li>
         <li id="theme15"></li>
       </ul>
