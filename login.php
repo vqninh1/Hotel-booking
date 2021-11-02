@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
 </head>
 <body>
-    <img class="background" src="./images/background-white-full-hd_030745983.jpg">
+
     <div class="container">
         <div class="img">
             <img src="./images/undraw_mobile_user_-7-oqo.svg">
@@ -59,19 +59,9 @@
                     </div>
                 </div>
                 <div class="more-information">
-                    <a href="#">Quên Mật Khẩu ?</a>
-                    <a target="_blank" href="resigter.php">Chưa có tài khoản ?</a>
+                    <a target="_blank" href="register.php">Chưa có tài khoản ?</a>
                 </div>
                 <input type="submit" class="btn" value="Đăng Nhập">
-                <p class="social-text">Hoặc Đăng Nhập Với</p>
-                <div class="social-media">
-                    <a href="#" class="social-icon">
-                        <i class="fab fa-google"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                    <i class="fab fa-facebook"></i>
-                    </a>
-                </div>
             </form>
         </div>
     </div>

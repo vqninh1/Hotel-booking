@@ -30,7 +30,8 @@
   <link href="assets/css/sidebar-menu.css" rel="stylesheet"/>
   <!-- Custom Style-->
   <link href="assets/css/app-style.css" rel="stylesheet"/>
-  
+  <link href="../fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet"/>
+
 </head>
 
 <body class="bg-theme bg-theme1">
@@ -116,9 +117,7 @@
                 <i class="icon-options"></i>
               </a>
                 <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="javascript:void();">Xoá</a>
-                <a class="dropdown-item" href="javascript:void();">Another action</a>
-                <a class="dropdown-item" href="javascript:void();">Something else here</a>
+                <a class="dropdown-item" href="rooms_add.php">Thêm</a>
                 </div>
               </div>
       </div>
@@ -126,35 +125,46 @@
                   <table class="table align-items-center table-flush table-borderless">
                     <thead>
                     <tr>
-                      <th>ID</th>
-                      <th>Số phòng</th>
-                      <th>Loại phòng</th>
-                      <th>Diện tích</th>
-                      <th>Số giường</th>
-                      <th>Tầm nhìn</th>
-                      <th>Số người</th>
-                      <th>Số phòng trống</th>
-                      <th>Giá phòng (VNĐ)</th>
+                      <th>STT</th>
+                      <th>Mã Phòng</th>
+                      <th>Tên Phòng</th>
+                      <th>Diện Tích</th>
+                      <th>Số Giường</th>
+                      <th>Sức Chứa</th>
+                      <th>Hình Ảnh</th>
+                      <th>Phòng Trống</th>
+                      <th>Giá Phòng (VNĐ)</th>
                     </tr>
                     </thead>
                         <?php
-                            //lấy dữ liệu từ CSDL và để ra bảng (phần lặp lại)
-                            //bước 1:kết nối tới csdl(mysql)
-                            $conn = mysqli_connect('localhost','root','','hotel-booking');
-                            if(!$conn){
-                              die("Không thể kết nối,kiểm tra lại các tham số kết nối");
-                                    }
-
-                            //bước 2 khai báo câu lệnh thực thi và thực hiện truy vấn
+                            require('./config/db.php');
                             $sql = "SELECT * from db_rooms";
-                                    $result = mysqli_query($conn,$sql);
+                            $result = mysqli_query($conn,$sql);
 
                             //bước 3 xử lý kết quả trả về
+
                             if(mysqli_num_rows($result) > 0){
                               $i=1;
-                              while($row = mysqli_fetch_assoc($result)){}}
+                              while($row = mysqli_fetch_assoc($result)){
                           ?>
-                          
+                         <tr>
+                    <th scope="row"><?php echo $i; ?> </th>
+                    <td><?php echo $row['id_rm']; ?> </td>
+                    <td><?php echo $row['name_rm']; ?> </td>
+                    <td><?php echo $row['area_rm']; ?> </td>
+                    <td><?php echo $row['bed_rm']; ?> </td>
+                    <td><?php echo $row['capacity_rm']; ?> </td>
+                    <td><img src="../images/<?php echo $row['image_rm']; ?>" width="100px"></td>
+                    <td><?php echo $row['available_rm']; ?> </td>
+                    <td><?php echo $row['price_rm']; ?> </td>
+                    <td><a href="rooms_update.php?id_rm=<?php echo $row['id_rm']; ?>"><i class="fas fa-edit"></i></a></td>
+                    <td><a href="rooms_delete.php?id_rm=<?php echo $row['id_rm']; ?>"><i class="fas fa-trash"></i></a></td>
+                    </tr>
+                    <?php 
+                        $i++;
+                        }
+                      }
+                    ?>
                   </table>
                 </div>
       </div>

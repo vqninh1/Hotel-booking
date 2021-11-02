@@ -25,8 +25,8 @@
         </a>
       </li>
       <li>
-        <a href="service.php">
-          <i class="zmdi zmdi-grid"></i> <span>Dịch vụ</span>
+        <a href="booking-table.php">
+          <i class="zmdi zmdi-grid"></i> <span>Dịch Vụ Đặt Bàn</span>
         </a>
       </li>
       <li>
