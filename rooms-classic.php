@@ -36,13 +36,16 @@
           			</div>
           		</div>
           		<div class="col-md-12 room-single mt-4 mb-5 ftco-animate">
-          			<h2 class="mb-4">Phòng Thường <span>- (10 Phòng Trống)</span></h2>
+          			<h2 class="mb-4">Phòng Cổ Điển <span>- (10 Phòng Trống)</span></h2>
 								<p>Nhìn ra thành phố / công viên / Opera, bồn tắm & vòi sen riêng biệt</p>
 
 								<p>Thức dậy trong căn phòng rộng 36 mét vuông này, với các khu vực làm việc và sinh hoạt riêng biệt, truy cập Wi-Fi và đồ nội thất thủ công tuyệt đẹp của nội địa. Báo mới, áo choàng tắm và hoa tạo thêm nét đặc biệt cho kỳ nghỉ của bạn.</p>
 
 								<p>Phòng có 1 giường cỡ lớn, bồn tắm và vòi sen riêng biệt, có thể chứa tối đa 2 người lớn và 1 trẻ em. Tối đa một giường phụ hoặc một cũi trẻ em.</p>
-          		</div>
+								<button type="button" class="btn btn-outline-secondary"><a href="">Đặt phòng</a></button>
+				</div>
+				  
+
           		<div class="col-md-12 room-single ftco-animate mb-5 mt-4">
           			<h3 class="mb-4">Nổi Bật</h3>
 					<ul>
@@ -56,7 +59,7 @@
 						<li>Giường xếp</li>
 					</ul>
           		</div>
-
+					
           		<div class="col-md-12 properties-single ftco-animate mb-5 mt-4">
           			<h4 class="mb-4">Nhận Xét &amp; Đánh Giá</h4>
           			<div class="row">
