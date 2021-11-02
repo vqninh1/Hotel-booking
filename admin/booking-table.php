@@ -162,6 +162,7 @@ if (!isset($_SESSION['login_ok'])) {
                           <td><?php echo $row['date_bt']; ?></td>
                           <td><?php echo $row['time_bt']; ?></td>
                           <td><a href="booking-table-update.php?id_bt=<?php echo $row['id_bt']; ?>"><i class="fas fa-edit"></i></a></td>
+                          <td><a href="booking-table-cancel.php?id_bt=<?php echo $row['id_bt']; ?>"><i class="fas fa-trash"></i></a></td>
                         </tr>
                     <?php
                         $i++;
