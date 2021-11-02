@@ -127,14 +127,13 @@
                     <tr>
                       <th>STT</th>
                       <th>Mã Phòng</th>
-                      <th>Số phòng</th>
-                      <th>Loại phòng</th>
-                      <th>Diện tích</th>
-                      <th>Số giường</th>
-                      <th>Hướng Nhìn</th>
+                      <th>Tên Phòng</th>
+                      <th>Diện Tích</th>
+                      <th>Số Giường</th>
                       <th>Sức Chứa</th>
-                      <th>Số phòng trống</th>
-                      <th>Giá phòng (VNĐ)</th>
+                      <th>Hình Ảnh</th>
+                      <th>Phòng Trống</th>
+                      <th>Giá Phòng (VNĐ)</th>
                     </tr>
                     </thead>
                         <?php
@@ -148,12 +147,11 @@
                          <tr>
                     <th scope="row"><?php echo $i; ?> </th>
                     <td><?php echo $row['id_rm']; ?> </td>
-                    <td><?php echo $row['number_rm']; ?> </td>
-                    <td><?php echo $row['type_rm']; ?> </td>
+                    <td><?php echo $row['name_rm']; ?> </td>
                     <td><?php echo $row['area_rm']; ?> </td>
                     <td><?php echo $row['bed_rm']; ?> </td>
-                    <td><?php echo $row['view_rm']; ?> </td>
                     <td><?php echo $row['capacity_rm']; ?> </td>
+                    <td><img src="../images/<?php echo $row['image_rm']; ?>" width="100px"></td>
                     <td><?php echo $row['available_rm']; ?> </td>
                     <td><?php echo $row['price_rm']; ?> </td>
                     <td><a href="rooms_update.php?id_rm=<?php echo $row['id_rm']; ?>"><i class="fas fa-edit"></i></a></td>

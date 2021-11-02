@@ -16,7 +16,13 @@
         </div>
       </div>
     </div>
-
+	<?php
+		require('admin/config/db.php');
+		$id_rm = $_GET['id_rm'];
+		$sql="SELECT * from db_rooms where id_rm='$id_rm'";
+		$query=mysqli_query($conn,$sql);
+		$row = mysqli_fetch_assoc($query);
+	?>
 		<section class="ftco-section">
       <div class="container">
         <div class="row">
@@ -25,43 +31,22 @@
           		<div class="col-md-12 ftco-animate">
           			<div class="single-slider owl-carousel">
           				<div class="item">
-          					<div class="room-img" style="background-image: url(images/room-4.jpg);"></div>
-          				</div>
-          				<div class="item">
-          					<div class="room-img" style="background-image: url(images/room-5.jpg);"></div>
-          				</div>
-          				<div class="item">
-          					<div class="room-img" style="background-image: url(images/room-6.jpg);"></div>
+          					<div class="room-img" style="background-image: url(./images/<?php echo $row['image_rm']; ?>);"></div>
           				</div>
           			</div>
           		</div>
-				<?php
-					require('admin/config/db.php');
-					$sql = "SELECT * from db_rooms where id_rm='4'";
-							$result = mysqli_query($conn,$sql);
-					if(mysqli_num_rows($result) > 0){
-						while($row = mysqli_fetch_assoc($result)){
-				?>
           		<div class="col-md-12 room-single mt-4 mb-5 ftco-animate">
-          			<h2 class="mb-4">Phòng Deluxe <span>- <?php echo $row['available_rm']; ?> Phòng Trống</span></h2>
-								<p>Nhìn ra thành phố / công viên / Opera, bồn tắm & vòi sen riêng biệt</p>
-
-								<p>Thức dậy trong căn phòng rộng 36 mét vuông này, với các khu vực làm việc và sinh hoạt riêng biệt, truy cập Wi-Fi và đồ nội thất thủ công tuyệt đẹp của nội địa. Báo mới, áo choàng tắm và hoa tạo thêm nét đặc biệt cho kỳ nghỉ của bạn.</p>
-
-								<p>Phòng có 1 giường cỡ lớn, bồn tắm và vòi sen riêng biệt, có thể chứa tối đa 2 người lớn và 1 trẻ em. Tối đa một giường phụ hoặc một cũi trẻ em.</p>
+          			<h2 class="mb-4"><?php echo $row['name_rm']?> <span>- (<?php echo $row['available_rm']?> Phòng Trống)</span></h2>
+					  <?php echo $row['des_rm']?>
           		</div>
           		<div class="col-md-12 room-single ftco-animate mb-5 mt-4">
           			<h3 class="mb-4">Nổi Bật</h3>
 					<ul>
-						<li>Diện tích: <?php echo $row['area_rm']; ?></li>
-						<li>Số Giường: <?php echo $row['bed_rm']; ?></li>
-						<li>Hướng Nhìn: <?php echo $row['view_rm']; ?></li>
-						<li>Sức Chứa: <?php echo $row['capacity_rm']; ?></li>
+						<li>Diện tích : <?php echo $row['area_rm']; ?></li>
+						<li>Số Giường : <?php echo $row['bed_rm'];?></li>
+						<li>Sức Chứa : <?php echo $row['capacity_rm'];?></li>
 					</ul>
           		</div>
-				  <?php
-						}}
-				  ?>
 
           		<div class="col-md-12 properties-single ftco-animate mb-5 mt-4">
           			<h4 class="mb-4">Nhận Xét &amp; Đánh Giá</h4>
