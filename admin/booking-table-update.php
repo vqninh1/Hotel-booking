@@ -14,7 +14,7 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 	<link rel="shortcut icon" href="images/Khách-sạn-Hilton-Hà-Nội-Opera-2-1290x860.jpg" />
-  	<title>Quản lý tài khoản</title>
+  	<title>Quản Lý Đặt Bàn</title>
 
 	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
@@ -52,7 +52,7 @@
 						<div class="form-header">
 							<h1>Sửa Thông Tin</h1>
 						</div>
-						<form>
+						<form action="process-booking-table-update.php" method="POST" >
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
@@ -78,21 +78,21 @@
                             <div class="form-group">
                                 <span class="form-label">Chọn Bàn</span>
                                 <select class="form-control" name="type_bt">
-                                    <option>Bàn Thường</option>
-                                    <option>Bàn Giản Dị</option>
-                                    <option>Bàn Cao Cấp</option>
-                                    <option>Bàn Siêu Cấp</option>
-                                    <option>Bàn Vip Pro</option>
+                                    <option value="<?php echo $row['type_bt'];?>">Bàn Thường</option>
+                                    <option value="<?php echo $row['type_bt'];?>">Bàn Giản Dị</option>
+                                    <option value="<?php echo $row['type_bt'];?>">Bàn Cao Cấp</option>
+                                    <option value="<?php echo $row['type_bt'];?>">Bàn Siêu Cấp</option>
+                                    <option value="<?php echo $row['type_bt'];?>">Bàn Vip Pro</option>
                                 </select>
                                 <span class="select-arrow"></span>
                             </div>
                             <div class="form-group">
                                 <span class="form-label">Chọn Số Người</span>
                                 <select class="form-control" name="person_bt">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
+                                    <option value="<?php echo $row['person_bt'];?>">1</option>
+                                    <option value="<?php echo $row['person_bt'];?>">2</option>
+                                    <option value="<?php echo $row['person_bt'];?>">3</option>
+                                    <option value="<?php echo $row['person_bt'];?>">4</option>
                                 </select>
                                 <span class="select-arrow"></span>
                             </div>

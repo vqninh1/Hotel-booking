@@ -115,16 +115,14 @@ if (!isset($_SESSION['login_ok'])) {
         <div class="row">
           <div class="col-12 col-lg-12">
             <div class="card">
-              <div class="card-header">Bảng điều khiển người dùng
+              <div class="card-header">Bảng điều khiển người đặt bàn
                 <div class="card-action">
                   <div class="dropdown">
                     <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
                       <i class="icon-options"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
-                      <a class="dropdown-item" href="javascript:void();">Xoá</a>
-                      <a class="dropdown-item" href="javascript:void();">Another action</a>
-                      <a class="dropdown-item" href="javascript:void();">Something else here</a>
+          
                     </div>
                   </div>
                 </div>
@@ -146,12 +144,12 @@ if (!isset($_SESSION['login_ok'])) {
                     <?php
                     include('config/db.php');
 
-                    $sql_1 = "SELECT * FROM db_bookingtable";
-                    $result_1 = mysqli_query($conn, $sql_1);
+                    $sql = "SELECT * FROM db_bookingtable";
+                    $result = mysqli_query($conn, $sql);
 
-                    if (mysqli_num_rows($result_1) > 0) {
+                    if (mysqli_num_rows($result) > 0) {
                       $i = 1;
-                      while ($row = mysqli_fetch_assoc($result_1)) {
+                      while ($row = mysqli_fetch_assoc($result)) {
                     ?>
                         <tr>
                           <th scope="row"><?php echo $i; ?> </th>
