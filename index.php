@@ -138,7 +138,6 @@
 							<span class="flaticon-reception-bell"></span>
 						</div>
 					</div>
-<<<<<<< HEAD
 					<div class="media-body">
 						<a href="booking-table.php">
 							<h3 class="heading mb-3">Đặt Bàn</h3>
@@ -175,34 +174,6 @@
 					<div class="d-flex justify-content-center">
 						<div class="icon d-flex align-items-center justify-content-center">
 							<span class="ion-ios-bed"></span>
-=======
-					<div class="col-lg-6">
-						<div class="room-wrap d-md-flex">
-							<a href="#" class="img order-md-last" style="background-image: url(images/room-2.jpg);"></a>
-							<div class="half right-arrow d-flex align-items-center">
-								<div class="text p-4 p-xl-5 text-center">
-									<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-									<p class="mb-0"><span class="price mr-1">10.000.000VNĐ</span></p>
-									<span class="per">một đêm</span>
-									<h3 class="mb-3"><a href="rooms-classic.php">Phòng Cổ Điển</a></h3>
-									<p class="pt-1"><a href="rooms-classic.php" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="room-wrap d-md-flex">
-							<a href="#" class="img order-md-last" style="background-image: url(images/room-3.jpg);"></a>
-							<div class="half right-arrow d-flex align-items-center">
-								<div class="text p-4 p-xl-5 text-center">
-									<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-									<p class="mb-0"><span class="price mr-1">15.000.000VNĐ</span></p>
-									<span class="per">một đêm</span>
-									<h3 class="mb-3"><a href="rooms-family.php">Phòng Gia Đình</a></h3>
-									<p class="pt-1"><a href="rooms-family.php" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
-								</div>
-							</div>
->>>>>>> ducanh
 						</div>
 					</div>
 					<div class="media-body">
@@ -214,211 +185,54 @@
 	</div>
 </section>
 
-<<<<<<< HEAD
-<section class="ftco-section bg-light ftco-room">
-	<div class="container-fluid px-0">
-		<div class="row no-gutters justify-content-center mb-5 pb-3">
-			<div class="col-md-7 heading-section text-center ftco-animate">
-				<span class="subheading">Hilton Rooms</span>
-				<h2 class="mb-4">Phòng Khách Sạn</h2>
-			</div>
+<section class="ftco-section bg-light ftco-no-pb">
+    	<div class="container-fluid px-0">
+    		<div class="row no-gutters justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<span class="subheading">Hilton's Rooms</span>
+					<h2 class="mb-4">Phòng Khách Sạn</h2>
+          		</div>
+        	</div>
+			<div class="row no-gutters">
+			<?php
+				require('admin/config/db.php');
+				$sql="SELECT * from db_rooms LIMIT 4";
+				$query=mysqli_query($conn,$sql);
+				$count = mysqli_num_rows($query);
+				if($count>0)
+				{
+					while($row=mysqli_fetch_assoc($query)){
+					$image_name=$row['image_rm'];
+					$id_rm =$row['id_rm'];
+					$name_rm=$row['name_rm'];
+					$price_rm=$row['price_rm'];
+					
+			?>
+    		
+    			<div class="col-lg-6">
+    				<div class="room-wrap d-md-flex">
+    					<a href="rooms-details.php?rooms_id=<?php echo $id_rm; ?>" class="img" style="background-image: url(./images/<?php echo $image_name; ?>);"></a>
+    					<div class="half left-arrow d-flex align-items-center">
+    						<div class="text p-4 p-xl-5 text-center">
+    							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
+    							<p class="mb-0"><span class="price mr-1"><?php echo $price_rm?></span></p>
+								<span class="per">một đêm</span>
+	    						<h3 class="mb-3"><a href="rooms-details.php?id_rm=<?php echo $id_rm; ?>"><?php echo $name_rm?></a></h3>
+	    						<p class="pt-1"><a href="rooms-details.php?id_rm=<?php echo $id_rm; ?>" class="btn-custom px-3 py-2">Xem Chi Tiết Phòng <span class="icon-long-arrow-right"></span></a></p>
+    						</div>
+    					</div>
+    				</div>
+    		</div>
+			<?php 
+				}
+			}
+			?>
+    	</div>
 		</div>
-		<div class="row no-gutters">
-			<div class="col-lg-12">
-				<div class="room-wrap">
-					<div class="img d-flex align-items-center" style="background-image: url(images/bg_3.jpg);">
-						<div class="text text-center px-4 py-4">
-							<h2>Chào mừng tới khách sạn <a href="index.html">Hilton</a> </h2>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="room-wrap d-md-flex">
-					<a href="#" class="img order-md-last" style="background-image: url(images/room-2.jpg);"></a>
-					<div class="half right-arrow d-flex align-items-center">
-						<div class="text p-4 p-xl-5 text-center">
-							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-							<p class="mb-0"><span class="price mr-1">10.000.000VNĐ</span></p>
-							<span class="per">một đêm</span>
-							<h3 class="mb-3"><a href="rooms.html">Phòng Cổ Điển</a></h3>
-							<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
-=======
-					<div class="col-lg-6">
-						<div class="room-wrap d-md-flex">
-							<a href="#" class="img" style="background-image: url(images/room-4.jpg);"></a>
-							<div class="half left-arrow d-flex align-items-center">
-								<div class="text p-4 p-xl-5 text-center">
-									<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-									<p class="mb-0"><span class="price mr-1">17.000.000VNĐ</span></p>
-									<span class="per">một đêm</span>
-									<h3 class="mb-3"><a href="rooms-deluxe.php">Phòng Deluxe</a></h3>
-									<p class="pt-1"><a href="rooms-deluxe.php" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="room-wrap d-md-flex">
-							<a href="#" class="img" style="background-image: url(images/room-6.jpg);"></a>
-							<div class="half left-arrow d-flex align-items-center">
-								<div class="text p-4 p-xl-5 text-center">
-									<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-									<p class="mb-0"><span class="price mr-1">25.000.000VNĐ</span></p>
-									<span class="per">một đêm</span>
-									<h3 class="mb-3"><a href="rooms-suite.php">Phòng Thượng Hạng</a></h3>
-									<p class="pt-1"><a href="rooms-suite.php" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
-								</div>
-							</div>
->>>>>>> ducanh
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="room-wrap d-md-flex">
-					<a href="#" class="img order-md-last" style="background-image: url(images/room-3.jpg);"></a>
-					<div class="half right-arrow d-flex align-items-center">
-						<div class="text p-4 p-xl-5 text-center">
-							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-							<p class="mb-0"><span class="price mr-1">15.000.000VNĐ</span></p>
-							<span class="per">một đêm</span>
-							<h3 class="mb-3"><a href="rooms.html">Phòng Gia Đình</a></h3>
-							<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-6">
-				<div class="room-wrap d-md-flex">
-					<a href="#" class="img" style="background-image: url(images/room-4.jpg);"></a>
-					<div class="half left-arrow d-flex align-items-center">
-						<div class="text p-4 p-xl-5 text-center">
-							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-							<p class="mb-0"><span class="price mr-1">17.000.000VNĐ</span></p>
-							<span class="per">một đêm</span>
-							<h3 class="mb-3"><a href="rooms.html">Phòng Deluxe</a></h3>
-							<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="room-wrap d-md-flex">
-					<a href="#" class="img" style="background-image: url(images/room-6.jpg);"></a>
-					<div class="half left-arrow d-flex align-items-center">
-						<div class="text p-4 p-xl-5 text-center">
-							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-							<p class="mb-0"><span class="price mr-1">25.000.000VNĐ</span></p>
-							<span class="per">một đêm</span>
-							<h3 class="mb-3"><a href="rooms.html">Phòng Thượng Hạng</a></h3>
-							<p class="pt-1"><a href="./rooms-single.html" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+    </section>
+		</br>
 
 
-<section class="ftco-section testimony-section bg-light">
-	<div class="container">
-		<div class="row justify-content-center mb-5 pb-3">
-			<div class="col-md-7 heading-section text-center ftco-animate">
-				<span class="subheading">Trải nghiệm</span>
-				<h2 class="mb-4">Nhận xét của khách hàng</h2>
-			</div>
-		</div>
-		<div class="row justify-content-center">
-			<div class="col-md-8 ftco-animate">
-				<div class="row ftco-animate">
-					<div class="col-md-12">
-						<div class="carousel-testimony owl-carousel ftco-owl">
-							<div class="item">
-								<div class="testimony-wrap py-4 pb-5">
-									<div class="user-img mb-4" style="background-image: url(images/kaito-sieurac)">
-										<span class="quote d-flex align-items-center justify-content-center">
-											<i class="icon-quote-left"></i>
-										</span>
-									</div>
-									<div class="text text-center">
-										<p class="star"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-										<p class="mb-4">Khách sạn ảo thật đấy</p>
-										<p class="name">Lương Chí Thành</p>
-										<span class="position">Khách hàng</span>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-wrap py-4 pb-5">
-									<div class="user-img mb-4" style="background-image: url(images/tuan.jpg)">
-										<span class="quote d-flex align-items-center justify-content-center">
-											<i class="icon-quote-left"></i>
-										</span>
-									</div>
-									<div class="text text-center">
-										<p class="star"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-										<p class="mb-4">Tôi năm nay hơn 70 tuổi mà chưa gặp 1 cái khách sạn nào đỉnh như thế này</p>
-										<p class="name">Đỗ Quang Tuấn</p>
-										<span class="position">Khách hàng</span>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-wrap py-4 pb-5">
-									<div class="user-img mb-4" style="background-image: url(images/hiep.jpg)">
-										<span class="quote d-flex align-items-center justify-content-center">
-											<i class="icon-quote-left"></i>
-										</span>
-									</div>
-									<div class="text text-center">
-										<p class="star"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-										<p class="mb-4">Dịch vụ tốt?</p>
-										<p class="name">Trần Ngọc Hiệp</p>
-										<span class="position">Khách hàng</span>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-wrap py-4 pb-5">
-									<div class="user-img mb-4" style="background-image: url(images/son.jpg)">
-										<span class="quote d-flex align-items-center justify-content-center">
-											<i class="icon-quote-left"></i>
-										</span>
-									</div>
-									<div class="text text-center">
-										<p class="star"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-										<p class="mb-4">Khách sạn nằm ngay trung tâm hà nội, cạnh nhà hát lớn, đi bộ ra hồ gươm rất gần, xung quanh nhiều điểm ăn uống cà phê... phòng ốc sạch đẹp, các bạn nhân viên được đào tạo rất chuyên nghiệp chào đón mình rất ấm áp! Nhât định lần công tác tới sẽ ghé lại Hilton</p>
-										<p class="name">Vũ Xuân Sơn</p>
-										<span class="position">Khách hàng</span>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-wrap py-4 pb-5">
-									<div class="user-img mb-4" style="background-image: url(images/hoanglong)">
-										<span class="quote d-flex align-items-center justify-content-center">
-											<i class="icon-quote-left"></i>
-										</span>
-									</div>
-									<div class="text text-center">
-										<p class="star"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-										<p class="mb-4">Có việc vào khách sạn hilton làm việc. Khách sạn đẹp quá. Nhân viên phục vụ cũng tốt. Bên cạnh có quán cafe khá yên tĩnh. Mình hẹn khách nên ra đây ngồi. Cảm giác yên bình giữa thành phố. Mặc dù giá cũng cao hơn mặt vằng chung 1 chút.</p>
-										<p class="name">Nguyễn Hoàng Long</p>
-										<span class="position">Khách hàng</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
 <section class="ftco-section ftco-no-pt ftco-no-pb px-0">
 	<div class="container-fluid px-0">
