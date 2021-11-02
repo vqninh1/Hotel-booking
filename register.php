@@ -32,7 +32,6 @@
     <link rel="stylesheet" href="css/icomoon.css">
 </head>
 <body>
-    <img class="background" src="./images">
     <div class="container">
         <div class="img">
             <img src="./images/undraw_mobile_user_-7-oqo.svg">
@@ -91,15 +90,6 @@
                     </div>
                 </div>
                 <input type="submit" class="btn" value="Đăng ký">
-                <p class="social-text">Hoặc Đăng Ký Với</p>
-                <div class="social-media">
-                    <a href="#" class="social-icon">
-                        <i class="fab fa-google"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </div>
             </form>
         </div>
     </div>
