@@ -37,6 +37,13 @@
 </head>
 
 <body>
+<?php 
+    require('config/db.php');
+    $id_bt = $_GET['id_bt'];
+    $query_1 = mysqli_query($conn , "SELECT * FROM db_bookingtable WHERE id_bt ='$id_bt'");
+    $row = mysqli_fetch_assoc($query_1);
+
+?>
 	<div id="booking" class="section">
 		<div class="section-center">
 			<div class="container">
@@ -49,24 +56,28 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <span class="form-label">Họ Tên</span>
-                                        <input class="form-control" type="text" placeholder="Nhập tên">
+                                        <span class="form-label">ID</span>
+                                        <input class="form-control" type="text" name="id_bt" value="<?php echo $row['id_bt'];?>" readonly>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <span class="form-label">Email</span>
-                                        <input class="form-control" type="email" placeholder="Nhập email">
+                                        <span class="form-label">Họ Tên</span>
+                                        <input class="form-control" type="email" name="name_bt" value="<?php echo $row['name_bt'];?>" readonly>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
+                                <span class="form-label">Email</span>
+                                <input class="form-control" type="text" name="email_bt" value="<?php echo $row['email_bt'];?>" readonly>
+                            </div>
+                            <div class="form-group">
                                 <span class="form-label">Số Điện Thoại</span>
-                                <input class="form-control" type="tel" placeholder="Nhập số điện thoại">
+                                <input class="form-control" type="tel" name="phone_bt" value="<?php echo $row['phone_bt'];?>" readonly>
                             </div>
                             <div class="form-group">
                                 <span class="form-label">Chọn Bàn</span>
-                                <select class="form-control">
+                                <select class="form-control" name="type_bt">
                                     <option>Bàn Thường</option>
                                     <option>Bàn Giản Dị</option>
                                     <option>Bàn Cao Cấp</option>
@@ -77,7 +88,7 @@
                             </div>
                             <div class="form-group">
                                 <span class="form-label">Chọn Số Người</span>
-                                <select class="form-control">
+                                <select class="form-control" name="person_bt">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -89,20 +100,20 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <span class="form-label">Chọn Ngày</span>
-                                        <input class="form-control" type="date" required>
+                                        <input class="form-control" type="date" name="date_bt" value="<?php echo $row['date_bt']; ?>">
                                     </div>
                                 </div>
 								<div class="col-sm-6">
                                     <div class="form-group">
                                         <span class="form-label">Chọn Thời Gian</span>
-                                        <input class="form-control" type="time" required>
+                                        <input class="form-control" type="time" name="time_bt" value="<?php echo $row['time_bt']; ?>">
                                     </div>
                                 </div>
                                 
                                         
                             </div>
                             <div class="form-btn">
-                                <button class="submit-btn">Sửa</button>
+                                <button class="submit-btn" name="btnUpdate">Sửa</button>
                             </div>
                         </form>
 					</div>

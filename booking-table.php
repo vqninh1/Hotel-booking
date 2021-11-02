@@ -1,6 +1,5 @@
 <?php
 include('header(table).php');
-date_default_timezone_set('UTC');
 
 ?>
 
