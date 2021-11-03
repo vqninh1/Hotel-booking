@@ -46,7 +46,9 @@
 						<li>Số Giường : <?php echo $row['bed_rm'];?></li>
 						<li>Sức Chứa : <?php echo $row['capacity_rm'];?></li>
 					</ul>
+					<h3><?php echo $row['price_rm'] ?>VNĐ/đêm</h3>
           		</div>
+				<button type="button" class="btn btn-outline-warning"><a href="order-room.php?id_rm=<?php echo $id_rm; ?>">Đặt phòng</a></button>
 
           		<div class="col-md-12 properties-single ftco-animate mb-5 mt-4">
           			<h4 class="mb-4">Nhận Xét &amp; Đánh Giá</h4>

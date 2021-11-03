@@ -143,6 +143,9 @@ if (!isset($_SESSION['login_ok'])) {
                                 $checkout_cr = $_POST['checkout_cr'];
                                 $type_cr = $_POST['type_cr'];
                                 $price_cr = $_POST['price_cr'];
+                                $day_cr = $_POST['day_cr'];
+                                $total_price = $_POST['total_price'];
+                                
                                 $status_cr = $_POST['status_cr'];
                                 // Create connection
                                 $conn = new mysqli("localhost", "root", "", "hotel-booking");
@@ -152,14 +155,13 @@ if (!isset($_SESSION['login_ok'])) {
                                 }
 
                                 $sql = "UPDATE db_check_room SET name_cr='$name_cr',phone_cr = '$phone_cr', email_cr='$email_cr', checkin_cr='$checkin_cr' , 
-                                checkout_cr='$checkout_cr', type_cr='$type_cr', price_cr='$price_cr' , status_cr='$status_cr' WHERE id_cr='$id_cr'";
+                                checkout_cr='$checkout_cr', type_cr='$type_cr', price_cr='$price_cr',day_cr='$day_cr', total_price='$total_price' , status_cr='$status_cr' WHERE id_cr='$id_cr'";
 
                                 if ($conn->query($sql) === TRUE) {
                                     echo "Sửa thành công";
                                 } else {
                                     echo "Sửa không thành công " . $conn->error;
                                 }
-
                                 $conn->close();
                             }
                             ?>

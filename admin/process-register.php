@@ -8,7 +8,6 @@ $pass2 = $_POST['pass2'];
 $phonenumber = $_POST['phonenumber'];
 $address = $_POST['address'];
 $str=rand();
-$code = md5($str);
 $sql_1 = "SELECT * from db_admin where email_user = '$email'";
 $result_1 = mysqli_query($conn, $sql_1);
 
