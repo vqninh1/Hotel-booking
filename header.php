@@ -45,7 +45,7 @@
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="index.php" class="nav-link">Trang Chủ</a></li>
 	          <li class="nav-item"><a href="rooms.php" class="nav-link">Phòng</a></li>
-	          <li class="nav-item"><a href="restaurant.php" class="nav-link">Nhà Hàng</a></li>
+	          <li class="nav-item"><a href="restaurant-detail.php" class="nav-link">Nhà Hàng</a></li>
 	          <li class="nav-item"><a href="about.php" class="nav-link">Giới Thiệu</a></li>
             <li class="nav-item"><a href="login.php" class="nav-link">Đăng nhập</a></li>
 	        </ul>
