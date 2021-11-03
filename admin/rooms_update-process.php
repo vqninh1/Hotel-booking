@@ -28,7 +28,7 @@ if(isset($_POST['btnSave'])){
         }}
         else
         {
-            $image_name = $current_image; //Default Image when Image is Not Selected
+            $image_name = $current_image; 
         }
     }
     else
