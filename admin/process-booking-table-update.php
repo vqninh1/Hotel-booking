@@ -9,8 +9,9 @@
         $person_bt = $_POST['person_bt'];
         $date_bt = $_POST['date_bt'];
         $time_bt = $_POST['time_bt'];
-    }
-    $sql_1 = "UPDATE db_bookingtable SET type_bt='$type_bt',person_bt='$person_bt',date_bt='$date_bt',time_bt='$time_bt' WHERE id_bt = '$id_bt'";
+        $status_bt = $_POST['status_bt'];
+        }
+    $sql_1 = "UPDATE db_bookingtable SET type_bt='$type_bt',person_bt='$person_bt',date_bt='$date_bt',time_bt='$time_bt',status_bt='$status_bt' WHERE id_bt = '$id_bt'";
     if(mysqli_query($conn,$sql_1)){
         header('Location: booking-table.php');
     } 

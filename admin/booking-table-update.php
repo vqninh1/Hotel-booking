@@ -108,9 +108,16 @@
                                         <span class="form-label">Chọn Thời Gian</span>
                                         <input class="form-control" type="time" name="time_bt" value="<?php echo $row['time_bt']; ?>">
                                     </div>
-                                </div>
-                                
-                                        
+                                </div>                                 
+                            </div>
+                            <div class="form-group">
+                                <span class="form-label">Trạng Thái</span>
+                                <select class="form-control" name="status_bt">
+                                    <option value="<?php echo $row['status_bt'];?>">Chờ xử lý</option>
+                                    <option value="<?php echo $row['status_bt'];?>">Hoàn thành đơn đặt</option>
+                                    <option value="<?php echo $row['status_bt'];?>">Hủy đơn đặt</option>
+                                </select>
+                                <span class="select-arrow"></span>
                             </div>
                             <div class="form-btn">
                                 <button class="submit-btn" name="btnUpdate">Sửa</button>
