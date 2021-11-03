@@ -36,23 +36,16 @@
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form action="rooms_add-process.php" class="contact100-form validate-form" method="POST">
+			<form action="rooms_add-process.php" class="contact100-form validate-form" method="POST" enctype="multipart/form-data">
 				<span class="contact100-form-title">
 					Thêm Phòng
 				</span>
 
 				<div class="wrap-input100 validate-input">
-					<span class="label-input100">Số Phòng</span>
-					<input class="input100" type="text" name="number_rm" id="number_rm">
+					<span class="label-input100">Tên Phòng</span>
+					<input class="input100" type="text" name="name_rm" id="name_rm">
 					<span class="focus-input100"></span>
 				</div>
-				
-				<div class="wrap-input100 validate-input">
-					<span class="label-input100">Loại Phòng</span>
-					<input class="input100" type="text" name="type_rm" id="type_rm">
-					<span class="focus-input100"></span>
-				</div>
-				
 				<div class="wrap-input100 validate-input">
 					<span class="label-input100">Diện Tích</span>
 					<input class="input100" type="text" name="area_rm" id="area_rm">
@@ -64,13 +57,18 @@
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100 validate-input">
-					<span class="label-input100">Hướng Nhìn</span>
-					<input class="input100" type="text" name="view_rm" id="view_rm">
+					<span class="label-input100">Sức Chứa</span>
+					<input class="input100" type="text" name="capacity_rm" id="capacity_rm">
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100 validate-input">
-					<span class="label-input100">Sức Chứa</span>
-					<input class="input100" type="text" name="capacity_rm" id="capacity_rm">
+					<span class="label-input100">Mô Tả</span>
+					<textarea class="input100" name="des_rm" id="des_rm" rows="10"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input">
+					<span class="label-input100">Hình Ảnh</span>
+					<input type="file" name="image_rm" id="image_rm">
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100 validate-input">

@@ -4,7 +4,7 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $sql_1 = "SELECT * from db_users where name_user = '$username'";
+    $sql_1 = "SELECT * from db_admin where name_user = '$username'";
     $result_1 = mysqli_query($conn, $sql_1);
 
     if (mysqli_num_rows($result_1)>0){
