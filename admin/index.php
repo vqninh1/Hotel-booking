@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if(!isset($_SESSION['login_ok'])){
+  if(!isset($_SESSION['login_oke'])){
     header("Location: login.php");
   }
 ?>
@@ -75,12 +75,12 @@
             <div class="media-body">
             <h6 class="mt-2 user-title">
               <?php
-                echo $_SESSION['login_ok']['name_user'];
+                echo $_SESSION['login_oke']['name_user'];
               ?>
             </h6>
             <p class="user-subtitle">
             <?php
-                echo $_SESSION['login_ok']['email_user'];
+                echo $_SESSION['login_oke']['email_user'];
               ?>
             </p>
             </div>

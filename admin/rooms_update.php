@@ -1,6 +1,6 @@
 <?php
   session_start();
-  if(!isset($_SESSION['login_ok'])){
+  if(!isset($_SESSION['login_oke'])){
     header("Location: login.php");
   }
 ?>
@@ -133,12 +133,9 @@
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> ducanh
 </body>
 </html>
 
