@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/ionicons.min.css">
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
     
@@ -32,6 +32,12 @@
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.php"><img src="./images/hiltonHotelsLogo.svg.png(1).png" alt=""></a>
+        <form action="search.php" class="search-form" method="POST" >
+          <div  class="form-group" style="left:100px;opacity:0.6;width:300px" >
+            <span class="icon ion-ios-search" ></span>
+            <input type="search" class="form-control" placeholder="Tìm Tên Phòng & Dịch Vụ...." name="search" require>
+          </div>
+        </form>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> 
 	      </button>

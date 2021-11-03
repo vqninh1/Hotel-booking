@@ -61,17 +61,16 @@
     	</div>
 		</div>
     </section>
-
+	
 
     <?php
-		include('./footer.php')
+		include('footer.php')
 
 	?>
 
     
   
 
- 
 
 
   <script src="js/jquery.min.js"></script>

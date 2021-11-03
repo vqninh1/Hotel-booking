@@ -22,6 +22,13 @@ if(isset($_POST['btnSave'])){
             $src_path = $_FILES['image']['tmp_name'];
             $dest_path = "../images/".$image_name;
             $upload = move_uploaded_file($src_path, $dest_path);
+        if($current_image!=""){
+            $remove_path = "../images/".$current_image;
+            $remove = unlink($remove_path);
+        }}
+        else
+        {
+            $image_name = $current_image; //Default Image when Image is Not Selected
         }
     }
     else
