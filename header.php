@@ -34,7 +34,7 @@
 	    <div class="container">
 	      <a class="navbar-brand" href="index.php"><img src="./images/hiltonHotelsLogo.svg.png(1).png" alt=""></a>
         <form action="search.php" class="search-form" method="POST" >
-          <div  class="form-group" style="left:100px;opacity:0.6;width:300px;margin-top:5px;" >
+          <div  class="form-group" style="left:100px;opacity:0.6;width:300px;margin-top:15px;" >
             <span class="icon ion-ios-search" ></span>
             <input type="search" class="form-control" placeholder="Tìm Tên Phòng & Dịch Vụ...." name="search" require>
           </div>
