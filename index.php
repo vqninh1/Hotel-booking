@@ -185,36 +185,6 @@
 	</div>
 </section>
 
-<<<<<<< HEAD
-<section class="ftco-section bg-light ftco-room">
-	<div class="container-fluid px-0">
-		<div class="row no-gutters justify-content-center mb-5 pb-3">
-			<div class="col-md-7 heading-section text-center ftco-animate">
-				<span class="subheading">Hilton Rooms</span>
-				<h2 class="mb-4">Phòng Khách Sạn</h2>
-			</div>
-		</div>
-		<div class="row no-gutters">
-			<div class="col-lg-12">
-				<div class="room-wrap">
-					<div class="img d-flex align-items-center" style="background-image: url(images/bg_3.jpg);">
-						<div class="text text-center px-4 py-4">
-							<h2>Chào mừng tới khách sạn <a href="index.html">Hilton</a> </h2>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="room-wrap d-md-flex">
-					<a href="#" class="img order-md-last" style="background-image: url(images/room-2.jpg);"></a>
-					<div class="half right-arrow d-flex align-items-center">
-						<div class="text p-4 p-xl-5 text-center">
-							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
-							<p class="mb-0"><span class="price mr-1">10.000.000VNĐ</span></p>
-							<span class="per">một đêm</span>
-							<h3 class="mb-3"><a href="rooms.html">Phòng Cổ Điển</a></h3>
-=======
 					<div class="col-lg-6">
 						<div class="room-wrap d-md-flex">
 							<a href="#" class="img" style="background-image: url(images/room-4.jpg);"></a>
@@ -241,7 +211,6 @@
 									<p class="pt-1"><a href="rooms-suite.php" class="btn-custom px-3 py-2">Xem thông tin phòng <span class="icon-long-arrow-right"></span></a></p>
 								</div>
 							</div>
->>>>>>> ducanh
 						</div>
 						</div>
 					</div>
