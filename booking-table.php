@@ -1,5 +1,6 @@
 <?php
-include('header.php')
+include('header(table).php');
+
 ?>
 
 <div class="hero-wrap" style="background-image: url('./images/Khách-sạn-Hilton-Hà-Nội-Opera-4-1290x860.jpg');">
@@ -27,28 +28,38 @@ include('header.php')
             <div class="container">
                 <div class="row">
                     <div class="booking-form">
-                        <form>
+                    <?php
+                        if(isset($_GET['response'])){
+                            if($_GET['response'] == 'successfully'){
+                                echo "<p class='text-danger'>Bạn đã đặt bàn thành công</p>";
+                            }
+                            if($_GET['response'] == 'existed'){
+                                echo "<p class='text-danger'>Email đã tồn tại</p>";
+                            }
+                        }
+                    ?>
+                        <form action="process-booking-table.php" method="POST">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <span class="form-label">Họ Tên</span>
-                                        <input class="form-control" type="text" placeholder="Nhập tên">
+                                        <input class="form-control" name="name_guest" type="text" placeholder="Nhập tên">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <span class="form-label">Email</span>
-                                        <input class="form-control" type="email" placeholder="Nhập email">
+                                        <input class="form-control" name="email_guest" type="email" placeholder="Nhập email">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <span class="form-label">Số Điện Thoại</span>
-                                <input class="form-control" type="tel" placeholder="Nhập số điện thoại">
+                                <input class="form-control" type="tel" name="phone_guest" placeholder="Nhập số điện thoại">
                             </div>
                             <div class="form-group">
                                 <span class="form-label">Chọn Bàn</span>
-                                <select class="form-control">
+                                <select class="form-control" id="type_table" name="type_table" >
                                     <option>Bàn Thường</option>
                                     <option>Bàn Giản Dị</option>
                                     <option>Bàn Cao Cấp</option>
@@ -59,7 +70,7 @@ include('header.php')
                             </div>
                             <div class="form-group">
                                 <span class="form-label">Chọn Số Người</span>
-                                <select class="form-control">
+                                <select class="form-control" id="person" name="person">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -68,68 +79,21 @@ include('header.php')
                                 <span class="select-arrow"></span>
                             </div>
                             <div class="row">
-                                <div class="col-sm-5">
+                                <div class="col-sm-6">
                                     <div class="form-group">
                                         <span class="form-label">Chọn Ngày</span>
-                                        <input class="form-control" type="date" required>
+                                        <input  class="form-control" name="date" type="date" required>
                                     </div>
                                 </div>
-                                <div class="col-sm-7">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <span class="form-label">Giờ</span>
-                                                <select class="form-control">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                    <option>6</option>
-                                                    <option>7</option>
-                                                    <option>8</option>
-                                                    <option>9</option>
-                                                    <option>10</option>
-                                                    <option>11</option>
-                                                    <option>12</option>
-                                                </select>
-                                                <span class="select-arrow"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <span class="form-label">Phút</span>
-                                                <select class="form-control">
-                                                    <option>05</option>
-                                                    <option>10</option>
-                                                    <option>15</option>
-                                                    <option>20</option>
-                                                    <option>25</option>
-                                                    <option>30</option>
-                                                    <option>35</option>
-                                                    <option>40</option>
-                                                    <option>45</option>
-                                                    <option>50</option>
-                                                    <option>55</option>
-                                                </select>
-                                                <span class="select-arrow"></span>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <span class="form-label">Sáng/Tối</span>
-                                                <select class="form-control">
-                                                    <option>Sáng</option>
-                                                    <option>Tối</option>
-                                                </select>
-                                                <span class="select-arrow"></span>
-                                            </div>
-                                        </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <span class="form-label">Chọn Thời Gian</span>
+                                        <input class="form-control" name="time" type="time" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-btn">
-                                <button class="submit-btn">Đặt Bàn Ngay</button>
+                                <button class="btn submit-btn">Đặt Bàn Ngay</button>
                             </div>
                         </form>
                     </div>

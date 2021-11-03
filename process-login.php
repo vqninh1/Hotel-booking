@@ -3,7 +3,7 @@
      require('config/db.php');
      $username_guest = $_POST['username_guest'];
      $password_guest = $_POST['password_guest'];
- 
+
      $sql_1 = "SELECT * from db_users where username_guest = '$username_guest'";
      $result_1 = mysqli_query($conn, $sql_1);
  
@@ -12,7 +12,7 @@
         $pass_saved = $row['password_guest'];
  
         if(password_verify($password_guest, $pass_saved)){
-            $_SESSION['login_ok']=$row;
+            $_SESSION['login_ok']=$row['username_guest'];
             header("Location:index.php");
             
         }else{

@@ -9,7 +9,9 @@ echo "Xoá thành công!";
 echo "Error updating record: " . $conn->error;
 }
 
-$conn->close();
+    $conn->close();
 }
 header("Location:room.php");
 ?>
+
+
