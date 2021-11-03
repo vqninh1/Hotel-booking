@@ -1,6 +1,12 @@
 <?php
 include('./header.php')
-
+?>
+<?php 
+        require('admin/config/db.php');
+        $id_rm = $_GET['id_rm'];
+		$sql="SELECT * from db_rooms where id_rm='$id_rm'";
+		$query=mysqli_query($conn,$sql);
+		$row = mysqli_fetch_assoc($query);
 ?>
 <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');">
     <div class="overlay"></div>
@@ -20,48 +26,88 @@ include('./header.php')
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <div class="row">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Họ và tên</label>
-                            <input type="email" class="form-control" name="fullname" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" name="phone" class="form-label">Số điện thoại</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" name="email" class="form-label">Email</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
+                <form action="" method="POST" class="order">
+                    <div class="food-menu-img">
+                    <div class="room-img" style="background-image: url(./images/<?php echo $row['image_rm']; ?>);"></div>
+                        
+                    </div>
+                    <div class="mb-3">
+                        <h3>Loại phòng : <?php echo $row['name_rm'] ?></h3></div>
+                        <input type="hidden" name="type_cr" value="<?php echo $row['name_rm'] ?>">
+                    <div class="mb-3">
+                        <h3>Giá phòng: <?php echo $row['price_rm'] ?>VNĐ/đêm</h3>
+                        <input type="hidden" name="price_cr" value="<?php echo $row['price_rm'] ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Họ và tên</label>
+                        <input type="text" class="form-control" name="name_cr" id="naemcheckroom" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone"  class="form-label">Số điện thoại</label>
+                        <input type="text" class="form-control" name="phone_cr" id="phonecheckroom">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email"  class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email_cr" id="exampleInputPassword1">
+                    </div>
 
-                        <div class="mb-3">
-                            <label for="#">Ngày Nhận Phòng</label>
-                            <input type="text" class="form-control checkin_date" name="checkin" placeholder="Ngày Nhận Phòng">
-                        </div>
+                    <div class="mb-3">
+                        <label for="#">Ngày Nhận Phòng</label>
+                        <input type="date" class="form-control" name="checkin_cr" required>
+                    </div>
 
-                        <div class="mb-3">
-                            <label for="#">Ngày Trả Phòng</label>
-                            <input type="text" class="form-control checkout_date" name="checkout" placeholder="Ngày Trả Phòng">
-                        </div>
-                        <div class="mb-3">
-                            <label for="#">Loại Phòng</label>
-                            <div class="mb-3">
-                                <div class="select-wrap">
-                                    <select name="type" id="" class="form-control">
-                                        <option value="">Phòng Cổ Điển</option>
-                                        <option value="">Phòng Gia Đình</option>
-                                        <option value="">Phòng Deluxe</option>
-                                        <option value="">Phòng Thượng Hạng</option>
-                                        <option value="">Phòng Sang Trọng</option>
-                                        <option value="">Phòng Superior</option>
-                                    </select>
-                                </div>
-                            </div>						
-						</div>
-                        <button type="button" class="btn btn-outline-secondary"><a href="order-room.php">Đặt phòng</a></button>
-                    </form>
-                </div>
+                    <div class="mb-3">
+                        <label for="#">Ngày Trả Phòng</label>
+                        <input type="date" class="form-control" name="checkout_cr" required>
+                    </div>
+                    <input type="submit" name="submit" value="Đặt phòng" class="btn btn-primary">
+                </form>
+                <?php 
+
+                    //CHeck whether submit button is clicked or not
+                    require('admin/config/db.php');
+                    if(isset($_POST['submit']))
+                    {
+                        // Get all the details from the form
+
+                        $type_cr = $_POST['type_cr'];
+                        $price_cr = $_POST['price_cr'];
+                        $checkin_cr = $_POST['checkin_cr']; 
+                        $checkout_cr = $_POST['checkout_cr'];
+                        $day1 = strtotime($checkin_cr);
+                        $day2 = strtotime($checkout_cr);
+                        $sec =$day2 - $day1;
+                        $status_cr = "Đang xử lí";  
+                        $day_cr = $sec/86400;
+                        $total_price = ((int)$price_cr * (int)$day_cr);
+                        $name_cr = $_POST['name_cr'];
+                        $phone_cr = $_POST['phone_cr'];
+                        $email_cr = $_POST['email_cr'];
+                        //Save the Order in Databaase
+                        //Create SQL to save the data
+                        $sql2 = "INSERT INTO `db_check_room`( `type_cr`, `price_cr`, `name_cr`, `phone_cr`, `email_cr`, `checkin_cr`, `checkout_cr`, `day_cr`, `total_price`, `status_cr`) 
+                        VALUES('$type_cr','$price_cr','$name_cr','$phone_cr','$email_cr','$checkin_cr','$checkout_cr','$day_cr','$total_price','$status_cr')";
+                        //Execute the Query
+                        $res2 = mysqli_query($conn, $sql2);
+
+                        //Check whether query executed successfully or not
+                        if($res2==true)
+                        {
+                            //Query Executed and Order Saved
+                            $_SESSION['order'] = "<div class='success text-center'>Phòng đã được đặt thành công</div>";
+                            echo 'Bạn đã đặt phòng thành công';
+                        }
+                        else
+                        {
+                            //Failed to Save Order
+                            $_SESSION['order'] = "<div class='error text-center'>Đặt phòng thất bại</div>";
+                            
+                        }
+
+                        }
+                
+                ?>
+                
             </div> <!-- .col-md-8 -->
             <div class="col-lg-4 sidebar ftco-animate">
                 <div class="sidebar-box">
@@ -98,10 +144,6 @@ include('./header.php')
 
 
 <!-- loader -->
-<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
-    </svg></div>
 
 
 <script src="js/jquery.min.js"></script>
