@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,7 +47,20 @@
           <li class="nav-item"><a href="rooms.php" class="nav-link">Phòng</a></li>
           <li class="nav-item"><a href="restaurant.php" class="nav-link">Nhà Hàng</a></li>
           <li class="nav-item"><a href="about.php" class="nav-link">Giới Thiệu</a></li>
-          <li class="nav-item"><a href="login.php" class="nav-link">Đăng nhập</a></li>
+          <?php
+
+          if (isset($_SESSION['login_ok'])) {
+            echo '
+                        <li class="nav-item"><i class="fa fa-user" aria-hidden="true"></i>
+                            <a class="nav-link">' . $_SESSION['login_ok'] . '</a></li>
+                        <li class="nav-item"><a class="nav-link" href="logout.php">Đăng xuất</a></li>
+                        ';
+          } else {
+            echo '
+                        <li class="nav-item"><a class="nav-link" href="login.php">Đăng nhập</a></li>
+                        ';
+          }
+          ?>
         </ul>
       </div>
     </div>

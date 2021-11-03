@@ -139,6 +139,7 @@ if (!isset($_SESSION['login_ok'])) {
                         <th>Số Người</th>
                         <th>Ngày</th>
                         <th>Thời Gian</th>
+                        <th>Tình Trạng Đơn Đặt</th>
                       </tr>
                     </thead>
                     <?php
@@ -161,6 +162,7 @@ if (!isset($_SESSION['login_ok'])) {
                           <td><?php echo $row['person_bt']; ?></td>
                           <td><?php echo $row['date_bt']; ?></td>
                           <td><?php echo $row['time_bt']; ?></td>
+                          <td><?php echo $row['status_bt']; ?></td>
                           <td><a href="booking-table-update.php?id_bt=<?php echo $row['id_bt']; ?>"><i class="fas fa-edit"></i></a></td>
                           <td><a href="booking-table-cancel.php?id_bt=<?php echo $row['id_bt']; ?>"><i class="fas fa-trash"></i></a></td>
                         </tr>
