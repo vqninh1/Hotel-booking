@@ -31,6 +31,8 @@ if (!isset($_SESSION['login_oke'])) {
   <link href="assets/css/sidebar-menu.css" rel="stylesheet" />
   <!-- Custom Style-->
   <link href="assets/css/app-style.css" rel="stylesheet" />
+  <link href="../fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet"/>
+
 
 
 </head>
@@ -103,7 +105,7 @@ if (!isset($_SESSION['login_oke'])) {
               <li class="dropdown-divider"></li>
               <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Tài Khoản</li>
               <li class="dropdown-divider"></li>
-              <li class="dropdown-item"><i class="icon-power mr-2"></i> Đăng Xuất</li>
+              <li class="dropdown-item"><i class="icon-power mr-2"></i><a href="logout.php">Đăng Xuất</a></li>
             </ul>
           </li>
         </ul>
@@ -123,20 +125,23 @@ if (!isset($_SESSION['login_oke'])) {
                     <table class="table align-items-center table-flush table-borderless">
                       <thead>
                         <tr>
+                          <th>STT</th>
                           <th>Mã đơn đặt</th>
+                          <th>Loại phòng</th>
+                          <th>Giá phòng(VNĐ)/1 đêm</th>
                           <th>Họ tên</th>
                           <th>SDT</th>
                           <th>Email</th>
                           <th>Check-in</th>
                           <th>Check-out</th>
-                          <th>Loại phòng</th>
-                          <th>Giá phòng(VNĐ)/1 đêm</th>
+                          <th>Số ngày đặt</th>
+                          <th>Tổng tiền</th>
                           <th>Tình trạng</th>
-                          <th>Chi tiết</th>
+                          <th></th>
                         </tr>
                       </thead>
                     
-                    <!-- Nhan xet :day la vung du lieu thay doi duoc-->
+                    
                     <?php
                     $conn = mysqli_connect('localhost', 'root', '', 'hotel-booking');
                     if (!$conn) {
@@ -150,13 +155,16 @@ if (!isset($_SESSION['login_oke'])) {
                     ?>
                         <tr>
                           <th scope="row"><?php echo $i; ?></th>
+                          <td><?php echo $row['id_cr']; ?></td>
+                          <td><?php echo $row['type_cr']; ?></td>
+                          <td><?php echo $row['price_cr']; ?></td>
                           <td><?php echo $row['name_cr']; ?></td>
                           <td><?php echo $row['phone_cr']; ?></td>
                           <td><?php echo $row['email_cr']; ?></td>
                           <td><?php echo $row['checkin_cr']; ?></td>
                           <td><?php echo $row['checkout_cr']; ?></td>
-                          <td><?php echo $row['type_cr']; ?></td>
-                          <td><?php echo $row['price_cr']; ?></td>
+                          <td><?php echo $row['day_cr']; ?></td>
+                          <td><?php echo $row['total_price']; ?></td>
                           <td><?php echo $row['status_cr']; ?></td>
                           <td><a href="./update-check-room.php?id_cr=<?php echo $row['id_cr']; ?>"><i class="fas fa-edit"></i></a></td>
                         </tr>
