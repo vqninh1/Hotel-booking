@@ -125,6 +125,7 @@ if (!isset($_SESSION['login_ok'])) {
                     <table class="table align-items-center table-flush table-borderless">
                       <thead>
                         <tr>
+                          <th>STT</th>
                           <th>Mã đơn đặt</th>
                           <th>Loại phòng</th>
                           <th>Giá phòng(VNĐ)/1 đêm</th>
@@ -136,11 +137,11 @@ if (!isset($_SESSION['login_ok'])) {
                           <th>Số ngày đặt</th>
                           <th>Tổng tiền</th>
                           <th>Tình trạng</th>
-                          <th>Chi tiết</th>
+                          <th></th>
                         </tr>
                       </thead>
                     
-                    <!-- Nhan xet :day la vung du lieu thay doi duoc-->
+                    
                     <?php
                     $conn = mysqli_connect('localhost', 'root', '', 'hotel-booking');
                     if (!$conn) {
@@ -154,6 +155,7 @@ if (!isset($_SESSION['login_ok'])) {
                     ?>
                         <tr>
                           <th scope="row"><?php echo $i; ?></th>
+                          <td><?php echo $row['id_cr']; ?></td>
                           <td><?php echo $row['type_cr']; ?></td>
                           <td><?php echo $row['price_cr']; ?></td>
                           <td><?php echo $row['name_cr']; ?></td>

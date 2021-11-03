@@ -120,7 +120,7 @@
                 <a class="dropdown-item" href="rooms_add.php">Thêm</a>
                 </div>
               </div>
-      </div>
+        </div>
           <div class="table-responsive">
                   <table class="table align-items-center table-flush table-borderless">
                     <thead>

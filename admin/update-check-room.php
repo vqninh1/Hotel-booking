@@ -125,13 +125,16 @@ if (!isset($_SESSION['login_ok'])) {
                     <div class="container-fluid">
                         <form method="POST" class="form">
                             <h2>Sửa thông tin đặt phòng</h2>
+                            <label>Loại phòng </label> <input type="text" value="<?php echo $row['type_cr']; ?>" name="type_cr"><br>
                             <label>Họ tên </label><input type="text" value="<?php echo $row['name_cr']; ?>" name="name_cr"><br>
+                            <label>Giá phòng </label> <input type="text" value="<?php echo $row['price_cr']; ?>" name="price_cr"><br>
                             <label>SĐT </label> <input type="text" value="<?php echo $row['phone_cr']; ?>" name="phone_cr"><br>
+                            
                             <label>Email </label> <input type="text" value="<?php echo $row['email_cr']; ?>" name="email_cr"><br>
                             <label>Check-in </label> <input type="date" value="<?php echo $row['checkin_cr']; ?>" name="checkin_cr"><br>
                             <label>Check-out </label> <input type="date" value="<?php echo $row['checkout_cr']; ?>" name="checkout_cr"><br>
-                            <label>Loại phòng </label> <input type="text" value="<?php echo $row['type_cr']; ?>" name="type_cr"><br>
-                            <label>Giá phòng </label> <input type="text" value="<?php echo $row['price_cr']; ?>" name="price_cr"><br>
+                            <label>Số ngày đặt </label> <input type="text" value="<?php echo $row['day_cr']; ?>" name="day_cr"><br>
+                            <label>Tổng tiền </label> <input type="text" value="<?php echo $row['total_price']; ?>" name="total_price"><br>
                             <label>Tình trạng </label> <input type="text" value="<?php echo $row['status_cr']; ?>" name="status_cr"><br>
                             <button class="contact100-form-btn" type="submit" name="update_user">Sửa</button>
                             <?php
@@ -145,7 +148,6 @@ if (!isset($_SESSION['login_ok'])) {
                                 $price_cr = $_POST['price_cr'];
                                 $day_cr = $_POST['day_cr'];
                                 $total_price = $_POST['total_price'];
-                                
                                 $status_cr = $_POST['status_cr'];
                                 // Create connection
                                 $conn = new mysqli("localhost", "root", "", "hotel-booking");
