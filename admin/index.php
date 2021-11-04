@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['login_ok'])) {
+if (!isset($_SESSION['login_oke'])) {
   header("Location: login.php");
 }
 ?>
@@ -72,20 +72,19 @@ if (!isset($_SESSION['login_ok'])) {
                     <div class="media-body">
                       <h6 class="mt-2 user-title">
                         <?php
-                        echo $_SESSION['login_ok']['name_user'];
+                        echo $_SESSION['login_oke']['name_user'];
                         ?>
                       </h6>
                       <p class="user-subtitle">
                         <?php
-                        echo $_SESSION['login_ok']['email_user'];
+                        echo $_SESSION['login_oke']['email_user'];
                         ?>
                       </p>
                     </div>
                   </div>
                 </a>
               </li>
-              <li class="dropdown-divider"></li>
-              <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Tài Khoản</li>
+              
               <li class="dropdown-divider"></li>
               <li class="dropdown-item"><i class="icon-power mr-2"></i><a href="logout.php">Đăng Xuất</a> </li>
             </ul>
@@ -114,6 +113,7 @@ if (!isset($_SESSION['login_ok'])) {
                           <th>mật khẩu</th>
                           <th>Email</th>
                           <th>SDT</th>
+                          <th>Ảnh đại diện</th>
                           <th>Địa chỉ</th>
                           <th></th>
                         </tr>
@@ -136,9 +136,10 @@ if (!isset($_SESSION['login_ok'])) {
                             <td><?php echo $row['password_guest']; ?></td>
                             <td><?php echo $row['email_guest']; ?></td>
                             <td><?php echo $row['phone_guest']; ?></td>
+                            <td><img src="../images/<?php echo $row['img_guest']; ?>" width="100px"></td>
                             <td><?php echo $row['address_guest']; ?></td>
-                            <td><a href="./update-guest.php?id_cr=<?php echo $row['id_guest']; ?>"><i class="fas fa-edit"></i></a></td>
-                            <td><a href="rooms_delete.php?id_rm=<?php echo $row['id_rm']; ?>"><i class="fas fa-trash"></i></a></td>
+                            <td><a href="./update-guest.php?id_guest=<?php echo $row['id_guest']; ?>"><i class="fas fa-edit"></i></a></td>
+                            <td><a href="./delete-guest.php?id_guest=<?php echo $row['id_guest']; ?>"><i class="fas fa-trash"></i></a></td>
                           </tr>
                       <?php
                           $i++;
@@ -170,10 +171,12 @@ if (!isset($_SESSION['login_ok'])) {
                         <tr>
                           <th>STT</th>
                           <th>ID</th>
+                          <th>Tên tài khoản</th>
                           <th>Họ tên</th>
                           <th>mật khẩu</th>
                           <th>Email</th>
                           <th>SDT</th>
+                          <th>Ảnh đại diện</th>
                           <th>Địa chỉ</th>
                           <th></th>
                         </tr>
@@ -193,12 +196,13 @@ if (!isset($_SESSION['login_ok'])) {
                             <th scope="row"><?php echo $i; ?></th>
                             <td><?php echo $row['id_user']; ?></td>
                             <td><?php echo $row['name_user']; ?></td>
+                            <td><?php echo $row['fullname_user']; ?></td>
                             <td><?php echo $row['password_user']; ?></td>
                             <td><?php echo $row['email_user']; ?></td>
                             <td><?php echo $row['phone']; ?></td>
-                            <td><?php echo $row['address']; ?></td>
-                            <td><a href="./update-admin.php?id_cr=<?php echo $row['id_user']; ?>"><i class="fas fa-edit"></i></a></td>
-                            <td><a href="rooms_delete.php?id_rm=<?php echo $row['id_rm']; ?>"><i class="fas fa-trash"></i></a></td>
+                            <td><img src="../images/<?php echo $row['img_admin']; ?>" width="100px"></td>
+                            <td><?php echo $row['address_user']; ?></td>
+                            <td><a href="./update-admin.php?id_user=<?php echo $row['id_user']; ?>"><i class="fas fa-edit"></i></a></td>
                           </tr>
                       <?php
                           $i++;
