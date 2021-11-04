@@ -95,10 +95,7 @@ include('./header.php')
                         {
                             //Query Executed and Order Saved
                             $_SESSION['order'] = "<div class='success text-center'>Phòng đã được đặt thành công</div>";
-                            echo '
-                            <div class="alert alert-info">
-                                <strong>Xin lỗi!</strong> Bạn cần đặt phòng thành công</a> để đấu giá.
-                            </div>';
+                            echo 'Đặt phòng thành công';
                         }
                         else
                         {
