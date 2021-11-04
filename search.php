@@ -90,7 +90,7 @@
 }
 else
 {
-	echo "<div class='text-danger'>Không có phòng nào liên quan đến từ khóa '$search'.</div>";
+	echo "<div class='text-danger' style='padding-left:12px;'>Không có phòng nào liên quan đến từ khóa '$search'.</div>";
 }
 ?>
 
@@ -120,7 +120,7 @@ else
 	}
 	else
 	{
-	echo "<div class='text-danger'>Không có dịch vụ đặt phòng nào liên quan đến từ khóa '$search'.</div>";
+	echo "<div class='text-danger' style='padding-left:12px;'>Không có dịch vụ đặt phòng nào liên quan đến từ khóa '$search'.</div>";
 	}
 	?>
 </div>
@@ -148,7 +148,7 @@ else
 	}
 	else
 	{
-	echo "<div class='text-danger'>Không có dịch vụ đặt bàn nào liên quan đến từ khóa '$search'.</div>";
+	echo "<div class='text-danger' style='padding-left:12px;'>Không có dịch vụ đặt bàn nào liên quan đến từ khóa '$search'.</div>";
 	}
 	?>
 </div>
