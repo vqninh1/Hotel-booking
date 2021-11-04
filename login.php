@@ -45,12 +45,12 @@
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="username_guest" placeholder="Tên tài khoản">
+						<input class="input100" type="text"  name="username_guest" id="username_guest" placeholder="Tên tài khoản">
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="password_guest" placeholder="Mật khẩu">
+						<input class="input100" type="password" name="password_guest" id="password_guest" placeholder="Mật khẩu">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 

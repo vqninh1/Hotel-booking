@@ -53,6 +53,10 @@
                         }
                     }
                     ?>
+					<div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input class="input100" type="text" name="fullname_guest" placeholder="Họ tên">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
 						<input class="input100" type="text" name="username_guest" placeholder="Tên tài khoản">

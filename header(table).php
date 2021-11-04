@@ -54,16 +54,20 @@
 	          <li class="nav-item"><a href="restaurant-detail.php" class="nav-link">Nhà Hàng</a></li>
 	          <li class="nav-item"><a href="about.php" class="nav-link">Giới Thiệu</a></li>
             <?php
-            if (isset($_SESSION['login_ok'])) {
-              echo '
-                          <li class="nav-item">
-                              <a class="nav-link"><i class="fa fa-user"></i>  ' . $_SESSION['login_ok'] . '</a></li>
-                          <li class="nav-item"><a class="nav-link" href="logout.php">Đăng xuất</a></li>
-                          ';
+            require('./config/db.php');
+            $query = mysqli_query($conn, "SELECT * from db_users");
+            $row = mysqli_fetch_assoc($query);
+            if (isset($_SESSION['login_oki'])) {
+            ?>
+
+              <li class="nav-item">
+                <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>" class="nav-link"><i class="fa fa-user"></i><?php echo $_SESSION['login_oki']  ?></a></li>
+              <li class="nav-item"><a class="nav-link" href="logout.php">Đăng xuất</a></li>
+            <?php
             } else {
-              echo '
-                          <li class="nav-item"><a class="nav-link" href="login.php">Đăng nhập</a></li>
-                          ';
+            ?>
+              <li class="nav-item"><a class="nav-link" href="login.php">Đăng nhập</a></li>
+            <?php
             }
             ?>
 	        </ul>

@@ -41,7 +41,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.php"><img src="./images/hiltonHotelsLogo.svg.png(1).png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,17 +54,23 @@
           <li class="nav-item"><a href="restaurant.php" class="nav-link">Nhà Hàng</a></li>
           <li class="nav-item"><a href="about.php" class="nav-link">Giới Thiệu</a></li>
           <?php
+          require('./config/db.php');
+          if(isset($_SESSION['login_oki'])){
+          $kaitorac = $_SESSION['login_oki']['id_guest'] ;
+          $query = mysqli_query($conn, "SELECT * from db_users WHERE id_guest = '$kaitorac'" );
+          $row = mysqli_fetch_assoc($query);
+          }
+          if (isset($_SESSION['login_oki'])) {
+          ?>
 
-          if (isset($_SESSION['login_ok'])) {
-            echo '
-                        <li class="nav-item">
-                            <a href="profile-guest.php" class="nav-link"><i class="fa fa-user"></i>  ' . $_SESSION['login_ok'] . '</a></li>
-                        <li class="nav-item"><a class="nav-link" href="logout.php">Đăng xuất</a></li>
-                        ';
+            <li class="nav-item">
+              <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>" class="nav-link"><i class="fa fa-user"></i><?php  echo $_SESSION['login_oki']['username_guest']; ?></a></li>
+            <li class="nav-item"><a class="nav-link" href="logout.php">Đăng xuất</a></li>
+          <?php
           } else {
-            echo '
-                        <li class="nav-item"><a class="nav-link" href="login.php">Đăng nhập</a></li>
-                        ';
+          ?>
+            <li class="nav-item"><a class="nav-link" href="login.php">Đăng nhập</a></li>
+          <?php
           }
           ?>
         </ul>
