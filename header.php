@@ -15,6 +15,10 @@
 
   <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style-profile.css">
 
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -54,7 +58,7 @@
           if (isset($_SESSION['login_ok'])) {
             echo '
                         <li class="nav-item">
-                            <a class="nav-link"><i class="fa fa-user"></i>  ' . $_SESSION['login_ok'] . '</a></li>
+                            <a href="profile-guest.php" class="nav-link"><i class="fa fa-user"></i>  ' . $_SESSION['login_ok'] . '</a></li>
                         <li class="nav-item"><a class="nav-link" href="logout.php">Đăng xuất</a></li>
                         ';
           } else {

@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['login_ok'])) {
+if (!isset($_SESSION['login_oke'])) {
   header("Location: login.php");
 }
 ?>
@@ -82,12 +82,12 @@ if (!isset($_SESSION['login_ok'])) {
                     <div class="media-body">
                       <h6 class="mt-2 user-title">
                         <?php
-                        echo $_SESSION['login_ok']['name_user'];
+                        echo $_SESSION['login_oke']['name_user'];
                         ?>
                       </h6>
                       <p class="user-subtitle">
                         <?php
-                        echo $_SESSION['login_ok']['email_user'];
+                        echo $_SESSION['login_oke']['email_user'];
                         ?>
                       </p>
                     </div>
@@ -162,26 +162,7 @@ if (!isset($_SESSION['login_ok'])) {
                           <td><?php echo $row['person_bt']; ?></td>
                           <td><?php echo $row['date_bt']; ?></td>
                           <td><?php echo $row['time_bt']; ?></td>
-                          <td><?php 
-                                  if($status=="Đang. xử lý")
-                                  {
-                                      echo "<label>$status</label>";
-                                  }
-                                  elseif($status=="On Delivery")
-                                  {
-                                      echo "<label style='color: orange;'>$status</label>";
-                                  }
-                                  elseif($status=="Delivered")
-                                  {
-                                      echo "<label style='color: green;'>$status</label>";
-                                  }
-                                  elseif($status=="Cancelled")
-                                  {
-                                      echo "<label style='color: red;'>$status</label>";
-                                  }
-
-                              ?>
-                          </td>
+                          <td><?php echo $row['status_bt']; ?></td>
                           <td><a href="booking-table-update.php?id_bt=<?php echo $row['id_bt']; ?>"><i class="fas fa-edit"></i></a></td>                        
                         </tr>
                     <?php

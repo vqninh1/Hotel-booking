@@ -75,6 +75,10 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
   <script src="js/24times.js" ></script>
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+  <script type='text/javascript'></script>
+  
+
   
   <!-- Optional JavaScript; choose one of the two! -->
 

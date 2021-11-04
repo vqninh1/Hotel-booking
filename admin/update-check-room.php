@@ -1,7 +1,7 @@
 <?php
 session_start();
 require("./config/db.php");
-if (!isset($_SESSION['login_ok'])) {
+if (!isset($_SESSION['login_oke'])) {
     header("Location: login.php");
 }
 ?>
@@ -145,7 +145,6 @@ if (!isset($_SESSION['login_ok'])) {
                                 $price_cr = $_POST['price_cr'];
                                 $day_cr = $_POST['day_cr'];
                                 $total_price = $_POST['total_price'];
-                                
                                 $status_cr = $_POST['status_cr'];
                                 // Create connection
                                 $conn = new mysqli("localhost", "root", "", "hotel-booking");

@@ -93,7 +93,7 @@ include('header(table).php');
                                 </div>
                             </div>
                             <div class="form-btn">
-                                <button class="btn submit-btn">Đặt Bàn Ngay</button>
+                                <button class="btn submit-btn" name="btnBooking">Đặt Bàn Ngay</button>
                             </div>
                         </form>
                     </div>
