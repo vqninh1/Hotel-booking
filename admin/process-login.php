@@ -12,7 +12,7 @@
        $pass_saved = $row['password_user'];
 
        if(password_verify($password, $pass_saved)){
-           $_SESSION['login_ok']=$row['name_user'];
+           $_SESSION['login_oke']=$row;
            header("Location:index.php");
            
        }else{
