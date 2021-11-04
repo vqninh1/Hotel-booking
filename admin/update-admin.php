@@ -138,11 +138,8 @@ if(isset($_POST['update-admin-table'])){
 
 $sql = "UPDATE db_admin SET fullname_user='$fullname_user',phone = '$phone',img_admin='$image_name', email_user='$email_user',
                                  address_user ='$address_user'  WHERE id_user='$id_user'";
-if(mysqli_query($conn,$sql))
-{echo '<pre>';
-    echo print_r($image_name);
-    echo '</pre>';
-
+if (mysqli_query($conn, $sql)) {
+    echo "<div class='text-danger'>Sửa thành công</div>";
 }
 else{
     $result="Cập nhật chưa thành công" .mysqli_error($conn);

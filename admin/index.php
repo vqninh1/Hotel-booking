@@ -63,7 +63,7 @@ if (!isset($_SESSION['login_oke']))
         <ul class="navbar-nav align-items-center right-nav-link">
           <li class="nav-item">
             <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
-              <span class="user-profile"><img src="https://via.placeholder.com/110x110" class="img-circle" alt="user avatar"></span>
+              <span class="user-profile"><img src="../images/<?php echo $row['img_admin']; ?>" width="100px" class="img-circle" alt="user avatar"></span>
             </a>
             <ul class="dropdown-menu dropdown-menu-right">
               <li class="dropdown-item user-details">

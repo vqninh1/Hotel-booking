@@ -65,9 +65,18 @@
 
           <form class="mx-1 mx-md-4" action="process-register.php" method="POST">
             <div class="form-group">
-              <label for="exampleInputName" class="sr-only">Họ tên</label>
+              <label for="exampleInputFullName" class="sr-only">Họ tên</label>
               <div class="position-relative has-icon-right">
-                <input type="text" id="exampleInputName" name="username" class="form-control input-shadow" placeholder="Nhập họ tên">
+                <input type="text" id="exampleInputFullName" name="fullname" class="form-control input-shadow" placeholder="Nhập họ tên">
+                <div class="form-control-position">
+                  <i class="icon-user"></i>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputName" class="sr-only">Tên tài khoản</label>
+              <div class="position-relative has-icon-right">
+                <input type="text" id="exampleInputName" name="username" class="form-control input-shadow" placeholder="Nhập tên tài khoản">
                 <div class="form-control-position">
                   <i class="icon-user"></i>
                 </div>
