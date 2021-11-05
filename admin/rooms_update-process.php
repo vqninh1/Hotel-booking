@@ -5,7 +5,6 @@ if(isset($_POST['btnSave'])){
     $id_rm      =$_POST['id_rm'];
     $name_rm  =$_POST['name_rm'];
     $area_rm    =$_POST['area_rm'];
-    $bed_rm     =$_POST['bed_rm'];
     $capacity_rm=$_POST['capacity_rm'];
     $des_rm    =$_POST['des_rm'];
     $current_image   =$_POST['current_image'];
@@ -38,7 +37,7 @@ if(isset($_POST['btnSave'])){
     
 
 }
-$sql = "UPDATE db_rooms SET name_rm='$name_rm' , area_rm='$area_rm',bed_rm='$bed_rm' , capacity_rm='$capacity_rm' , des_rm='$des_rm' , image_rm='$image_name', available_rm='$available_rm' , price_rm='$price_rm' where id_rm='$id_rm'";
+$sql = "UPDATE db_rooms SET name_rm='$name_rm' , area_rm='$area_rm' , capacity_rm='$capacity_rm' , des_rm='$des_rm' , image_rm='$image_name', available_rm='$available_rm' , price_rm='$price_rm' where id_rm='$id_rm'";
 if(mysqli_query($conn,$sql))
 {
     header('Location:room.php');

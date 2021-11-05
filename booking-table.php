@@ -33,12 +33,19 @@ include('header(table).php');
                             if($_GET['response'] == 'successfully'){
                                 echo "<p class='text-danger'>Bạn đã đặt bàn thành công</p>";
                             }
-                            if($_GET['response'] == 'existed'){
-                                echo "<p class='text-danger'>Email đã tồn tại</p>";
-                            }
+
                         }
+                        require('config/db.php');
+                        if (isset($_SESSION['login_oki'])) {
+                        $kaitorac = $_SESSION['login_oki']['id_guest'];
+                        $query = mysqli_query($conn, "SELECT * from db_users WHERE id_guest = '$kaitorac'");
+                        $row = mysqli_fetch_assoc($query);
+                      
                     ?>
                         <form action="process-booking-table.php" method="POST">
+                            <input type="hidden" name="id_guest" id="id_guest" value="<?php echo $kaitorac;?>">
+                            <?php }
+                            ?>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">

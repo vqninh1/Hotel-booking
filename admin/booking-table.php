@@ -132,6 +132,7 @@ if (!isset($_SESSION['login_oke'])) {
                       <tr>
                         <th>STT</th>
                         <th>ID</th>
+                        <th>ID Khách</th>
                         <th>Tên Khách Hàng</th>
                         <th>Email</th>
                         <th>Số Điện Thoại</th>
@@ -155,6 +156,7 @@ if (!isset($_SESSION['login_oke'])) {
                         <tr>
                           <th scope="row"><?php echo $i; ?> </th>
                           <td><?php echo $row['id_bt']; ?></td>
+                          <td><?php echo $row['id_guest']; ?></td>
                           <td><?php echo $row['name_bt']; ?></td>
                           <td><?php echo $row['email_bt']; ?></td>
                           <td><?php echo $row['phone_bt']; ?></td>

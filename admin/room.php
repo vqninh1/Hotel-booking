@@ -123,7 +123,6 @@
                       <th>Mã Phòng</th>
                       <th>Tên Phòng</th>
                       <th>Diện Tích</th>
-                      <th>Số Giường</th>
                       <th>Sức Chứa</th>
                       <th>Hình Ảnh</th>
                       <th>Phòng Trống</th>
@@ -146,7 +145,6 @@
                     <td><?php echo $row['id_rm']; ?> </td>
                     <td><?php echo $row['name_rm']; ?> </td>
                     <td><?php echo $row['area_rm']; ?> </td>
-                    <td><?php echo $row['bed_rm']; ?> </td>
                     <td><?php echo $row['capacity_rm']; ?> </td>
                     <td><img src="../images/<?php echo $row['image_rm']; ?>" width="100px"></td>
                     <td><?php echo $row['available_rm']; ?> </td>

@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 include('header.php')
 
 ?>
@@ -109,17 +109,15 @@ $row= mysqli_fetch_assoc($query);
 							<div>
 								<button class="btn btn-primary" name="btnSaveProfile">Cập nhật</button>
 								<input type="hidden" name="current_image" id="current_image" value="<?php echo $row['img_guest']; ?>">
-								<button class="btn btn-light">Hủy</button>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
-							<h3 class="mb-4">Security Settings</h3>
+							<h3 class="mb-4">Kiểm tra đơn đã đặt</h3>
 							<div class="row">
 								<div class="col-md-12">
 									<div class="form-group">
-										<label>Login</label>
 										<div class="service" style="text-align:center">
-											<h2 class="text-info">Các Dịch Vụ Đặt Bàn Của Bạn</h2>
+											<h2 class="text-info">Các Dịch Vụ Đã Bàn Của Bạn</h2>
 										</div>
 										<table class="table">
 											<thead>
@@ -132,12 +130,13 @@ $row= mysqli_fetch_assoc($query);
 													<th scope="col">Số Người</th>
 													<th scope="col">Ngày</th>
 													<th scope="col">Thời Gian</th>
+													<th scope="col">TTrạng Thái Xử Lí</th>
 												</tr>
 											</thead>
 											<tbody>
 												<?php
 												require('admin/config/db.php');
-												$sql2 = "SELECT name_bt,email_bt, phone_bt, type_bt,person_bt,date_bt,time_bt FROM db_bookingtable ";
+												$sql2 = "SELECT name_bt,email_bt, phone_bt, type_bt,person_bt,date_bt,time_bt,status_bt FROM db_bookingtable where id_guest='$id_guest' ";
 												$result2 = mysqli_query($conn, $sql2);
 												if (mysqli_num_rows($result2) > 0) {
 													$i = 1;
@@ -154,6 +153,7 @@ $row= mysqli_fetch_assoc($query);
 															<td><?php echo $row2['person_bt']; ?> </td>
 															<td><?php echo $row2['date_bt']; ?> </td>
 															<td><?php echo $row2['time_bt']; ?> </td>
+															<td><?php echo $row2['status_bt']; ?> </td>
 														</tr>
 												<?php
 														$i++;
@@ -161,12 +161,7 @@ $row= mysqli_fetch_assoc($query);
 												}
 												?>
 											</tbody>
-										</table>
-										<div class="booking-rooms" style="text-align:center">
-											<h2 class="text-info">Các Dịch Vụ Đặt Phòng Của Bạn</h2>
-										</div>
-
-
+											</table>
 										<div class="booking-rooms" style="text-align:center">
 											<h2 class="text-info">Các Phòng Ở Đã Đặt Của Bạn</h2>
 										</div>
@@ -184,8 +179,8 @@ $row= mysqli_fetch_assoc($query);
 												</tr>
 											</thead>
 											<?php
-											require('admin/config/db.php');
-											$sql3 = "SELECT * from db_rooms";
+											require('config/db.php');
+											$sql3 = "SELECT * from db_check_room where id_guest='$id_guest'";
 											$result3 = mysqli_query($conn, $sql3);
 											if (mysqli_num_rows($result3) > 0) {
 												$i = 1;
@@ -193,15 +188,16 @@ $row= mysqli_fetch_assoc($query);
 											?>
 													<tr>
 														<th scope="row"><?php echo $i; ?> </th>
-														<td><?php echo $row3['id_rm']; ?> </td>
-														<td><?php echo $row3['name_rm']; ?> </td>
-														<td><?php echo $row3['area_rm']; ?> </td>
-														<td><?php echo $row3['bed_rm']; ?> </td>
-														<td><?php echo $row3['capacity_rm']; ?> </td>
-														<td><img src="../images/<?php echo $row3['image_rm']; ?>" width="100px"></td>
-														<td><?php echo $row3['available_rm']; ?> </td>
-														<td><?php echo $row3['price_rm']; ?> </td>
-
+														<td><?php echo $row3['type_cr']; ?> </td>
+														<td><?php echo $row3['price_cr']; ?> </td>
+														<td><?php echo $row3['name_cr']; ?> </td>
+														<td><?php echo $row3['phone_cr']; ?> </td>
+														<td><?php echo $row3['email_cr']; ?> </td>
+														<td><?php echo $row3['checkin_cr']; ?> </td>
+														<td><?php echo $row3['checkout_cr']; ?> </td>
+														<td><?php echo $row3['day_cr']; ?> </td>
+														<td><?php echo $row3['total_price']; ?> </td>
+														<td><?php echo $row3['status_cr']; ?> </td>
 													</tr>
 											<?php
 													$i++;

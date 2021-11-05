@@ -1,18 +1,5 @@
-<?php
+<?php session_start();
 include('./header.php')
-?>
-<?php
-if (!isset($_SESSION['login_oki'])) 
-{
-  header("Location: login.php");
-}
-?>
-<?php 
-        require('admin/config/db.php');
-        $id_rm = $_GET['id_rm'];
-		$sql="SELECT * from db_rooms where id_rm='$id_rm'";
-		$query=mysqli_query($conn,$sql);
-		$row = mysqli_fetch_assoc($query);
 ?>
 <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');">
     <div class="overlay"></div>
@@ -29,14 +16,21 @@ if (!isset($_SESSION['login_oki']))
 </div>
 
 <section class="ftco-section">
+    <?php
+    require('admin/config/db.php');
+    $id_rm = $_GET['id_rm'];
+    $sql="SELECT * from db_rooms where id_rm='$id_rm'";
+    $query=mysqli_query($conn,$sql);
+    while($row = mysqli_fetch_assoc($query)){
+    ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <form action="" method="POST" class="order">
                     <div class="food-menu-img">
                     <div class="room-img" style="background-image: url(./images/<?php echo $row['image_rm']; ?>);"></div>
-                        
                     </div>
+                  
                     <div class="mb-3">
                         <h3>Loại phòng : <?php echo $row['name_rm'] ?></h3></div>
                         <input type="hidden" name="type_cr" value="<?php echo $row['name_rm'] ?>">
@@ -67,6 +61,19 @@ if (!isset($_SESSION['login_oki']))
                         <input type="date" class="form-control" name="checkout_cr" required>
                     </div>
                     <input type="submit" name="submit" value="Đặt phòng" class="btn btn-primary">
+                    <input type="hidden" name="id_rm" id="id_rm" value="<?php echo $row['id_rm'];?>">
+                    <?php } ?>
+                    <?php 
+                    require('config/db.php');
+                     if (isset($_SESSION['login_oki'])) {
+                        $kaitorac = $_SESSION['login_oki']['id_guest'];
+                        $query = mysqli_query($conn, "SELECT * from db_users WHERE id_guest = '$kaitorac'");
+                        $row = mysqli_fetch_assoc($query);
+                      
+                    ?>
+                    <input type="hidden" name="id_guest" id="id_guest" value="<?php echo $kaitorac;?>">
+                    <?php }?>
+                   
                 </form>
                 <?php 
 
@@ -75,7 +82,8 @@ if (!isset($_SESSION['login_oki']))
                     if(isset($_POST['submit']))
                     {
                         // Get all the details from the form
-
+                        $kaitorac =$_POST['id_guest'];
+                        $id_rm =$_POST['id_rm'];
                         $type_cr = $_POST['type_cr'];
                         $price_cr = $_POST['price_cr'];
                         $checkin_cr = $_POST['checkin_cr']; 
@@ -91,8 +99,8 @@ if (!isset($_SESSION['login_oki']))
                         $email_cr = $_POST['email_cr'];
                         //Save the Order in Databaase
                         //Create SQL to save the data
-                        $sql2 = "INSERT INTO `db_check_room`( `type_cr`, `price_cr`, `name_cr`, `phone_cr`, `email_cr`, `checkin_cr`, `checkout_cr`, `day_cr`, `total_price`, `status_cr`) 
-                        VALUES('$type_cr','$price_cr','$name_cr','$phone_cr','$email_cr','$checkin_cr','$checkout_cr','$day_cr','$total_price','$status_cr')";
+                        $sql2 = "INSERT INTO `db_check_room`( `id_guest`,`id_rm`,`type_cr`, `price_cr`, `name_cr`, `phone_cr`, `email_cr`, `checkin_cr`, `checkout_cr`, `day_cr`, `total_price`, `status_cr`) 
+                        VALUES('$kaitorac','$id_rm','$type_cr','$price_cr','$name_cr','$phone_cr','$email_cr','$checkin_cr','$checkout_cr','$day_cr','$total_price','$status_cr')";
                         //Execute the Query
                         $res2 = mysqli_query($conn, $sql2);
 
@@ -105,9 +113,10 @@ if (!isset($_SESSION['login_oki']))
                         }
                         else
                         {
+                
                             //Failed to Save Order
                             $_SESSION['order'] = "<div class='error text-center'>Đặt phòng thất bại</div>";
-                            
+                           
                         }
 
                         }

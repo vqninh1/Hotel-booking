@@ -57,6 +57,14 @@
                                 <span class="form-label">Mã đơn đặt</span>
                                 <input class="form-control" type="text" value="<?php echo $row['id_cr']; ?>" name="id_cr" readonly>
                             </div>
+                            <div class="form-group">
+                                <span class="form-label">Mã Khách</span>
+                                <input class="form-control" type="text" value="<?php echo $row['id_guest']; ?>" name="id_guest" readonly>
+                            </div>
+                            <div class="form-group">
+                                <span class="form-label">Mã Phòng</span>
+                                <input class="form-control" type="text" value="<?php echo $row['id_rm']; ?>" name="id_rm" readonly>
+                            </div>
                             <div class="row">
                                 
                                 <div class="col-sm-6">

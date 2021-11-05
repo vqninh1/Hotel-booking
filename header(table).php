@@ -44,6 +44,8 @@ if (!isset($_SESSION['login_oki']))
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-profile.css">
+
 </head>
 
 <body>
@@ -67,23 +69,17 @@ if (!isset($_SESSION['login_oki']))
           <li class="nav-item"><a href="restaurant-detail.php" class="nav-link">Nhà Hàng</a></li>
           <li class="nav-item"><a href="about.php" class="nav-link">Giới Thiệu</a></li>
           <?php
-          require('./config/db.php');
+          require('config/db.php');
           $query = mysqli_query($conn, "SELECT * from db_users");
           $row = mysqli_fetch_assoc($query);
           if (isset($_SESSION['login_oki'])) {
           ?>
 
-            <li class="nav-item" style="margin-top: 0.5rem">
-              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret img-circle" data-toggle="dropdown" href="#">
-                <span class="user-profile"><img style="margin-top: -1.5rem ; height: 50px ; width: 50px !important;" src="images/<?php echo $row['img_guest']; ?>" alt="Image" class="shadow"></span>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-right " style="margin:-10px 150px 0 0;">
-                <li class="dropdown-item">
-                    <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>">Tài khoản</a>
-                </li>
-                <li class="dropdown-item"><a href="logout.php">Đăng Xuất</a> </li>
-              </ul>
-            
+            <li class="nav-item">
+              <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>" class="nav-link img-circle"><img style="margin-top: -1.5rem ; height: 50px ; width: 50px !important;" src="images/<?php echo $row['img_guest']; ?>" alt="Image" class="circle"></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="logout.php">Đăng xuất</a></li>
+
           <?php
           } else {
           ?>

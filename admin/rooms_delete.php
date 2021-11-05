@@ -8,10 +8,7 @@ echo "Xoá thành công!";
 } else {
 echo "Error updating record: " . $conn->error;
 }
-
     $conn->close();
 }
 header("Location:room.php");
 ?>
-
-
