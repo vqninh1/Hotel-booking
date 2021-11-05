@@ -77,7 +77,7 @@ session_start();
                 <li class="dropdown-item">
                     <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>">Tài khoản</a>
                 </li>
-                <li class="dropdown-item"><a href="logout.php">Đăng Xuất</a> </li>
+                <li class="dropdown-item"></i><a href="logout.php">Đăng Xuất</a> </li>
               </ul>
             </li>
             
