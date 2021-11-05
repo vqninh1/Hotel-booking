@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -69,7 +66,7 @@ session_start();
           if (isset($_SESSION['login_oki'])) {
           ?>
 
-            <li class="dropdown" style="margin-top: 1.5rem">
+            <li class="nav-item" style="margin-top: 1.5rem">
               <a class="nav-link dropdown-toggle dropdown-toggle-nocaret img-circle" data-toggle="dropdown" href="#">
                 <span class="user-profile"><img style="margin-top: -1.5rem ; height: 50px ; width: 50px !important;" src="images/<?php echo $row['img_guest']; ?>" alt="Image" class="shadow"></span>
               </a>

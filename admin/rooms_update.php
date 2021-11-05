@@ -70,11 +70,7 @@
                             <div class="form-group">
                                 <span class="form-label">Diện Tích</span>
                                 <input class="form-control" type="text" name="area_rm" value="<?php echo $row['area_rm'];?>" size="30">
-                            </div>
-                            <div class="form-group">
-                                <span class="form-label">Số Giường</span>
-                                <input class="form-control" type="text" name="bed_rm" value="<?php echo $row['bed_rm'];?>" size="30">
-                            </div>
+                            </div>                           
                             <div class="form-group">
                                 <span class="form-label">Sức Chứa</span>
                                 <input class="form-control" type="text" name="capacity_rm" value="<?php echo $row['capacity_rm'];?>" size="30">
