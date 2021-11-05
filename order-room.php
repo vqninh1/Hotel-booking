@@ -1,5 +1,8 @@
 <?php session_start();
-include('./header.php')
+include('./header.php');
+if (!isset($_SESSION['login_oki'])) {
+    header("Location: login.php");
+  }
 ?>
 <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');">
     <div class="overlay"></div>
