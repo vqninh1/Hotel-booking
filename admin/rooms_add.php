@@ -54,7 +54,7 @@
                             <div class="form-group">
                                 <span class="form-label">Diện Tích</span>
                                 <input class="form-control" type="text" name="area_rm" id="area_rm">
-                            </div>                           
+                            </div>
                             <div class="form-group">
                                 <span class="form-label">Sức Chứa</span>
                                 <input class="form-control" type="text" name="capacity_rm" id="capacity_rm">

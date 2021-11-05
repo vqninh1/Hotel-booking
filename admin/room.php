@@ -83,9 +83,6 @@
            </div>
           </a>
         </li>
-        <li class="dropdown-divider"></li>
-        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Tài Khoản</li>
-        <li class="dropdown-divider"></li>
         <li class="dropdown-item"><i class="icon-power mr-2"></i> Đăng Xuất</li>
       </ul>
     </li>
@@ -144,7 +141,7 @@
                     <th scope="row"><?php echo $i; ?> </th>
                     <td><?php echo $row['id_rm']; ?> </td>
                     <td><?php echo $row['name_rm']; ?> </td>
-                    <td><?php echo $row['area_rm']; ?> </td>                   
+                    <td><?php echo $row['area_rm']; ?> </td>
                     <td><?php echo $row['capacity_rm']; ?> </td>
                     <td><img src="../images/<?php echo $row['image_rm']; ?>" width="100px"></td>
                     <td><?php echo $row['available_rm']; ?> </td>

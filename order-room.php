@@ -1,5 +1,8 @@
-<?php
-include('./header.php')
+<?php session_start();
+include('./header.php');
+if (!isset($_SESSION['login_oki'])) {
+    header("Location: login.php");
+  }
 ?>
 <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');">
     <div class="overlay"></div>
@@ -65,10 +68,13 @@ include('./header.php')
                     <?php } ?>
                     <?php 
                     require('config/db.php');
-                    $query = mysqli_query($conn, "SELECT * from db_users");
-                    while($row = mysqli_fetch_assoc($query)) {
+                     if (isset($_SESSION['login_oki'])) {
+                        $kaitorac = $_SESSION['login_oki']['id_guest'];
+                        $query = mysqli_query($conn, "SELECT * from db_users WHERE id_guest = '$kaitorac'");
+                        $row = mysqli_fetch_assoc($query);
+                      
                     ?>
-                    <input type="hidden" name="id_guest" id="id_guest" value="<?php echo $row['id_guest'];?>">
+                    <input type="hidden" name="id_guest" id="id_guest" value="<?php echo $kaitorac;?>">
                     <?php }?>
                    
                 </form>
@@ -79,7 +85,7 @@ include('./header.php')
                     if(isset($_POST['submit']))
                     {
                         // Get all the details from the form
-                        $id_guest =$_POST['id_guest'];
+                        $kaitorac =$_POST['id_guest'];
                         $id_rm =$_POST['id_rm'];
                         $type_cr = $_POST['type_cr'];
                         $price_cr = $_POST['price_cr'];
@@ -97,14 +103,13 @@ include('./header.php')
                         //Save the Order in Databaase
                         //Create SQL to save the data
                         $sql2 = "INSERT INTO `db_check_room`( `id_guest`,`id_rm`,`type_cr`, `price_cr`, `name_cr`, `phone_cr`, `email_cr`, `checkin_cr`, `checkout_cr`, `day_cr`, `total_price`, `status_cr`) 
-                        VALUES('$id_guest','$id_rm','$type_cr','$price_cr','$name_cr','$phone_cr','$email_cr','$checkin_cr','$checkout_cr','$day_cr','$total_price','$status_cr')";
+                        VALUES('$kaitorac','$id_rm','$type_cr','$price_cr','$name_cr','$phone_cr','$email_cr','$checkin_cr','$checkout_cr','$day_cr','$total_price','$status_cr')";
                         //Execute the Query
                         $res2 = mysqli_query($conn, $sql2);
 
                         //Check whether query executed successfully or not
                         if($res2==true)
                         {
-                    
                             //Query Executed and Order Saved
                             $_SESSION['order'] = "<div class='success text-center'>Phòng đã được đặt thành công</div>";
                             echo 'Đặt phòng thành công';

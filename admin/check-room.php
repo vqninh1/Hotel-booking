@@ -68,12 +68,7 @@ if (!isset($_SESSION['login_oke'])) {
               <i class="icon-menu menu-icon"></i>
             </a>
           </li>
-          <li class="nav-item">
-            <form class="search-bar">
-              <input type="text" class="form-control" placeholder="Nhập từ khóa">
-              <a href="javascript:void();"><i class="icon-magnifier"></i></a>
-            </form>
-          </li>
+          
         </ul>
 
         <ul class="navbar-nav align-items-center right-nav-link">
@@ -101,10 +96,6 @@ if (!isset($_SESSION['login_oke'])) {
                   </div>
                 </a>
               </li>
-
-              <li class="dropdown-divider"></li>
-              <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Tài Khoản</li>
-              <li class="dropdown-divider"></li>
               <li class="dropdown-item"><i class="icon-power mr-2"></i><a href="logout.php">Đăng Xuất</a></li>
             </ul>
           </li>
@@ -127,6 +118,8 @@ if (!isset($_SESSION['login_oke'])) {
                         <tr>
                           <th>STT</th>
                           <th>Mã đơn đặt</th>
+                          <th>Mã Khách </th>
+                          <th>Mã Phòng </th>
                           <th>Loại phòng</th>
                           <th>Giá phòng(VNĐ)/1 đêm</th>
                           <th>Họ tên</th>
@@ -156,6 +149,8 @@ if (!isset($_SESSION['login_oke'])) {
                         <tr>
                           <th scope="row"><?php echo $i; ?></th>
                           <td><?php echo $row['id_cr']; ?></td>
+                          <td><?php echo $row['id_guest']; ?></td>
+                          <td><?php echo $row['id_rm']; ?></td>
                           <td><?php echo $row['type_cr']; ?></td>
                           <td><?php echo $row['price_cr']; ?></td>
                           <td><?php echo $row['name_cr']; ?></td>

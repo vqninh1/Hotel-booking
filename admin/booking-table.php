@@ -61,12 +61,7 @@ if (!isset($_SESSION['login_oke'])) {
               <i class="icon-menu menu-icon"></i>
             </a>
           </li>
-          <li class="nav-item">
-            <form class="search-bar">
-              <input type="text" class="form-control" placeholder="Nhập từ khóa">
-              <a href="javascript:void();"><i class="icon-magnifier"></i></a>
-            </form>
-          </li>
+          
         </ul>
 
         <ul class="navbar-nav align-items-center right-nav-link">
@@ -94,9 +89,6 @@ if (!isset($_SESSION['login_oke'])) {
                   </div>
                 </a>
               </li>
-              <li class="dropdown-divider"></li>
-              <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Tài Khoản</li>
-              <li class="dropdown-divider"></li>
               <li class="dropdown-item"><i class="icon-power mr-2"></i><a href="logout.php">Đăng Xuất</a></li>
             </ul>
           </li>
@@ -132,6 +124,7 @@ if (!isset($_SESSION['login_oke'])) {
                       <tr>
                         <th>STT</th>
                         <th>ID</th>
+                        <th>ID Khách</th>
                         <th>Tên Khách Hàng</th>
                         <th>Email</th>
                         <th>Số Điện Thoại</th>
@@ -155,6 +148,7 @@ if (!isset($_SESSION['login_oke'])) {
                         <tr>
                           <th scope="row"><?php echo $i; ?> </th>
                           <td><?php echo $row['id_bt']; ?></td>
+                          <td><?php echo $row['id_guest']; ?></td>
                           <td><?php echo $row['name_bt']; ?></td>
                           <td><?php echo $row['email_bt']; ?></td>
                           <td><?php echo $row['phone_bt']; ?></td>

@@ -35,12 +35,15 @@ include('header(table).php');
                             }
 
                         }
-                        require('admin/config/db.php');
-                        $query = mysqli_query($conn, "SELECT * from db_users");
-                        while($row = mysqli_fetch_assoc($query)) {
+                        require('config/db.php');
+                        if (isset($_SESSION['login_oki'])) {
+                        $kaitorac = $_SESSION['login_oki']['id_guest'];
+                        $query = mysqli_query($conn, "SELECT * from db_users WHERE id_guest = '$kaitorac'");
+                        $row = mysqli_fetch_assoc($query);
+                      
                     ?>
                         <form action="process-booking-table.php" method="POST">
-                            <input type="hidden" name="id_guest" id="id_guest" value="<?php echo $row['id_guest'];?>">
+                            <input type="hidden" name="id_guest" id="id_guest" value="<?php echo $kaitorac;?>">
                             <?php }
                             ?>
                             <div class="row">

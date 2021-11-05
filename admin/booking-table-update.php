@@ -62,10 +62,14 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <span class="form-label">Họ Tên</span>
-                                        <input class="form-control" type="email" name="name_bt" value="<?php echo $row['name_bt'];?>" readonly>
+                                        <span class="form-label">Mã Khách</span>
+                                        <input class="form-control" type="text" name="id_guest" value="<?php echo $row['id_guest'];?>" readonly>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="form-label">Họ Tên</span>
+                                <input class="form-control" type="text" name="name_bt" value="<?php echo $row['name_bt'];?>" readonly>
                             </div>
                             <div class="form-group">
                                 <span class="form-label">Email</span>

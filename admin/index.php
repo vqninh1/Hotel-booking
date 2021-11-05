@@ -40,7 +40,6 @@ if (!isset($_SESSION['login_oke']))
 </head>
 
 <body class="bg-theme bg-theme1">
-
  
 <!-- Start wrapper-->
  <div id="wrapper">
@@ -132,7 +131,6 @@ if (!isset($_SESSION['login_oke']))
                             <td><img src="../images/<?php echo $row['img_guest']; ?>" width="100px"></td>
                             <td><?php echo $row['address_guest']; ?></td>
                             <td><a href="./update-guest.php?id_guest=<?php echo $row['id_guest']; ?>"><i class="fas fa-edit"></i></a></td>
-                            <td><a href="./delete-guest.php?id_guest=<?php echo $row['id_guest']; ?>"><i class="fas fa-trash"></i></a></td>
                           </tr>
                       <?php
                           $i++;
