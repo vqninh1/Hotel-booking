@@ -1,7 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['login_oke'])) 
-{
+if (!isset($_SESSION['login_oke'])) {
   header("Location: login.php");
 }
 ?>
@@ -35,18 +34,24 @@ if (!isset($_SESSION['login_oke']))
   <link href="assets/css/sidebar-menu.css" rel="stylesheet" />
   <!-- Custom Style-->
   <link href="assets/css/app-style.css" rel="stylesheet" />
-  <link href="../fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet"/>
+  <link href="../fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet" />
 
 </head>
 
 <body class="bg-theme bg-theme1">
-<<<<<<< HEAD
- 
-<!-- Start wrapper-->
- <div id="wrapper">
- 
-  <!--Start sidebar-wrapper-->
-   <?php include('menu.php')?>
+  <div id="pageloader-overlay" class="visible incoming">
+    <div class="loader-wrapper-outer">
+      <div class="loader-wrapper-inner">
+        <div class="loader"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start wrapper-->
+  <div id="wrapper">
+
+    <!--Start sidebar-wrapper-->
+    <?php include('menu.php') ?>
 
     <!--Start topbar header-->
     <header class="topbar-nav">
@@ -57,7 +62,7 @@ if (!isset($_SESSION['login_oke']))
               <i class="icon-menu menu-icon"></i>
             </a>
           </li>
-          
+
         </ul>
 
         <ul class="navbar-nav align-items-center right-nav-link">
@@ -85,7 +90,7 @@ if (!isset($_SESSION['login_oke']))
                   </div>
                 </a>
               </li>
-              
+
               <li class="dropdown-divider"></li>
               <li class="dropdown-item"><i class="icon-power mr-2"></i><a href="logout.php">Đăng Xuất</a> </li>
             </ul>
@@ -158,13 +163,13 @@ if (!isset($_SESSION['login_oke']))
             <div class="card">
               <div class="card-header">Bảng điều khiển tài khoản admin
                 <div class="card-action">
-                <div class="dropdown">
-                <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
-                  <i class="icon-options"></i>
-                </a>
-                  
+                  <div class="dropdown">
+                    <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
+                      <i class="icon-options"></i>
+                    </a>
+
+                  </div>
                 </div>
-              </div>
                 <div class="table-responsive">
                   <tbody>
                     <table class="table align-items-center table-flush table-borderless">
@@ -219,12 +224,12 @@ if (!isset($_SESSION['login_oke']))
             </div>
           </div>
 
-            <!--End Dashboard Content-->
+          <!--End Dashboard Content-->
 
           <div class="overlay toggle-menu"></div>
-            <!--end overlay-->
+          <!--end overlay-->
 
-          
+
           <!-- End container-fluid-->
 
         </div>

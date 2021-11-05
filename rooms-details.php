@@ -26,7 +26,7 @@
 		<section class="ftco-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
+          <div class="col-lg-12">
           	<div class="row">
           		<div class="col-md-12 ftco-animate">
           			<div class="single-slider owl-carousel">
@@ -50,64 +50,9 @@
           		</div>
 				<button type="button" class="btn btn-outline-warning"><a href="order-room.php?id_rm=<?php echo $id_rm; ?>">Đặt phòng</a></button>
 
-          		<div class="col-md-12 properties-single ftco-animate mb-5 mt-4">
-          			<h4 class="mb-4">Nhận Xét &amp; Đánh Giá</h4>
-          			<div class="row">
-          				<div class="col-md-6">
-          					<form method="post" class="star-rating">
-										  <div class="form-check">
-												<label class="form-check-label" for="exampleCheck1">
-													<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i> 100 Đánh Giá</span></p>
-												</label>
-										  </div>
-										  <div class="form-check">
-									      <label class="form-check-label" for="exampleCheck1">
-									    	   <p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i> 30 Đánh Giá</span></p>
-									      </label>
-										  </div>
-										  <div class="form-check">
-									      <label class="form-check-label" for="exampleCheck1">
-									      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i> 5 Đánh Giá</span></p>
-									     </label>
-										  </div>
-										  <div class="form-check">
-									      <label class="form-check-label" for="exampleCheck1">
-									      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i> 0 Đánh Giá</span></p>
-									      </label>
-										  </div>
-										  <div class="form-check">
-									      <label class="form-check-label" for="exampleCheck1">
-									      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i> 0 Đánh Giá</span></p>
-										    </label>
-										  </div>
-										</form>
-          				</div>
-          			</div>
-          		</div>
+          		
           	</div>
           </div> <!-- .col-md-8 -->
-          <div class="col-lg-4 sidebar ftco-animate">
-            <div class="sidebar-box">
-              <form action="#" class="search-form">
-                <div class="form-group">
-                  <span class="icon ion-ios-search"></span>
-                  <input type="text" class="form-control" placeholder="Tìm Kiếm...">
-                </div>
-              </form>
-            </div>
-            <div class="sidebar-box ftco-animate">
-              <h3>Tag Cloud</h3>
-              <div class="tagcloud">
-                <a href="#" class="tag-cloud-link">Bữa Ăn</a>
-                <a href="#" class="tag-cloud-link">Thực Đơn</a>
-                <a href="#" class="tag-cloud-link">Đồ Ăn</a>
-                <a href="#" class="tag-cloud-link">Ngọt</a>
-                <a href="#" class="tag-cloud-link">Ngon</a>
-                <a href="#" class="tag-cloud-link">Tráng Miệng</a>
-                <a href="#" class="tag-cloud-link">Đồ uống</a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section> 

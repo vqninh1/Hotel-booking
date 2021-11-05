@@ -1,6 +1,9 @@
 <?php
 session_start();
-
+if (!isset($_SESSION['login_oki'])) 
+{
+  header("Location: login.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,6 +23,8 @@ session_start();
 
   <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/style-profile.css">
+
 
   <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -68,10 +73,17 @@ session_start();
           if (isset($_SESSION['login_oki'])) {
           ?>
 
-            <li class="nav-item">
-              <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>" class="nav-link"><i class="fa fa-user"></i><?php echo $_SESSION['login_oki']  ?></a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="logout.php">Đăng xuất</a></li>
+            <li class="nav-item" style="margin-top: 0.5rem">
+              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret img-circle" data-toggle="dropdown" href="#">
+                <span class="user-profile"><img style="margin-top: -1.5rem ; height: 50px ; width: 50px !important;" src="images/<?php echo $row['img_guest']; ?>" alt="Image" class="shadow"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right " style="margin:-10px 150px 0 0;">
+                <li class="dropdown-item">
+                    <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>">Tài khoản</a>
+                </li>
+                <li class="dropdown-item"><a href="logout.php">Đăng Xuất</a> </li>
+              </ul>
+            
           <?php
           } else {
           ?>
