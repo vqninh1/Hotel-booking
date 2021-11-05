@@ -25,7 +25,7 @@ include('./header.php')
     ?>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-12">
                 <form action="" method="POST" class="order">
                     <div class="food-menu-img">
                     <div class="room-img" style="background-image: url(./images/<?php echo $row['image_rm']; ?>);"></div>
@@ -122,28 +122,7 @@ include('./header.php')
                 ?>
                 
             </div> <!-- .col-md-8 -->
-            <div class="col-lg-4 sidebar ftco-animate">
-                <div class="sidebar-box">
-                    <form action="#" class="search-form">
-                        <div class="form-group">
-                            <span class="icon ion-ios-search"></span>
-                            <input type="text" class="form-control" placeholder="Tìm Kiếm...">
-                        </div>
-                    </form>
-                </div>
-                <div class="sidebar-box ftco-animate">
-                    <h3>Tag Cloud</h3>
-                    <div class="tagcloud">
-                        <a href="#" class="tag-cloud-link">Bữa Ăn</a>
-                        <a href="#" class="tag-cloud-link">Thực Đơn</a>
-                        <a href="#" class="tag-cloud-link">Đồ Ăn</a>
-                        <a href="#" class="tag-cloud-link">Ngọt</a>
-                        <a href="#" class="tag-cloud-link">Ngon</a>
-                        <a href="#" class="tag-cloud-link">Tráng Miệng</a>
-                        <a href="#" class="tag-cloud-link">Đồ uống</a>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </section> <!-- .section -->

@@ -56,12 +56,6 @@
        <i class="icon-menu menu-icon"></i>
      </a>
     </li>
-    <li class="nav-item">
-      <form class="search-bar">
-        <input type="text" class="form-control" placeholder="Nhập từ khóa">
-         <a href="javascript:void();"><i class="icon-magnifier"></i></a>
-      </form>
-    </li>
   </ul>
      
   <ul class="navbar-nav align-items-center right-nav-link">

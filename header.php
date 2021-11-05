@@ -57,7 +57,7 @@ session_start();
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"><a href="index.php" class="nav-link">Trang Chủ</a></li>
           <li class="nav-item"><a href="rooms.php" class="nav-link">Phòng</a></li>
-          <li class="nav-item"><a href="restaurant.php" class="nav-link">Nhà Hàng</a></li>
+          <li class="nav-item"><a href="restaurant-detail.php" class="nav-link">Nhà Hàng</a></li>
           <li class="nav-item"><a href="about.php" class="nav-link">Giới Thiệu</a></li>
           <?php
           require('./config/db.php');
@@ -70,9 +70,17 @@ session_start();
           ?>
 
             <li class="nav-item" style="margin-top: 0.5rem">
-              <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>" class="nav-link img-circle"><img style="margin-top: -1.5rem ; height: 50px ; width: 50px !important;" src="images/<?php echo $row['img_guest']; ?>" alt="Image" class="shadow"></a>
+              <a class="nav-link dropdown-toggle dropdown-toggle-nocaret img-circle" data-toggle="dropdown" href="#">
+                <span class="user-profile"><img style="margin-top: -1.5rem ; height: 50px ; width: 50px !important;" src="images/<?php echo $row['img_guest']; ?>" alt="Image" class="shadow"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right " style="margin:-10px 150px 0 0;">
+                <li class="dropdown-item">
+                    <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>">Tài khoản</a>
+                </li>
+                <li class="dropdown-item"><a href="logout.php">Đăng Xuất</a> </li>
+              </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="logout.php">Đăng xuất</a></li>
+            
           <?php
           } else {
           ?>
@@ -83,5 +91,6 @@ session_start();
         </ul>
       </div>
     </div>
-  </nav>
+  </nav>              
+
   <!-- END nav -->

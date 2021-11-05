@@ -1,6 +1,9 @@
 <?php
 session_start();
-
+if (!isset($_SESSION['login_oki'])) 
+{
+  header("Location: login.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,6 +23,8 @@ session_start();
 
   <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/style-profile.css">
+
 
   <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -74,6 +79,7 @@ session_start();
               <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>" class="nav-link img-circle"><img style="margin-top: -1.5rem ; height: 50px ; width: 50px !important;" src="images/<?php echo $row['img_guest']; ?>" alt="Image" class="circle"></a>
             </li>
             <li class="nav-item"><a class="nav-link" href="logout.php">Đăng xuất</a></li>
+
           <?php
           } else {
           ?>
