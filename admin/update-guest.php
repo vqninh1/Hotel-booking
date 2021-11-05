@@ -113,7 +113,7 @@ if (!isset($_SESSION['login_oke'])) {
                                     if ($image_name != "") {
                                         $ext = explode('.', $image_name);
                                         $end = end($ext);
-                                        $image_name = "Room-image" . rand(0000, 9999) . '.' . $end;
+                                        $image_name = "profile-image" . rand(0000, 9999) . '.' . $end;
                                         $src_path = $_FILES['image']['tmp_name'];
                                         $dest_path = "../images/" . $image_name;
                                         $upload = move_uploaded_file($src_path, $dest_path);
