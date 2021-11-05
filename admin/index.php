@@ -40,7 +40,6 @@ if (!isset($_SESSION['login_oke']))
 </head>
 
 <body class="bg-theme bg-theme1">
-<<<<<<< HEAD
  
 <!-- Start wrapper-->
  <div id="wrapper">

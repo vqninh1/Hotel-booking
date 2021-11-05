@@ -41,10 +41,10 @@
 	$sql1="SELECT * from db_rooms WHERE name_rm LIKE '%$search%' OR des_rm LIKE '%$search%'";
 	$query=mysqli_query($conn,$sql1);
 	$count = mysqli_num_rows($query);
-	$sql2="SELECT * from db_service WHERE name_ser like '%$search%' OR des_ser like '%$search%' OR type_ser like '%$search%' and type_ser like 'Đặt Phòng'";
+	$sql2="SELECT * from db_service WHERE (name_ser like '%$search%' OR des_ser like '%$search%' OR type_ser like '%$search%') and type_ser='Đặt Phòng'";
 	$query1=mysqli_query($conn,$sql2);
 	$count1=mysqli_num_rows($query1);
-	$sql3="SELECT * from db_service WHERE name_ser like '%$search%' OR des_ser like '%$search%' OR type_ser like '%$search%' and type_ser like 'Đặt Bàn'";
+	$sql3="SELECT * from db_service WHERE (name_ser like '%$search%' OR des_ser like '%$search%' OR type_ser like '%$search%') and type_ser='Đặt Bàn'";
 	$query2=mysqli_query($conn,$sql3);
 	$count2=mysqli_num_rows($query2);
 ?>
@@ -83,8 +83,8 @@
 			</div>
 		</div>
 	</div>
-</div>
 
+</div>
 <?php 
 }
 }
