@@ -41,17 +41,14 @@
 	$sql1="SELECT * from db_rooms WHERE name_rm LIKE '%$search%' OR des_rm LIKE '%$search%'";
 	$query=mysqli_query($conn,$sql1);
 	$count = mysqli_num_rows($query);
-	$sql2="SELECT * from db_service WHERE name_ser like '%$search%' OR des_ser like '%$search%' OR type_ser like '%$search%' and type_ser like 'Đặt Phòng'";
+	$sql2="SELECT * from db_service WHERE name_ser like '%$search%' OR des_ser like '%$search%' ";
 	$query1=mysqli_query($conn,$sql2);
 	$count1=mysqli_num_rows($query1);
-	$sql3="SELECT * from db_service WHERE name_ser like '%$search%' OR des_ser like '%$search%' OR type_ser like '%$search%' and type_ser like 'Đặt Bàn'";
-	$query2=mysqli_query($conn,$sql3);
-	$count2=mysqli_num_rows($query2);
 ?>
 <section class="food-search text-center">
         <div class="container">
 
-            <h4><span class="text-danger">Có <?php echo $count + $count1 + $count2; ?> Kết Quả Liên Quan Đến Từ Khóa "<?php echo $search;?>"</span></h4>
+            <h4><span class="text-danger">Có <?php echo $count + $count1; ?> Kết Quả Liên Quan Đến Từ Khóa "<?php echo $search;?>"</span></h4>
 
         </div>
 </section>
@@ -83,8 +80,8 @@
 			</div>
 		</div>
 	</div>
-</div>
 
+</div>
 <?php 
 }
 }
@@ -97,7 +94,7 @@ else
 </div>
 </div>
 <div class="service-table">
-	<h2><span class="text-info">Dịch Vụ Đặt Phòng: </span></h2>
+	<h2><span class="text-info">Dịch Vụ : </span></h2>
 </div>
 <div class="row-mb-5" style="display:flex;">
 	<?php 
@@ -113,44 +110,17 @@ else
 	<p class="des_ser" style="height:70px">
 		<?php echo $des_ser; ?>
 	</p>
-	<a href="#" class="btn btn-primary">Đặt Phòng</a>
+	<a href="booking-table.php" class="btn btn-primary">Đặt</a>
 	</div>
 	<?php
 		}
 	}
 	else
 	{
-	echo "<div class='text-danger' style='padding-left:12px;'>Không có dịch vụ đặt phòng nào liên quan đến từ khóa '$search'.</div>";
+	echo "<div class='text-danger' style='padding-left:12px;'>Không có dịch vụ nào liên quan đến từ khóa '$search'.</div>";
 	}
 	?>
 </div>
-<div class="service-rooms">
-	<h2><span class="text-info">Dịch Vụ Đặt Bàn: </span></h2>
-</div>
-<div class="row-mb-5" style="display:flex;">
-	<?php 
-	if($count2>0)
-	{
-		while($row2=mysqli_fetch_assoc($query2))
-		{
-			$name_des1=$row2['name_ser'];
-			$des_ser1=$row2['des_ser'];
-	?>
-	<div class="col-md" style="text-align:center;">
-	<h4><?php echo $name_des1; ?></h4>
-	<p class="des">
-		<?php echo $des_ser1; ?>
-	</p>
-	<a href="#" class="btn btn-primary">Đặt Bàn</a>
-	</div>
-	<?php
-		}
-	}
-	else
-	{
-	echo "<div class='text-danger' style='padding-left:12px;'>Không có dịch vụ đặt bàn nào liên quan đến từ khóa '$search'.</div>";
-	}
-	?>
-</div>
+
 
 <?php include('footer.php')?>

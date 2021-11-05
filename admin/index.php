@@ -39,6 +39,7 @@ if (!isset($_SESSION['login_oke'])) {
 </head>
 
 <body class="bg-theme bg-theme1">
+<<<<<<< HEAD
   <div id="pageloader-overlay" class="visible incoming">
     <div class="loader-wrapper-outer">
       <div class="loader-wrapper-inner">
@@ -52,6 +53,14 @@ if (!isset($_SESSION['login_oke'])) {
 
     <!--Start sidebar-wrapper-->
     <?php include('menu.php') ?>
+=======
+ 
+<!-- Start wrapper-->
+ <div id="wrapper">
+ 
+  <!--Start sidebar-wrapper-->
+   <?php include('menu.php')?>
+>>>>>>> 2dc3e01ba7716aa26425c7fdfe4aa3159cff3e87
 
     <!--Start topbar header-->
     <header class="topbar-nav">
