@@ -39,6 +39,8 @@ session_start();
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-profile.css">
+
 </head>
 
 <body>
@@ -62,14 +64,14 @@ session_start();
           <li class="nav-item"><a href="restaurant-detail.php" class="nav-link">Nhà Hàng</a></li>
           <li class="nav-item"><a href="about.php" class="nav-link">Giới Thiệu</a></li>
           <?php
-          require('./config/db.php');
+          require('config/db.php');
           $query = mysqli_query($conn, "SELECT * from db_users");
           $row = mysqli_fetch_assoc($query);
           if (isset($_SESSION['login_oki'])) {
           ?>
 
             <li class="nav-item">
-              <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>" class="nav-link"><i class="fa fa-user"></i><?php echo $_SESSION['login_oki']  ?></a>
+              <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>" class="nav-link img-circle"><img style="margin-top: -1.5rem ; height: 50px ; width: 50px !important;" src="images/<?php echo $row['img_guest']; ?>" alt="Image" class="circle"></a>
             </li>
             <li class="nav-item"><a class="nav-link" href="logout.php">Đăng xuất</a></li>
           <?php

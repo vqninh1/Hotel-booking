@@ -1,3 +1,4 @@
+<?php include('header.php'); ?>
 <section class="ftco-section ftco-menu" style="background-image: url(images/restaurant-pattern.jpg);">
 	<div class="container">
 		<div class="row justify-content-center mb-5 pb-3">
@@ -110,3 +111,4 @@
 		</div>
 	</div>
 </section>
+<?php  include('footer.php')?>
