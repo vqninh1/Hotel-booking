@@ -108,11 +108,17 @@
                                         <span class="form-label">Chọn Thời Gian</span>
                                         <input class="form-control" type="time" name="time_bt" value="<?php echo $row['time_bt']; ?>">
                                     </div>
+<<<<<<< HEAD
                                 </div>                                 
                             </div>
                             <div class="form-group">
                                 <span class="form-label">Trạng Thái</span>
                                 <input class="form-control"  name="status_bt" value="<?php echo $row['status_bt'];?>" >
+=======
+                                </div>
+                                
+                                        
+>>>>>>> ducanh
                             </div>
                             <div class="form-btn">
                                 <button class="submit-btn" name="btnUpdate">Sửa</button>
