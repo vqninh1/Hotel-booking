@@ -64,7 +64,7 @@ if (!isset($_SESSION['login_oke'])) {
       <nav class="navbar navbar-expand fixed-top">
         <ul class="navbar-nav mr-auto align-items-center">
           <li class="nav-item">
-            <a class="nav-link toggle-menu" href="javascript:void();">
+            <a class="nav-link toggle-menu"  href="javascript:void();">
               <i class="icon-menu menu-icon"></i>
             </a>
           </li>
@@ -72,31 +72,25 @@ if (!isset($_SESSION['login_oke'])) {
         </ul>
 
         <ul class="navbar-nav align-items-center right-nav-link">
+        <?php
+          require('./config/db.php');
+          if (isset($_SESSION['login_oke'])) {
+            $kaitozac = $_SESSION['login_oke']['id_user'];
+            $query = mysqli_query($conn, "SELECT * from db_admin WHERE id_user = '$kaitozac'");
+            $row = mysqli_fetch_assoc($query);
+          }
+          if (isset($_SESSION['login_oke'])) {
+          ?>
           <li class="nav-item">
             <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
-              <span class="user-profile"><img src="https://via.placeholder.com/110x110" class="img-circle" alt="user avatar"></span>
+              <span class="user-profile img-circle"><img src="../images/<?php echo $row['img_admin']; ?>" width="50px"  alt="Image" class="shadow"></span>
             </a>
-            <ul class="dropdown-menu dropdown-menu-right">
-              <li class="dropdown-item user-details">
-                <a href="javaScript:void();">
-                  <div class="media">
-                    <div class="avatar"><img class="align-self-start mr-3" src="https://via.placeholder.com/110x110" alt="user avatar"></div>
-                    <div class="media-body">
-                      <h6 class="mt-2 user-title">
-                        <?php
-                        echo $_SESSION['login_oke']['name_user'];
-                        ?>
-                      </h6>
-                      <p class="user-subtitle">
-                        <?php
-                        echo $_SESSION['login_oke']['email_user'];
-                        ?>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="dropdown-item"><i class="icon-power mr-2"></i><a href="logout.php">Đăng Xuất</a></li>
+          <?php
+          }
+          ?>
+            <ul class="dropdown-menu dropdown-menu-right">                          
+            <li class="dropdown-divider"></li>             
+              <li class="dropdown-item"><i class="icon-power mr-2"></i><a href="logout.php">Đăng Xuất</a> </li>
             </ul>
           </li>
         </ul>
