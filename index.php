@@ -56,11 +56,16 @@
 							<span class="flaticon-reception-bell"></span>
 						</div>
 					</div>
+					<?php 
+					 if (isset($_SESSION['login_oki'])) {
+					?>
 					<div class="media-body">
-						<a href="booking-table.php">
+						<a href="booking-table.php?id_guest=<?php echo $row['id_guest']; ?>">
 							<h3 class="heading mb-3">Đặt Bàn</h3>
 						</a>
 					</div>
+					<?php 
+					}?>
 				</div>
 			</div>
 			<div class="col-md px-md-1 d-flex align-self-stretch ftco-animate">

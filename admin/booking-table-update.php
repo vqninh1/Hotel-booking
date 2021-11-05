@@ -108,7 +108,6 @@
                                         <span class="form-label">Chọn Thời Gian</span>
                                         <input class="form-control" type="time" name="time_bt" value="<?php echo $row['time_bt']; ?>">
                                     </div>
-<<<<<<< HEAD
                                 </div>                                 
                             </div>
                             <div class="form-group">
