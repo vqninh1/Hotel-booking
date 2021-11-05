@@ -51,7 +51,7 @@
         <span class="oi oi-menu"></span>
       </button>
       <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" style="align-items:center;">
           <li class="nav-item active"><a href="index.php" class="nav-link">Trang Chủ</a></li>
           <li class="nav-item"><a href="rooms.php" class="nav-link">Phòng</a></li>
           <li class="nav-item"><a href="restaurant-detail.php" class="nav-link">Nhà Hàng</a></li>
