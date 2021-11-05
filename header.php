@@ -63,7 +63,7 @@
           if (isset($_SESSION['login_oki'])) {
           ?>
 
-            <li class="nav-item">
+            <li class="nav-item" style="margin-top: 0.5rem">
               <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>" class="nav-link img-circle"><img style="margin-top: -1.5rem ; height: 50px ; width: 50px !important;" src="images/<?php echo $row['img_guest']; ?>" alt="Image"  class="shadow"></a></li>
             <li class="nav-item"><a class="nav-link" href="logout.php">Đăng xuất</a></li>
           <?php
