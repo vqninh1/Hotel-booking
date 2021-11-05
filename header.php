@@ -1,5 +1,5 @@
 <?php
-  session_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,9 +16,9 @@
   <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style-profile.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style-profile.css">
 
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -41,9 +41,15 @@
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.php"><img src="./images/hiltonHotelsLogo.svg.png(1).png" alt=""></a>
+      <form action="search.php" class="search-form" method="POST">
+        <div class="form-group" style="left:100px;opacity:0.6;width:300px;margin-top:15px;">
+          <span class="icon ion-ios-search"></span>
+          <input type="search" class="form-control" placeholder="Tìm Tên Phòng & Dịch Vụ...." name="search" require>
+        </div>
+      </form>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span>
       </button>
@@ -55,16 +61,17 @@
           <li class="nav-item"><a href="about.php" class="nav-link">Giới Thiệu</a></li>
           <?php
           require('./config/db.php');
-          if(isset($_SESSION['login_oki'])){
-          $kaitorac = $_SESSION['login_oki']['id_guest'] ;
-          $query = mysqli_query($conn, "SELECT * from db_users WHERE id_guest = '$kaitorac'" );
-          $row = mysqli_fetch_assoc($query);
+          if (isset($_SESSION['login_oki'])) {
+            $kaitorac = $_SESSION['login_oki']['id_guest'];
+            $query = mysqli_query($conn, "SELECT * from db_users WHERE id_guest = '$kaitorac'");
+            $row = mysqli_fetch_assoc($query);
           }
           if (isset($_SESSION['login_oki'])) {
           ?>
 
             <li class="nav-item" style="margin-top: 0.5rem">
-              <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>" class="nav-link img-circle"><img style="margin-top: -1.5rem ; height: 50px ; width: 50px !important;" src="images/<?php echo $row['img_guest']; ?>" alt="Image"  class="shadow"></a></li>
+              <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>" class="nav-link img-circle"><img style="margin-top: -1.5rem ; height: 50px ; width: 50px !important;" src="images/<?php echo $row['img_guest']; ?>" alt="Image" class="shadow"></a>
+            </li>
             <li class="nav-item"><a class="nav-link" href="logout.php">Đăng xuất</a></li>
           <?php
           } else {
