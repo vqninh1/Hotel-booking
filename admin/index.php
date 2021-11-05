@@ -77,9 +77,8 @@ if (!isset($_SESSION['login_oke']))
           <?php
           }
           ?>
-            <ul class="dropdown-menu dropdown-menu-right">             
-              
-              <li class="dropdown-divider"></li>
+            <ul class="dropdown-menu dropdown-menu-right">                          
+            <li class="dropdown-divider"></li>             
               <li class="dropdown-item"><i class="icon-power mr-2"></i><a href="logout.php">Đăng Xuất</a> </li>
             </ul>
           </li>
