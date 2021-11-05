@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 	include('header.php')
 ?>
 <div class="hero-wrap" style="background-image: url('./images/Khách-sạn-Hilton-Hà-Nội-Opera-4-1290x860.jpg');">

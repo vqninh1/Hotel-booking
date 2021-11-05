@@ -127,6 +127,8 @@ if (!isset($_SESSION['login_oke'])) {
                         <tr>
                           <th>STT</th>
                           <th>Mã đơn đặt</th>
+                          <th>Mã Khách </th>
+                          <th>Mã Phòng </th>
                           <th>Loại phòng</th>
                           <th>Giá phòng(VNĐ)/1 đêm</th>
                           <th>Họ tên</th>
@@ -156,6 +158,8 @@ if (!isset($_SESSION['login_oke'])) {
                         <tr>
                           <th scope="row"><?php echo $i; ?></th>
                           <td><?php echo $row['id_cr']; ?></td>
+                          <td><?php echo $row['id_guest']; ?></td>
+                          <td><?php echo $row['id_rm']; ?></td>
                           <td><?php echo $row['type_cr']; ?></td>
                           <td><?php echo $row['price_cr']; ?></td>
                           <td><?php echo $row['name_cr']; ?></td>

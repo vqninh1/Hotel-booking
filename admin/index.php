@@ -39,28 +39,12 @@ if (!isset($_SESSION['login_oke'])) {
 </head>
 
 <body class="bg-theme bg-theme1">
-<<<<<<< HEAD
-  <div id="pageloader-overlay" class="visible incoming">
-    <div class="loader-wrapper-outer">
-      <div class="loader-wrapper-inner">
-        <div class="loader"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Start wrapper-->
-  <div id="wrapper">
-
-    <!--Start sidebar-wrapper-->
-    <?php include('menu.php') ?>
-=======
  
 <!-- Start wrapper-->
  <div id="wrapper">
  
   <!--Start sidebar-wrapper-->
    <?php include('menu.php')?>
->>>>>>> 2dc3e01ba7716aa26425c7fdfe4aa3159cff3e87
 
     <!--Start topbar header-->
     <header class="topbar-nav">
@@ -154,7 +138,6 @@ if (!isset($_SESSION['login_oke'])) {
                             <td><img src="../images/<?php echo $row['img_guest']; ?>" width="100px"></td>
                             <td><?php echo $row['address_guest']; ?></td>
                             <td><a href="./update-guest.php?id_guest=<?php echo $row['id_guest']; ?>"><i class="fas fa-edit"></i></a></td>
-                            <td><a href="./delete-guest.php?id_guest=<?php echo $row['id_guest']; ?>"><i class="fas fa-trash"></i></a></td>
                           </tr>
                       <?php
                           $i++;

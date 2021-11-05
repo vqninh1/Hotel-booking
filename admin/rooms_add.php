@@ -56,10 +56,6 @@
                                 <input class="form-control" type="text" name="area_rm" id="area_rm">
                             </div>
                             <div class="form-group">
-                                <span class="form-label">Số Giường</span>
-                                <input class="form-control" type="text" name="bed_rm" id="bed_rm">
-                            </div>
-                            <div class="form-group">
                                 <span class="form-label">Sức Chứa</span>
                                 <input class="form-control" type="text" name="capacity_rm" id="capacity_rm">
                             </div>

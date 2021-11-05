@@ -1,5 +1,5 @@
-<?php
-  include('./header.php')
+<?php session_start();
+  include('header.php')
 
 ?>
     <!-- END nav -->
@@ -43,7 +43,6 @@
           			<h3 class="mb-4">Nổi Bật</h3>
 					<ul>
 						<li>Diện tích : <?php echo $row['area_rm']; ?></li>
-						<li>Số Giường : <?php echo $row['bed_rm'];?></li>
 						<li>Sức Chứa : <?php echo $row['capacity_rm'];?></li>
 					</ul>
 					<h3><?php echo $row['price_rm'] ?>VNĐ/đêm</h3>

@@ -1,4 +1,5 @@
-<?php include('header.php') ?>
+<?php session_start();
+include('header.php') ?>
 
 <!-- END nav -->
 <div class="hero">
@@ -34,12 +35,8 @@
 				</div>
 			</div>
 		</div>
-	</section>
 </div>
-
-
-
-
+</section>
 <section class="ftco-section">
 	<div class="container">
 		<div class="row justify-content-center mb-5 pb-3">
@@ -59,13 +56,15 @@
 					<?php 
 					 if (isset($_SESSION['login_oki'])) {
 					?>
+					<?php 
+					}
+					?>
 					<div class="media-body">
 						<a href="booking-table.php?id_guest=<?php echo $row['id_guest']; ?>">
 							<h3 class="heading mb-3">Đặt Bàn</h3>
 						</a>
 					</div>
-					<?php 
-					}?>
+					
 				</div>
 			</div>
 			<div class="col-md px-md-1 d-flex align-self-stretch ftco-animate">
@@ -173,8 +172,3 @@ include('restaurant.php')
 
 
 
-<?php
-
-include('footer.php')
-
-?>
