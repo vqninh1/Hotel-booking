@@ -117,34 +117,6 @@ else
 	}
 	else
 	{
-	echo "<div class='text-danger' style='padding-left:12px;'>Không có dịch vụ đặt phòng nào liên quan đến từ khóa '$search'.</div>";
-	}
-	?>
-</div>
-<div class="service-rooms">
-	<h2><span class="text-info">Dịch Vụ Đặt Bàn: </span></h2>
-</div>
-<div class="row-mb-5" style="display:flex;">
-	<?php 
-	if($count2>0)
-	{
-		while($row2=mysqli_fetch_assoc($query2))
-		{
-			$name_des1=$row2['name_ser'];
-			$des_ser1=$row2['des_ser'];
-	?>
-	<div class="col-md" style="text-align:center;">
-	<h4><?php echo $name_des1; ?></h4>
-	<p class="des">
-		<?php echo $des_ser1; ?>
-	</p>
-	<a href="booking-table.php" class="btn btn-primary">Đặt Bàn</a>
-	</div>
-	<?php
-		}
-	}
-	else
-	{
 	echo "<div class='text-danger' style='padding-left:12px;'>Không có dịch vụ nào liên quan đến từ khóa '$search'.</div>";
 	}
 	?>
