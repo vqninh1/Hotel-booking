@@ -20,6 +20,7 @@ session_start();
 
   <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/style-profile.css">
 
   <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -63,13 +64,16 @@ session_start();
           <li class="nav-item"><a href="about.php" class="nav-link">Giới Thiệu</a></li>
           <?php
           require('./config/db.php');
-          $query = mysqli_query($conn, "SELECT * from db_users");
-          $row = mysqli_fetch_assoc($query);
+          if (isset($_SESSION['login_oki'])) {
+            $kaitorac = $_SESSION['login_oki']['id_guest'];
+            $query = mysqli_query($conn, "SELECT * from db_users WHERE id_guest = '$kaitorac'");
+            $row = mysqli_fetch_assoc($query);
+          }
           if (isset($_SESSION['login_oki'])) {
           ?>
 
-            <li class="nav-item">
-              <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>" class="nav-link"><i class="fa fa-user"></i><?php echo $_SESSION['login_oki']  ?></a>
+            <li class="nav-item" style="margin-top: 0.5rem">
+              <a href="profile-guest.php?id_guest=<?php echo $row['id_guest']; ?>" class="nav-link img-circle"><img style="margin-top: -1.5rem ; height: 50px ; width: 50px !important;" src="images/<?php echo $row['img_guest']; ?>" alt="Image" class="shadow"></a>
             </li>
             <li class="nav-item"><a class="nav-link" href="logout.php">Đăng xuất</a></li>
           <?php

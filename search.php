@@ -113,7 +113,7 @@ else
 	<p class="des_ser" style="height:70px">
 		<?php echo $des_ser; ?>
 	</p>
-	<a href="#" class="btn btn-primary">Đặt Phòng</a>
+	<a href="order-room.php" class="btn btn-primary">Đặt Phòng</a>
 	</div>
 	<?php
 		}
@@ -141,7 +141,7 @@ else
 	<p class="des">
 		<?php echo $des_ser1; ?>
 	</p>
-	<a href="#" class="btn btn-primary">Đặt Bàn</a>
+	<a href="booking-table.php" class="btn btn-primary">Đặt Bàn</a>
 	</div>
 	<?php
 		}
