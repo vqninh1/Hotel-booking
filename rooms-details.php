@@ -110,7 +110,7 @@
           </div>
         </div>
       </div>
-    </section> <!-- .section -->
+    </section> 
 
   <?php include('footer.php')?>
     

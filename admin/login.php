@@ -61,9 +61,6 @@
 			<div class="form-row">
 			 <div class="form-group col-6">
 			 </div>
-			 <div class="form-group col-6 text-right">
-			  <a href="reset-password.php">Quên mật khẩu</a>
-			 </div>
 			</div>
 			 <button type="submit" class="btn btn-light btn-block">Đăng nhập</button>
 			 </form>

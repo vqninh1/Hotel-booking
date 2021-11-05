@@ -1,8 +1,8 @@
 <?php
-session_start();
-if (!isset($_SESSION['login_oke'])) {
-  header("Location: login.php");
-}
+  session_start();
+  if(!isset($_SESSION['login_oke'])){
+    header("Location: login.php");
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,98 +37,92 @@ if (!isset($_SESSION['login_oke'])) {
 
 <body class="bg-theme bg-theme1">
 
-  <!-- start loader -->
-  <div id="pageloader-overlay" class="visible incoming">
-    <div class="loader-wrapper-outer">
-      <div class="loader-wrapper-inner">
-        <div class="loader"></div>
-      </div>
-    </div>
-  </div>
-  <!-- end loader -->
+<!-- start loader -->
+   <div id="pageloader-overlay" class="visible incoming"><div class="loader-wrapper-outer"><div class="loader-wrapper-inner" ><div class="loader"></div></div></div></div>
+   <!-- end loader -->
 
-  <!-- Start wrapper-->
-  <div id="wrapper">
+<!-- Start wrapper-->
+ <div id="wrapper">
 
-    <!--Start sidebar-wrapper-->
-    <?php include('menu.php') ?>
-    <!--End sidebar-wrapper-->
+  <!--Start sidebar-wrapper-->
+  <?php include('menu.php')?>
+   <!--End sidebar-wrapper-->
 
-    <!--Start topbar header-->
-    <header class="topbar-nav">
-      <nav class="navbar navbar-expand fixed-top">
-        <ul class="navbar-nav mr-auto align-items-center">
-          <li class="nav-item">
-            <a class="nav-link toggle-menu" href="javascript:void();">
-              <i class="icon-menu menu-icon"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <form class="search-bar">
-              <input type="text" class="form-control" placeholder="Nhập từ khóa">
-              <a href="javascript:void();"><i class="icon-magnifier"></i></a>
-            </form>
-          </li>
-        </ul>
+<!--Start topbar header-->
+<header class="topbar-nav">
+ <nav class="navbar navbar-expand fixed-top">
+  <ul class="navbar-nav mr-auto align-items-center">
+    <li class="nav-item">
+      <a class="nav-link toggle-menu" href="javascript:void();">
+       <i class="icon-menu menu-icon"></i>
+     </a>
+    </li>
+    <li class="nav-item">
+      <form class="search-bar">
+        <input type="text" class="form-control" placeholder="Nhập từ khóa">
+         <a href="javascript:void();"><i class="icon-magnifier"></i></a>
+      </form>
+    </li>
+  </ul>
+     
+  <ul class="navbar-nav align-items-center right-nav-link">
+    <li class="nav-item">
+      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
+        <span class="user-profile"><img src="https://via.placeholder.com/110x110" class="img-circle" alt="user avatar"></span>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-right">
+       <li class="dropdown-item user-details">
+        <a href="javaScript:void();">
+           <div class="media">
+             <div class="avatar"><img class="align-self-start mr-3" src="https://via.placeholder.com/110x110" alt="user avatar"></div>
+            <div class="media-body">
+            <h6 class="mt-2 user-title">
+              <?php
+                echo $_SESSION['login_oke']['name_user'];
+              ?>
+            </h6>
+            <p class="user-subtitle">
+            <?php
+                echo $_SESSION['login_oke']['email_user'];
+              ?>
+            </p>
+            </div>
+           </div>
+          </a>
+        </li>
+        <li class="dropdown-divider"></li>
+        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Tài Khoản</li>
+        <li class="dropdown-divider"></li>
+        <li class="dropdown-item"><i class="icon-power mr-2"></i> Đăng Xuất</li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</header>
+<!--End topbar header-->
 
-        <ul class="navbar-nav align-items-center right-nav-link">
-          <li class="nav-item">
-            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
-              <span class="user-profile"><img src="https://via.placeholder.com/110x110" class="img-circle" alt="user avatar"></span>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-right">
-              <li class="dropdown-item user-details">
-                <a href="javaScript:void();">
-                  <div class="media">
-                    <div class="avatar"><img class="align-self-start mr-3" src="https://via.placeholder.com/110x110" alt="user avatar"></div>
-                    <div class="media-body">
-                      <h6 class="mt-2 user-title">
-                        <?php
-                        echo $_SESSION['login_oke']['name_user'];
-                        ?>
-                      </h6>
-                      <p class="user-subtitle">
-                        <?php
-                        echo $_SESSION['login_oke']['email_user'];
-                        ?>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="dropdown-divider"></li>
-              <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Tài Khoản</li>
-              <li class="dropdown-divider"></li>
-              <li class="dropdown-item"><i class="icon-power mr-2"></i> Đăng Xuất</li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!--End topbar header-->
+<div class="clearfix"></div>
+	
+<div class="content-wrapper">
+    <div class="container-fluid">
 
-    <div class="clearfix"></div>
+    <!--Start Dashboard Content-->
 
-    <div class="content-wrapper">
-      <div class="container-fluid">
-
-        <!--Start Dashboard Content-->
-
-        <div class="row">
-          <div class="col-12 col-lg-12">
-            <div class="card">
-              <div class="card-header">Bảng điều khiển phòng
-                <div class="card-action">
-                  <div class="dropdown">
-                    <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
-                      <i class="icon-options"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a class="dropdown-item" href="rooms_add.php">Thêm</a>
-                    </div>
-                  </div>
+    <div class="row">
+    <div class="col-12 col-lg-12">
+      <div class="card">
+        <div class="card-header">Bảng điều khiển phòng
+        <div class="card-action">
+              <div class="dropdown">
+              <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
+                <i class="icon-options"></i>
+              </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="rooms_add.php">Thêm</a>
                 </div>
-                <div class="table-responsive">
+              </div>
+        </div>
+          <div class="table-responsive">
                   <table class="table align-items-center table-flush table-borderless">
                     <thead>
                       <tr>
