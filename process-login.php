@@ -9,12 +9,12 @@
 
     if (mysqli_num_rows($result_1)>0){
        $row=mysqli_fetch_assoc($result_1);
-       $pass_saved = $row['password_user'];
+       $pass_saved = $row['password_guest'];
 
-       if(($password ==  $pass_saved)){
+       if((password_verify($password_guest, $pass_saved))){
            $_SESSION['login_oki']=$row;
            header("Location:index.php");
-           
+       
        }else{
         $response = 'sai mật khẩu kìa';
         header("Location: login.php?response=$response");

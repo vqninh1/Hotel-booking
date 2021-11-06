@@ -64,12 +64,12 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="password1_guest" placeholder="Mật khẩu">
+						<input class="input100" type="password" name="pass1_guest" placeholder="Mật khẩu">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 
                     <div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="password2_guest" placeholder="Xác nhận mật khẩu">
+						<input class="input100" type="password" name="pass2_guest" placeholder="Xác nhận mật khẩu">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 
