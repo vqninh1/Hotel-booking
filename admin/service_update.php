@@ -14,7 +14,7 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 	<link rel="shortcut icon" href="images/Khách-sạn-Hilton-Hà-Nội-Opera-2-1290x860.jpg" />
-  	<title>Thêm Dịch Vụ</title>
+  	<title>Sửa Dịch Vụ</title>
 
 	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
@@ -38,25 +38,35 @@
 </head>
 
 <body>
+<?php 
+  require('./config/db.php');
+  $id_service = $_GET['id_service'];
+  $query = mysqli_query($conn, "SELECT * from db_service where id_service='$id_service'");
+  $row = mysqli_fetch_assoc($query);
+?>
 	<div id="booking" class="section">
 		<div class="section-center">
 			<div class="container">
 				<div class="row">
 					<div class="booking-form">
 						<div class="form-header">
-							<h1>Thêm Dịch Vụ</h1>
+							<h1>Sửa Dịch Vụ</h1>
 						</div>
-						<form action="service_add-process.php" class="text-dark" method="POST">
+						<form action="service_update-process.php" class="text-dark" method="POST">
+                            <div class="form-group">
+                                <span class="form-label">Mã Dịch vụ</span>
+                                <input class="form-control" type="text" name="id_service" value="<?php echo $row['id_service'];?>" size="30" readonly>
+                            </div>
                             <div class="form-group">
                                 <span class="form-label">Tên Dịch Vụ</span>
-                                <input class="form-control" type="text" name="name_ser" id="name_ser">
+                                <input class="form-control" type="text" name="name_ser" id="name_ser" value="<?php echo $row['name_ser'];?>">
                             </div>
                             <div class="form-group">
                                 <span class="form-label">Mô Tả</span>
-                                <input class="form-control" type="text" name="des_ser" id="des_ser">
+                                <input class="form-control" type="text" name="des_ser" id="des_ser" value="<?php echo $row['des_ser'];?>">
                             </div>
                             <div class="form-btn">
-                                <button class="submit-btn" name="btnAdd">Thêm</button>
+                                <button class="submit-btn" name="btnSave">Thêm</button>
                             </div>
                         </form>
 					</div>
