@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 05, 2021 lúc 08:15 PM
+-- Thời gian đã tạo: Th10 06, 2021 lúc 05:44 AM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
--- Phiên bản PHP: 7.3.30
+-- Phiên bản PHP: 8.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -163,12 +163,9 @@ CREATE TABLE `db_service` (
 --
 
 INSERT INTO `db_service` (`id_service`, `name_ser`, `des_ser`) VALUES
-(1, 'đám cưới', 'hello'),
-(2, 'Họp cc', 'xin chào'),
-(3, 'Họp', 'xin chào'),
-(4, 'ăn cứt\r\n', 'xin chào'),
-(5, 'chiến xiên', 'xin chào'),
-(6, 'chiến', 'xin chào');
+(8, 'Ăn Sáng', 'Mang đến cho bạn 1 bữa sáng ấm cúng , thoải mái'),
+(9, 'Bàn ăn tối', 'Đặt một bàn ăn bữa tối cho gia đình , bạn bè của bạn'),
+(10, 'Buffee', 'Bữa ăn thịnh soạn ăn thả ga');
 
 -- --------------------------------------------------------
 
@@ -194,7 +191,7 @@ CREATE TABLE `db_users` (
 INSERT INTO `db_users` (`id_guest`, `username_guest`, `fullname_guest`, `password_guest`, `email_guest`, `phone_guest`, `img_guest`, `address_guest`) VALUES
 (1, 'ducanh123', 'alo anh bình gâu ', '$2y$10$0CsNaSCi60.rueWjEEW7meV3escRTLSOrpgPPVPNKAuxMz/.sIEJK', 'tranducanh@gamil.com', '123456', 'profile-image3624.png', '22'),
 (2, 'ducanh1234', 'alo', '$2y$10$6BaGy0JL7o7NNtKnUT2Bm.f27WaN.Gjop8IUa82addTIIooQd9xjS', 'tranducanh@gmail.com', '123456', 'hoanglong.png', '22'),
-(3, 'ninh', 'alo', '$2y$10$cmJbUvs9F0btAaUP/JlDoOnaWcWJ2JVeoy5.DT2L0ycb7iaDLTznK', '123@gmail.com', '123456', 'profile-image1736.png', 'há'),
+(3, 'ninh', 'alo ', '$2y$10$cmJbUvs9F0btAaUP/JlDoOnaWcWJ2JVeoy5.DT2L0ycb7iaDLTznK', '123@gmail.com', '123456', 'profile-image8783.png', 'há'),
 (4, 'hiep', 'Hiệp Trần', '$2y$10$Mq1e.KVHo29Ug6yvFiboTuZTFarPs010k/izc3p27ASfHkFZNBiQC', 'hiep@gmail.com', '1', 'hoanglong.png', 'Hưng Yên');
 
 --
@@ -272,7 +269,7 @@ ALTER TABLE `db_rooms`
 -- AUTO_INCREMENT cho bảng `db_service`
 --
 ALTER TABLE `db_service`
-  MODIFY `id_service` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_service` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT cho bảng `db_users`
