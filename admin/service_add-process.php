@@ -7,7 +7,7 @@
 
     if(mysqli_query($conn,$sql)==TRUE){
         echo "Thêm thành công";
-        header("Location:room.php");
+        header("Location:service.php");
     }else{
         echo "Chưa thêm được .....";
     }
