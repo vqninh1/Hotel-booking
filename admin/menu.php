@@ -30,6 +30,11 @@
         </a>
       </li>
       <li>
+        <a href="service.php">
+          <i class="zmdi zmdi-format-list-bulleted"></i> <span>Thông tin Dịch Vụ</span>
+        </a>
+      </li>
+      <li>
         <a href="register.php">
           <span>Tạo tài khoản admin</span>
         </a>
