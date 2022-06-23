@@ -102,7 +102,6 @@ if (!isset($_SESSION['login_oke']))
                           <th>STT</th>
                           <th>ID</th>
                           <th>Họ tên</th>
-                          <th>mật khẩu</th>
                           <th>Email</th>
                           <th>SDT</th>
                           <th>Ảnh đại diện</th>
@@ -125,12 +124,12 @@ if (!isset($_SESSION['login_oke']))
                             <th scope="row"><?php echo $i; ?></th>
                             <td><?php echo $row['id_guest']; ?></td>
                             <td><?php echo $row['username_guest']; ?></td>
-                            <td><?php echo $row['password_guest']; ?></td>
                             <td><?php echo $row['email_guest']; ?></td>
                             <td><?php echo $row['phone_guest']; ?></td>
                             <td><img src="../images/<?php echo $row['img_guest']; ?>" width="100px"></td>
                             <td><?php echo $row['address_guest']; ?></td>
                             <td><a href="./update-guest.php?id_guest=<?php echo $row['id_guest']; ?>"><i class="fas fa-edit"></i></a></td>
+                            <td><a href="./delete-guest.php?id_guest=<?php echo $row['id_guest']; ?>"><i class="fas fa-trash"></i></a></td>
                           </tr>
                       <?php
                           $i++;
@@ -164,7 +163,6 @@ if (!isset($_SESSION['login_oke']))
                           <th>ID</th>
                           <th>Tên tài khoản</th>
                           <th>Họ tên</th>
-                          <th>mật khẩu</th>
                           <th>Email</th>
                           <th>SDT</th>
                           <th>Ảnh đại diện</th>
@@ -188,7 +186,6 @@ if (!isset($_SESSION['login_oke']))
                             <td><?php echo $row['id_user']; ?></td>
                             <td><?php echo $row['name_user']; ?></td>
                             <td><?php echo $row['fullname_user']; ?></td>
-                            <td><?php echo $row['password_user']; ?></td>
                             <td><?php echo $row['email_user']; ?></td>
                             <td><?php echo $row['phone']; ?></td>
                             <td><img src="../images/<?php echo $row['img_admin']; ?>" width="100px"></td>
