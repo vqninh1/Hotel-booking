@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 06, 2021 lúc 05:44 AM
+-- Thời gian đã tạo: Th6 23, 2022 lúc 08:28 PM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
 -- Phiên bản PHP: 8.0.10
 
@@ -69,10 +69,6 @@ CREATE TABLE `db_bookingtable` (
 --
 
 INSERT INTO `db_bookingtable` (`id_bt`, `id_guest`, `name_bt`, `email_bt`, `phone_bt`, `type_bt`, `person_bt`, `date_bt`, `time_bt`, `status_bt`) VALUES
-(1, 1, 'đức anh', 'tranducanh@gamil.com', 123456, 'Bàn Giản Dị', '2', '2021-11-07', '10:59:00', 'Oke duk'),
-(2, 1, 'đức anh', 'tranducanh@gamil.com', 123456, 'Bàn Cao Cấp', '2', '2021-11-07', '10:59:00', 'Đang xử lý'),
-(3, 1, 'đức anh', 'tranducanh@gamil.com', 123456, 'Bàn Siêu Cấp', '3', '2021-11-13', '11:07:00', 'Đang xử lý'),
-(5, 1, 'đức anh', 'tranducanh@gmail.com', 123456, 'Bàn Vip Pro', '2', '2021-11-27', '03:15:00', 'Đang xử lý'),
 (6, 2, 'đức anh', 'tranducanh@gmail.com', 123456, 'Bàn Cao Cấp', '3', '2021-12-05', '04:22:00', 'Đang xử lý'),
 (7, 2, 'đức anh', 'tranducanh@gmail.com', 123456, 'Bàn Cao Cấp', '3', '2021-12-05', '04:22:00', 'Đang xử lý'),
 (8, 2, 'đức anh', 'tranducanh@gmail.com', 123456, 'Bàn Vip Pro', '4', '2021-11-21', '11:22:00', 'Đang xử lý'),
@@ -80,7 +76,6 @@ INSERT INTO `db_bookingtable` (`id_bt`, `id_guest`, `name_bt`, `email_bt`, `phon
 (10, 3, 'đức anh', 'tranducanh@gamil.com', 123456, 'Bàn Siêu Cấp', '4', '2021-11-17', '04:03:00', 'Đang xử lý'),
 (11, 3, 'đức anh', 'tranducanh@gmail.com', 1234563231, 'Bàn Vip Pro', '3', '2021-11-27', '05:29:00', 'Đang xử lý'),
 (12, 3, 'đức anh 12345', 'tranducanh@gamil.com', 1234563231, 'Bàn Siêu Cấp', '3', '2021-11-14', '14:28:00', 'Đang xử lý'),
-(13, 1, 'đức anh 123456767567', '123@gmail.com', 2147483647, 'Bàn Giản Dị', '3', '2021-12-10', '17:34:00', 'Đang xử lý'),
 (14, 3, 'Đỗ Quang Tuấn', 'tuan@gmail.com', 1, 'Bàn Giản Dị', '2', '2021-11-18', '02:03:00', 'Đang xử lý');
 
 -- --------------------------------------------------------
@@ -116,7 +111,6 @@ INSERT INTO `db_check_room` (`id_cr`, `id_guest`, `id_rm`, `type_cr`, `price_cr`
 (23, 3, 1, 'Luxude', 900000, 'Kaito rác', '12345679', 'Rac@gmail.com', '2021-11-26', '2021-11-28', 2, 1800000, 'Đang xử lí'),
 (24, 3, 1, 'Luxude', 900000, 'Kaito rác vl', '12345678789', 'Rac123@gmail.com', '2021-11-13', '2021-11-21', 8, 7200000, 'Đang xử lí'),
 (25, 3, 1, 'Luxude', 900000, 'Kaito rác vl', '12345678789', 'Rac123@gmail.com', '2021-11-13', '2021-11-21', 8, 7200000, 'Đang xử lí'),
-(27, 1, 1, 'Luxude', 900000, 'alo', '12345678', 'tranducanh@gmail.com', '2021-11-07', '2021-11-10', 3, 2700000, 'Đang xử lí'),
 (28, 3, 1, 'Luxude', 900000, 'Vướng Quang Ninh', '1', '1@gmail.com', '2021-11-17', '2021-11-17', 0, 0, 'Đang xử lí');
 
 -- --------------------------------------------------------
@@ -189,10 +183,9 @@ CREATE TABLE `db_users` (
 --
 
 INSERT INTO `db_users` (`id_guest`, `username_guest`, `fullname_guest`, `password_guest`, `email_guest`, `phone_guest`, `img_guest`, `address_guest`) VALUES
-(1, 'ducanh123', 'alo anh bình gâu ', '$2y$10$0CsNaSCi60.rueWjEEW7meV3escRTLSOrpgPPVPNKAuxMz/.sIEJK', 'tranducanh@gamil.com', '123456', 'profile-image3624.png', '22'),
 (2, 'ducanh1234', 'alo', '$2y$10$6BaGy0JL7o7NNtKnUT2Bm.f27WaN.Gjop8IUa82addTIIooQd9xjS', 'tranducanh@gmail.com', '123456', 'hoanglong.png', '22'),
 (3, 'ninh', 'alo ', '$2y$10$cmJbUvs9F0btAaUP/JlDoOnaWcWJ2JVeoy5.DT2L0ycb7iaDLTznK', '123@gmail.com', '123456', 'profile-image8783.png', 'há'),
-(4, 'hiep', 'Hiệp Trần', '$2y$10$Mq1e.KVHo29Ug6yvFiboTuZTFarPs010k/izc3p27ASfHkFZNBiQC', 'hiep@gmail.com', '1', 'hoanglong.png', 'Hưng Yên');
+(5, 'Ducanh', 'Đức Anh', '$2y$10$CjW20eFGv8jsyO2ueriINeQFwEeOToNTjJ/OqobzsILQ2u84Oqdeq', 'tranducanh2404@gmail.com', '0123456789', 'hoanglong.png', 'Hà Nội');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -275,7 +268,7 @@ ALTER TABLE `db_service`
 -- AUTO_INCREMENT cho bảng `db_users`
 --
 ALTER TABLE `db_users`
-  MODIFY `id_guest` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_guest` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
@@ -285,14 +278,14 @@ ALTER TABLE `db_users`
 -- Các ràng buộc cho bảng `db_bookingtable`
 --
 ALTER TABLE `db_bookingtable`
-  ADD CONSTRAINT `db_bookingtable_ibfk_1` FOREIGN KEY (`id_guest`) REFERENCES `db_users` (`id_guest`);
+  ADD CONSTRAINT `db_bookingtable_ibfk_1` FOREIGN KEY (`id_guest`) REFERENCES `db_users` (`id_guest`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Các ràng buộc cho bảng `db_check_room`
 --
 ALTER TABLE `db_check_room`
-  ADD CONSTRAINT `db_check_room_ibfk_1` FOREIGN KEY (`id_guest`) REFERENCES `db_users` (`id_guest`),
-  ADD CONSTRAINT `db_check_room_ibfk_2` FOREIGN KEY (`id_rm`) REFERENCES `db_rooms` (`id_rm`) ON DELETE CASCADE;
+  ADD CONSTRAINT `db_check_room_ibfk_1` FOREIGN KEY (`id_guest`) REFERENCES `db_users` (`id_guest`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `db_check_room_ibfk_2` FOREIGN KEY (`id_rm`) REFERENCES `db_rooms` (`id_rm`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
